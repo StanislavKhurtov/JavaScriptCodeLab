@@ -1,14 +1,14 @@
 // обьекты
 
-const person = {
-	name: 'Stas',
-	age: 26,
-	isProgrammer: true,
-	languages: ['ru', 'en', 'de'],
-	greet() {
-		console.log('Great from person')
-	}
-};
+// const person = {
+// 	name: 'Stas',
+// 	age: 26,
+// 	isProgrammer: true,
+// 	languages: ['ru', 'en', 'de'],
+// 	greet() {
+// 		console.log('Great from person')
+// 	}
+// };
 
 
 //  console.log(person['age'])
