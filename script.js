@@ -84,9 +84,90 @@
 
 // Функции
 
-function showMessage() {
-	console.log('Hello World');
-}
+//  let num = 20;
+//
+//  function showMessage(text) {
+//  	console.log(text);
+//  	let num = 10;
+//  	console.log(num);
+//  }
+//
+//  showMessage('Привет');
+//
+//  console.log(num);
+//
+//  function calc(a, b) {
+//  	return (a + b);
+//
+//  };
+//
+//  console.log(calc(10,20));
 
-showMessage();
+//const logger = function () {
+//	console.log('Hello');
+//};
+//
+//logger();
+
+//function logger() {
+//	console.log('Hello');
+//};
+//
+//logger();
+//
+
+//  const calc = (a, b) =>{
+//  	let c = a + b;
+//  	return c;
+//  } ;
+//  console.log(calc(10,5))
+
+
+//========================================================================================================================================================
+
+
+//  Свойства и методы String & number
+
+//  const str = "fruit";
+//  const arr = [1, 2, 4];
+//
+//  const per = str.toUpperCase();
+//
+//  console.log(str);
+//  console.log(per);
+//
+//  const fruit = "Some fruit";
+//
+//  console.log(fruit.length);
+//
+//  const logg = "Hello World";
+//
+//  console.log(logg.slice(6));// с помощью метода slice можно вырезать нужный нам кусочек строки
+//
+//  console.log(logg.substring(6)); // в методе substring не используются отрицатедльные значений!
+//
+//  console.log(logg.substr(6, 5)); // в методе substr первый указывается номер начала позиции,
+//                                              // а вторым длину строки которую нужно вырезать;
+//
+//
+//  const num = 12.2;
+//
+//  console.log(Math.round(num));  // округляет до цлого числа
+//
+//  const te = "12.2px";
+//
+//  console.log(parseInt(te)); // привело к типу число и округлило
+//  console.log(parseFloat(te)); // возвращает в дробном виде и в числовом типе;
+
+
+
+
+
+
+
+
+
+
+
+
 
