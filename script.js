@@ -152,12 +152,97 @@
 //
 //  const num = 12.2;
 //
-//  console.log(Math.round(num));  // округляет до цлого числа
+//  console.log(Math.round(num));  // округляет до целого числа
 //
 //  const te = "12.2px";
 //
-//  console.log(parseInt(te)); // привело к типу число и округлило
+//  console.log(parseInt(te)); // привело к типу число и округляет
 //  console.log(parseFloat(te)); // возвращает в дробном виде и в числовом типе;
+
+//========================================================================================================================================================
+
+
+// Callback - функция ( функция которая должна быть выполнена после того как другая функция завершила свое выполнение
+
+//  function first() {
+//      //do something
+//      setTimeout(function () {
+//          console.log(1);
+//      }, 1000);
+//  }
+//
+//  function second() {
+//      console.log(2);
+//  }
+//
+//  //first();
+//  //second();
+//
+//  function learnJS(lang, callback) {
+//      console.log(`Я учу: ${lang}`);
+//      callback();
+//  }
+//
+//  learnJS('JavaScript', first);
+
+
+
+//===========================================================================================
+
+// Обьекты, деструктуризация
+
+
+const options = {
+    name: "test",
+    width: 1024,
+    height: 1600,
+    colors: {
+        border: 'black',
+        bg: "red",
+    },
+    makeTest: function () {
+        console.log("Test");
+
+    }
+};
+//delete options.colors.bg; // delete удаляет свойство из обьекта
+
+//console.log(options.colors);
+
+// перебрать все свойства обьекта c помощью for ... in
+// с помощью метода for... of мы не можем перебрать обьекты
+
+// у обьекта нет свойства lenght, как у массива. Но можно узать другими методами,
+// не всегда этот метод является точным , лучше через Object.keys()
+
+let counter = 0;
+
+for (let key in options) {
+    if (typeof(options[key]) === 'object') {
+        for (let i in options[key]) {
+            console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+            counter++;
+        }
+    } else {
+        console.log(`Свойство ${key} имеет значение ${options[key]}`);
+        counter++;
+    }
+}
+console.log(counter);
+
+// метод Object.keys поможет нам получить массив со всеми ключами,
+// соотвественно добавив свойство lenght мы узнаем количество свойств массива
+
+console.log(Object.keys(options)); // преобразует обьект в массив
+console.log(Object.keys(options).length);
+
+options.makeTest();
+
+// деструктуризация обьекта
+
+const {bg}  = options.colors;
+
+console.log(bg);
 
 
 
