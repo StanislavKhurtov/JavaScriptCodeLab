@@ -139,36 +139,36 @@
 //
 //  const per = str.toUpperCase();
 //
-//  console.log(str);
-//  console.log(per);
+//  console.log(str); // fruit
+//  console.log(per); // FRUIT
 //
 //  const fruit = "Some fruit";
 //
-//  console.log(fruit.length);
+//  console.log(fruit.length);  // 10
 //
 //  const logg = "Hello World";
 //
-//  console.log(logg.slice(6));// с помощью метода slice можно вырезать нужный нам кусочек строки
+//  console.log(logg.slice(6));// World // с помощью метода slice можно вырезать нужный нам кусочек строки
 //
-//  console.log(logg.substring(6)); // в методе substring не используются отрицательные значений!
+//  console.log(logg.substring(6)); // World // в методе substring не используются отрицательные значений!
 //
-//  console.log(logg.substr(6, 5)); // в методе substr первый указывается номер начала позиции,
-//                                  // а вторым длину строки которую нужно вырезать;
-//
-//
+//  console.log(logg.substr(6, 5)); // World // в методе substr первый указывается номер начала позиции,
+                                  // а вторым длину строки которую нужно вырезать;
+
+
 //  const num = 12.2;
 //
-//  console.log(Math.round(num));  // округляет до целого числа
+//  console.log(Math.round(num));  // 12 // округляет до целого числа
 //
 //  const te = "12.2px";
 //
-//  console.log(parseInt(te)); // привело к типу число и округляет // 12
-//  console.log(parseFloat(te)); // возвращает в дробном виде и в числовом типе;  // 12.2
+//  console.log(parseInt(te)); // 12 // привело к типу число и округляет
+//  console.log(parseFloat(te));// 12.2 // возвращает в дробном виде и в числовом типе;
 
 //========================================================================================================================================================
 
 
-// Callback - функция (функция которая должна быть выполнена,
+// Callback - функция - функция которая должна быть выполнена,
 // после того как другая функция завершила свое выполнение.
 
 //  function first() {
@@ -199,28 +199,28 @@
 // Объекты, деструктуризация
 
 
-// const options = {
-//     name: "test",
-//     width: 1024,
-//     height: 1600,
-//     colors: {
-//         border: 'black',
-//         bg: "red",
-//     },
-//     makeTest: function () {
-//         console.log("Test");
+//  const options = {
+//      name: "test",
+//      width: 1024,
+//      height: 1600,
+//      colors: {
+//          border: 'black',
+//          bg: "red",
+//      },
+//      makeTest: function () {
+//          console.log("Test");
 //
-//     }
-// };
-//delete options.colors.bg; // delete удаляет свойство из объекта
-
-//console.log(options.colors);
+//      }
+//  };
+//  delete options.colors.bg; // delete удаляет свойство из объекта
+//
+//  console.log(options.colors); // { border: 'black' }
 
 // Перебрать все свойства объекта c помощью for ... in
 // с помощью метода for... of мы не можем перебрать объекты
 
-// у объекта нет свойства length, как у массива. Но можно узнать другими методами,
-// не всегда этот метод является точным , лучше через Object.keys()
+// У объекта нет свойства length, как у массива. Но можно узнать другими методами,
+// не всегда этот метод является точным, лучше через Object.keys()
 
 //  let counter = 0;
 //
@@ -245,7 +245,7 @@
 //
 //  options.makeTest();
 //
-//  // деструктуризация объекта
+//  // Деструктуризация объекта
 //
 //  const {bg}  = options.colors;
 //
@@ -256,21 +256,21 @@
 // Массивы и псевдомассивы
 
 
-// const arr = [1, 23, 14 ,5, 38, 111];
+//   const arr = [1, 23, 14 ,5, 38, 111];
 //
-// arr.sort(compareNum);
+//   arr.sort(compareNum);
 //
-// // console.log(arr.length);
+//   // console.log(arr.length);
 //
-// console.log(arr);
+//   console.log(arr);
 //
-// // метод sort - внимание, все из-за того что метод применяет алгоритм быстрой сортировки,
-// // нужно прописать callback функцию, так как метод будет сортировать как строки
-// // !!!!!
+//   // метод sort - внимание, все из-за того что метод применяет алгоритм быстрой сортировки,
+//   // нужно прописать callback функцию, так как метод будет сортировать как строки
+//   // !!!!!
 //
-// function compareNum(a, b) {
-//   return a - b;
-// }
+//  function compareNum(a, b) {
+//    return a - b;
+//  }
 
 
 //arr.pop(); //  удаляет последний элемент массива
@@ -290,11 +290,11 @@
 
 //обычный цикл
 
-//for (let i = 0; i< arr.length; i++) {
+//for (let i = 0; i < arr.length; i++) {
 //    console.log(arr[i]);
 //}
 
-// с помощью for...of  // плюс такого метода перебора массива , то что можно использовать break & continio
+// с помощью for...of  // плюс такого метода перебора массива, то что можно использовать break & continue
 
 // for (let value of arr) {
 //     console.log(value);
@@ -307,7 +307,7 @@
 // });
 
 
-// метод arr.map, arr.every/some, arr.filter, arr.reduce - модифицируют массива, тоесть создают новый массив
+// метод arr.map, arr.every/some, arr.filter, arr.reduce - модифицируют массива, то есть создают новый массив
 
 
 // Метод split - получаем из строчки - массив, метод join - преобразует в строчку
@@ -319,7 +319,7 @@
   // console.log(products.join(";"));
 
 
-// Понятие псевдомассивы - по факту это такой обьект, похожий на массив,
+// Понятие псевдомассивы - по факту это такой объект, похожий на массив,
 // но к нему нельзя применить методы массивов;
 
 
@@ -327,19 +327,19 @@
 
 // Передача данных по ссылке и по значению
 
-// !!!! Есть глубокие и поверхностные копии объектов
+// !!!! Есть глубокие и поверхностные копии объектов, в этом блоке разберем поверхностные копии
 
 // разберем поверхностные копии с помощью циклов
 
- //function copy(mainObg) {
- //    let objCopy = {};
+//  function copy(mainObg) {
+//      let objCopy = {};
 
- //    let key;
- //    for (key in mainObg) {
- //        objCopy[key] = mainObg[key];
- //    }
- //    return objCopy;
- //}
+//      let key;
+//      for (key in mainObg) {
+//          objCopy[key] = mainObg[key];
+//      }
+//      return objCopy;
+//  }
 
 //  const copy = (mainObg) => {
 //      let objCopy = {};
@@ -406,42 +406,98 @@
 //
 // console.log(internet);
 
-function log(a, b, c) {
-    console.log(a);
-    console.log(b);
-    console.log(c);
-}
+// function log(a, b, c) {
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+// }
+//
+// const num = [2 ,5, 9];
+//
+//
+// log(...num);
+//
+// // 4 способ создать поверхностных копий и опять с помощью spread оператора
+//
+// const array = ['a', 'b'];
+//
+// const sprArr = [...array];
+//
+// sprArr[2] = 'c';
+// sprArr[1] = 'p';
+//
+//
+// const q = {
+//     one: 1,
+//     two: 2
+// };
+//
+// const nwOb = {...q, three: 3};
+//
+// nwOb.two = 56565;
+//
+// console.log(array);
+// console.log(sprArr);
+//
+//
+// console.log(q);
+// console.log(nwOb);
 
-const num = [2 ,5, 9];
+//===========================================================================================
 
 
-log(...num);
+// ООП (Объектно-Ориентированное Программирование) - наука о том, как делать правильную архитектуру
 
-// 4 способ создать поверхностных копий и опять с помощью spread оператора
+//   let str = 'some';
+//   let strObj = new String(str);
+//
+//   console.log(typeof(str));    // string
+//   console.log(typeof(strObj)); // object
+//
+//   console.dir([1 ,3, 4]);
+//
+const soldier = {
+  health:400,
+  armor: 100,
+    sayHello: function () {
+      console.log('Hello');
+    }
 
-const array = ['a', 'b'];
-
-const sprArr = [...array];
-
-sprArr[2] = 'c';
-sprArr[1] = 'p';
-
-
-const q = {
-    one: 1,
-    two: 2
 };
 
-const nwOb = {...q, three: 3};
-
-nwOb.two = 56565;
-
-console.log(array);
-console.log(sprArr);
+//  const jonh = {
+//      health: 100
+//  };
 
 
-console.log(q);
-console.log(nwOb);
+//jonh.__proto__ = soldier; // объект john наследует прототип ( шаблон можно сказать) soldier
+                          // такой формат уже не надо использовать = устаревший,
+                          // сейчас используется Object.create,Object.setPrototypeOf, Object.getPrototypeOf
+
+//console.log(jonh.armor);
+
+// Object.setPrototypeOf(jonh, soldier);
+//
+// console.log(jonh.sayHello());
+
+//  const jonh = Object.create(soldier);
+//
+//  console.log(jonh.armor);
+
+//===========================================================================================
+
+// Рефакторинг кода - переписывание под новые условия, под новые задачи
+
+//===========================================================================================
+
+
+
+
+
+
+
+
+
 
 
 
