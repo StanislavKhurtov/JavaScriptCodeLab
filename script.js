@@ -456,14 +456,14 @@
 //
 //   console.dir([1 ,3, 4]);
 //
-const soldier = {
-  health:400,
-  armor: 100,
-    sayHello: function () {
-      console.log('Hello');
-    }
-
-};
+//  const soldier = {
+//    health:400,
+//    armor: 100,
+//      sayHello: function () {
+//        console.log('Hello');
+//      }
+//
+//  };
 
 //  const jonh = {
 //      health: 100
@@ -489,6 +489,26 @@ const soldier = {
 // Рефакторинг кода - переписывание под новые условия, под новые задачи
 
 //===========================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
