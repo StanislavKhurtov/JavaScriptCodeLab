@@ -213,8 +213,10 @@ document.querySelector('.b-13').onclick = f13;
 let d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
 function f15() {
-
-
+	let n = parseInt(document.querySelector('.i-15').value);
+	if (!d15.includes(n)) {
+		d15.push(n);
+	}
 	showArr('.out-15', d15);
 }
 
