@@ -28,8 +28,10 @@
 // console.log(Math.trunc(4.9)) округляет в  меньшую сторону до целого числа
 //console.log(Math.random())
 
+/*
 function getRAndon(min,max) {
 	return Math.floor(Math.random() * (max - min + 1) + min)
 }
 console.log(getRAndon(1,50))
 
+*/

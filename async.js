@@ -1,4 +1,4 @@
-//Evaent Loop  Ассинхронность
+//Event Loop  Ассинхронность
 
 
 //  const timeOut  = setTimeout(() => {
