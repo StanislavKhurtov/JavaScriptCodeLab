@@ -3,14 +3,14 @@
 // Функции Declaration
 
 //  function greet(name) {
-//  	console.log('Привет - ', name)
+//  	console.log('Привет - ', name);
 //  }
 
-//Функция 
+// Функция Exspression
 
 //  const greet2 = function (name) {
-//  	console.log('Привет 2 - ', name)
-//  }
+//  	console.log('Привет 2 - ', name);
+//  };
 
 //  greet('Lena')
 //  greet2('Lena')

@@ -22,7 +22,7 @@
 // 	console.log(' stas privet')
 // },2000)
 
-// ПРОМИСЫ
+//! ПРОМИСЫ
 
 //  const delay = (wait = 1000) => {
 //  	const promise = new Promise((resolve, reject) => {
