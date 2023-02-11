@@ -63,6 +63,4 @@
 //  
 //  const logName = createMemeber('Stas')
 //  
-
-
 //  console.log(logName('Hurtov'))
