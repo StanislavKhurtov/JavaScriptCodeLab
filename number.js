@@ -1,4 +1,4 @@
-// Раздел Числа (Number)
+//!! Раздел Числа (Number)
 
 
 // const str = '42'
@@ -8,14 +8,14 @@
 //  console.log(0.4 + 0.2)
 //  console.log(parseFloat(0.4 + 0.2).toFixed(1))
 
-//BigInt
+//!BigInt
 
 
 //console.log(typeof 9007199254740991n)
 
 
 
-// 3. обьект Math
+//! 3. обьект Math
 
 // console.log(Math.E)    
 // console.log(Math.PI)   выводит значение п
@@ -29,8 +29,9 @@
 //console.log(Math.random())
 
 /*
+
 function getRAndon(min,max) {
-	return Math.floor(Math.random() * (max - min + 1) + min)
+    return Math.floor(Math.random() * (max - min + 1) + min)
 }
 console.log(getRAndon(1,50))
 
