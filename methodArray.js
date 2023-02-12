@@ -92,17 +92,20 @@ let lastIndex = nums.lastIndexOf(1);
 console.log(lastIndex)
 */
 
-// 11. Метод fill - заполнить массив данными, создаем новый массив и заполняем данными
+//! 11. Метод fill - заполнить массив данными, создаем новый массив и заполняем данными
 
-//  let newArr = new Array(10).fill(3)
-//  console.log(newArr);
+/*
+let newArr = new Array(10).fill(3)
+console.log(newArr);
+*/
 
-// 12. Найти случайное число из массива
+//! 12. Найти случайное число из массива
 
-//  let nums2 = [1,21,3,46,54,8,74];
-//  let randNum = nums2[(Math.floor(Math.random() * (nums2.length)))]
-//  console.log(randNum);
-
+/*
+let nums2 = [1,21,3,46,54,8,74];
+let randNum = nums2[(Math.floor(Math.random() * (nums2.length)))]
+console.log(randNum);
+*/
 
 
 
