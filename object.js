@@ -1,4 +1,4 @@
-// Oбьекты
+//! Oбьекты
 
 // const person = {
 // 	name: 'Stas',
@@ -22,7 +22,7 @@
 //  console.log(person)
 
 
-// Деструкторизация
+//! Деструкторизация
 
 // const name = person.name;
 // const age = person.age;
