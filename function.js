@@ -1,12 +1,12 @@
-// 1. Функции
+//! 1. Функции
 
-// Функции Declaration
+//! Функции Declaration
 
 //  function greet(name) {
 //  	console.log('Привет - ', name);
 //  }
 
-// Функция Exspression
+//! Функция Exspression
 
 //  const greet2 = function (name) {
 //  	console.log('Привет 2 - ', name);
@@ -17,7 +17,7 @@
 //  
 //  console.log(typeof greet)
 
-// 2. Анонимные функции
+//! 2. Анонимные функции
 
 //  let counter = 0
 //  const interval = setInterval(function() {
@@ -29,7 +29,7 @@
 //  }, 1000)
 
 
-// 3. Стрелочные функции
+//! 3. Стрелочные функции
 
 //  const arrow = (name) => {  
 //	console.log('Привет - ', name)
@@ -53,7 +53,7 @@
 // 
 // console.log(sum(5))
 
-// 5. Замыкание
+//! 5. Замыкание
 
 //  function createMemeber(name) {
 //  	return function(lastName) {

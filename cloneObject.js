@@ -20,7 +20,7 @@ const simpleUserCopy4 = JSON.parse(JSON.stringify(simpleUser));
 */
 
 /*
-const simpleUserCopy5 = structuredClone(simpleUser); // лучший спсоб клонировать обьект
+const simpleUserCopy5 = structuredClone(simpleUser); //! лучший способ клонировать обьект с помощью метода structuredClone
 
-console.log(structuredClone({fn: () => {}})) // выдаст ошибку , потому что метод не может хранить функиции в обькте, также дом элементы 
+console.log(structuredClone({fn: () => {}})) //! выдаст ошибку , потому что метод не может хранить функиции в обькте, также дом элементы 
 */

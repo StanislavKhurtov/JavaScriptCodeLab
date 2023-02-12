@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 
 //const result = confirm("Что ты делаешь");
 
