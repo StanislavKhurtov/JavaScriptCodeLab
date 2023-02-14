@@ -7,10 +7,10 @@
 const items = ['item1', 'item2', 'item3'];
 const copy = [];
 
-//можно перебрать циклами
-//  for (let i = 0; i < items.lenght; i++) {
-//  	copy.push("New" + items[i]);
-//  }
+можно перебрать циклами
+  for (let i = 0; i < items.lenght; i++) {
+		copy.push("New" + items[i]);
+}
 
 items.forEach(function (el, index, array) {
 	copy.push(index + "New" + el);
@@ -19,7 +19,97 @@ items.forEach(function (el, index, array) {
 console.log(copy);
 */
 
+
 // ! Если Вы используете метод forEach, Вы не можете прервать итеррирование на каком нибудь элементе
+
+//! ==========своя реализация метода forEach===============================
+
+// // ForEach
+//arr.forEach(callback(currentValue[, index[, array]]) {
+//   // execute something
+// }[, thisArg]);
+
+/*
+
+let arr = [1, 2, 3];
+arr[10] = 10;
+
+Array.prototype.forEach2 = function (callback, thisArg) {
+	if (this == null) {
+		throw new Error("Cant iterate over undefined or null");
+	}
+	let context = this;
+
+	let O = Object(this);
+
+	if (arguments.length > 1) {
+		context = thisArg;
+	}
+
+	if (typeof callback !== "function") {
+		throw new Error("Callback is not a function");
+	}
+
+	let len = O.length;
+
+	let i = 0;
+
+	while (i < len) {
+		if (i in O) {
+			callback.call(context, this[i], i, O);
+		}
+
+		i++;
+	}
+};
+
+arr.forEach2.call(1, (item, index, array) => {
+	console.log({ item, index });
+});
+
+//Filter
+let array = [4, 6, 8, 9, 12, 53, -17, 2, 5, 7, 31, 97, -1, 17];
+
+function isPrime(num) {
+	if (num <= 1) return false;
+	else if (num === 2) return true;
+	else {
+		for (let i = 2; i < num; i++) if (num % i === 0) return false;
+		return true;
+	}
+}
+
+Array.prototype.filter2 = function (callback, thisArg) {
+	if (this == null) {
+hrow new Error("Cant iterate over undefined or null");
+	}
+	let context = this;
+	let O = Object(this);
+	if (arguments.length > 1) {
+		ontext = thisArg;
+	}
+	if (typeof callback !== "function") {
+hrow new Error("Callback is not a function");
+	}
+	let len = O.length;
+	let res = [];
+	for (let i = 0; i < len; i++) {
+		f(i in O) {
+			let current = this[i];
+			if (callback.call(context, current, i, O)) {
+				res.push(current);
+			}
+
+		}
+eturn res;
+	};
+
+	let prime = array.filter2(isPrime);
+
+	console.log(prime);
+
+*/
+
 
 //========================================
 
@@ -33,7 +123,7 @@ console.log(copy);
 /*
 let array = [12,56,8,45,456];
 const newArray = array.filter(function (el,index,array) {
-    return el > 15;
+	return el > 15;
 });
 console.log(newArray);
 */
@@ -59,7 +149,7 @@ console.log(minArray);
 /*
 let nums = [1,4,9,12,50];
 let result = nums.map(function (elem) {
-    return elem * 2;
+	return elem * 2;
 });
 console.log(result);
 */
@@ -85,8 +175,8 @@ console.log(result);
 const array = [1,2,3,4,5];
 
 let total = array.reduce(function (acc, el) {
-    console.log('Acc', acc, 'Current elem', el);
-    return acc + el; //
+	console.log('Acc', acc, 'Current elem', el);
+	return acc + el; //
 }, 10);
 
 console.log(total);
@@ -100,8 +190,8 @@ console.log(total);
 const array = ['apple','banan','peach','orange'];
 
 let  fruits = array.reduce((acc, el) => {
-    acc[el] = 1;
-    return acc; //
+	acc[el] = 1;
+	return acc; //
 }, {});
 
 console.log(fruits);
