@@ -630,7 +630,7 @@ afterend - вставляет код после элемента;
 одного класса
 */
 
-// Получаем элемент
+//! Получаем элемент
 
 //const element = document.querySelector('.lesson__item-list_red');
 

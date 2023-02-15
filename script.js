@@ -1,551 +1,360 @@
-'use strict';
+//! Методы массивов
+
+//! Метод forEach
+//Метод forEach — исопльзуется для перебора элементов массива.
+
+/*
+const items = ['item1', 'item2', 'item3'];
+const copy = [];
+
+можно перебрать циклами
+  for (let i = 0; i < items.lenght; i++) {
+		copy.push("New" + items[i]);
+}
 
-//========================================================================================================================================================
+items.forEach(function (el, index, array) {
+	copy.push(index + "New" + el);
+});
 
-//! Условия
+console.log(copy);
+*/
 
 
-//if ( 4 == 9) {
-//	console.log('Ok!');
-//} else {
-//	console.log('Error');
-//}
+// ! Если Вы используете метод forEach, Вы не можете прервать итеррирование на каком нибудь элементе
 
-//const num = 50;
+//! ==========своя реализация метода forEach===============================
 
-//if (num < 49) {
-//	console.log('Error');
-//} else if (num > 100) {
-//	console.log('Много');
-//} else {
-//	console.log('Ok!');
-//}
+// // ForEach
+//arr.forEach(callback(currentValue[, index[, array]]) {
+//   // execute something
+// }[, thisArg]);
 
+/*
 
-//! Тернарный оператор
+let arr = [1, 2, 3];
+arr[10] = 10;
+
+Array.prototype.forEach2 = function (callback, thisArg) {
+	if (this == null) {
+		throw new Error("Cant iterate over undefined or null");
+	}
+	let context = this;
+
+	let O = Object(this);
 
-//(num == 50) ? console.log('Ok!') : console.log('Error');
+	if (arguments.length > 1) {
+		context = thisArg;
+	}
 
+	if (typeof callback !== "function") {
+		throw new Error("Callback is not a function");
+	}
 
+	let len = O.length;
+
+	let i = 0;
+
+	while (i < len) {
+		if (i in O) {
+			callback.call(context, this[i], i, O);
+		}
 
-// Конструкция Switch (идет только строгое сравнение)
+		i++;
+	}
+};
+
+arr.forEach2.call(1, (item, index, array) => {
+	console.log({ item, index });
+});
 
-//  switch (num) {
-//  	case 49:
-//  		console.log('Неверно');
-//  		break;
-//  	case 100:
-//  		console.log('Неверно');
-//  		break;
-//  	case 50:
-//  		console.log('В точку');
-//  		break;
-//  	default:
-//  		console.log('Error');
-//  		break;
-//  }
+//Filter
+let array = [4, 6, 8, 9, 12, 53, -17, 2, 5, 7, 31, 97, -1, 17];
 
+function isPrime(num) {
+	if (num <= 1) return false;
+	else if (num === 2) return true;
+	else {
+		for (let i = 2; i < num; i++) if (num % i === 0) return false;
+		return true;
+	}
+}
 
-//========================================================================================================================================================
+Array.prototype.filter2 = function (callback, thisArg) {
+	if (this == null) {
+hrow new Error("Cant iterate over undefined or null");
+	}
+	let context = this;
+	let O = Object(this);
+	if (arguments.length > 1) {
+		ontext = thisArg;
+	}
+	if (typeof callback !== "function") {
+hrow new Error("Callback is not a function");
+	}
+	let len = O.length;
+	let res = [];
+	for (let i = 0; i < len; i++) {
+		f(i in O) {
+			let current = this[i];
+			if (callback.call(context, current, i, O)) {
+				res.push(current);
+			}
 
-//! Циклы
+		}
+eturn res;
+	};
 
-//let num = 50;
-//
-// первый цикл while
-
-//while (num <= 55) {
-//	console.log(num);
-//	num++;
-//};
-
-
-// второй цикл do... while
-
-//do {
-//	console.log(num);
-//	num++;
-//}
-//while (num <= 55);
-
-// третий цикл for
-
-
-//for (let i = 1; i <= 10; i++) {
-//	if (i === 3) {
-//		break; // при заданном условие останавливает цикл
-//		continue;// при заданном условие пропускает это условие и идет дальше по циклу
-//	}
-//console.log(i);  // цикл отработал одну итерацию
-//}
-
-//========================================================================================================================================================
-
-
-//! Функции
-
-//  let num = 20;
-//
-//  function showMessage(text) {
-//  	console.log(text);
-//  	let num = 10;
-//  	console.log(num);
-//  }
-//
-//  showMessage('Привет');
-//
-//  console.log(num);
-//
-//  function calc(a, b) {
-//  	return (a + b);
-//
-//  };
-//
-//  console.log(calc(10,20));
-
-//! Объявление функции
-
-//! function declaration;
-
-//const logger = function () {
-//	console.log('Hello');
-//};
-
-//logger();
-
-//! function definition;
-
-//function logger() {
-//	console.log('Hello');
-//};
-//logger();
-
-//! стрелочная функция;
-
-//  const calc = (a, b) =>{
-//  	let c = a + b;
-//  	return c;
-//  } ;
-//  console.log(calc(10,5))
-
-
-//========================================================================================================================================================
-
-
-//!  Свойства и методы String & number
-
-//  const str = "fruit";
-//  const arr = [1, 2, 4];
-//
-//  const per = str.toUpperCase();
-//
-//  console.log(str); // fruit
-//  console.log(per); // FRUIT
-//
-//  const fruit = "Some fruit";
-//
-//  console.log(fruit.length);  // 10
-//
-//  const logg = "Hello World";
-//
-//  console.log(logg.slice(6));// World // с помощью метода slice можно вырезать нужный нам кусочек строки
-//
-//  console.log(logg.substring(6)); // World // в методе substring не используются отрицательные значений!
-//
-//  console.log(logg.substr(6, 5)); // World // в методе substr первый указывается номер начала позиции,
-                                  // а вторым длину строки которую нужно вырезать;
-
-
-//  const num = 12.2;
-//
-//  console.log(Math.round(num));  // 12 // округляет до целого числа
-//
-//  const te = "12.2px";
-//
-//  console.log(parseInt(te)); // 12 // привело к типу число и округляет
-//  console.log(parseFloat(te));// 12.2 // возвращает в дробном виде и в числовом типе;
+	let prime = array.filter2(isPrime);
 
-//========================================================================================================================================================
+	console.log(prime);
 
+*/
 
-//! Callback - функция - функция которая должна быть выполнена,
-// после того как другая функция завершила свое выполнение.
 
-//  function first() {
-//      //do something
-//      setTimeout(function () {
-//          console.log(1);
-//      }, 1000);
-//  }
-//
-//  function second() {
-//      console.log(2);
-//  }
-//
-//  //first();
-//  //second();
-//
-//  function learnJS(lang, callback) {
-//      console.log(`Я учу: ${lang}`);
-//      callback();
-//  }
-//
-//  learnJS('JavaScript', first);
+//========================================
 
+//! метод filter
+// Метод filter — используется для создания нового массива, который будет содержать только отфильтрованные элементы,
+// прошедшие проверку по какому-то условию.
 
+// Позволяет Вас отфильтровать ваш исходный массив по какому то критерию, он возвращает результирующий массив,
+// в котором будут только те элементы, которые прошли проверку по какому то критерию.
 
-//===========================================================================================
+/*
+let array = [12,56,8,45,456];
+const newArray = array.filter(function (el,index,array) {
+	return el > 15;
+});
+console.log(newArray);
+*/
 
-//! Объекты, деструктуризация
+/*
+let array = [12,56,8,45,456];
+let isBigEno = (elem) => elem < 15; // функцию можно создать отдельно
+const minArray = array.filter(isBigEno);
+console.log(minArray);
+*/
 
+//==========================
 
-//  const options = {
-//      name: "test",
-//      width: 1024,
-//      height: 1600,
-//      colors: {
-//          border: 'black',
-//          bg: "red",
-//      },
-//      makeTest: function () {
-//          console.log("Test");
-//
-//      }
-//  };
-//  delete options.colors.bg; // delete удаляет свойство из объекта
-//
-//  console.log(options.colors); // { border: 'black' }
+//! Метод Map
+//Метод map — позволяет создать новый массив с элементами, которые каким-то образом были созданы/преобразованы
+// из элементов исходного массива.
 
-// Перебрать все свойства объекта c помощью for ... in
-// с помощью метода for... of мы не можем перебрать объекты
+// По аналогии с предыдущими метода, проходимся по каждому элементу массива и также будем вызывать callback функцию,
+// который поместим в метод map. Метод вернет нам новый массив, каждый элемент нового массива, будет содержать
+// значение, которое вернуло функция callback map на каждой иттерации, которая произошла.
 
-// У объекта нет свойства length, как у массива. Но можно узнать другими методами,
-// не всегда этот метод является точным, лучше через Object.keys()
 
-//  let counter = 0;
-//
-//  for (let key in options) {
-//      if (typeof(options[key]) === 'object') {
-//          for (let i in options[key]) {
-//              console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
-//              counter++;
-//          }
-//      } else {
-//          console.log(`Свойство ${key} имеет значение ${options[key]}`);
-//          counter++;
-//      }
-//  }
-//  console.log(counter);
-
-// метод Object.keys поможет нам получить массив со всеми ключами,
-// соответственно добавив свойство length мы узнаем количество свойств массива
-
-//  console.log(Object.keys(options)); // преобразует объект в массив
-//  console.log(Object.keys(options).length);
-//
-//  options.makeTest();
-//
-//  // Деструктуризация объекта
-//
-//  const {bg}  = options.colors;
-//
-//  console.log(bg);
+/*
+let nums = [1,4,9,12,50];
+let result = nums.map(function (elem) {
+	return elem * 2;
+});
+console.log(result);
+*/
 
-//===========================================================================================
+//! or
 
-//! Массивы и псевдомассивы
+/*
+//через функцию, выведенную отдельно
+let nums = [1,4,9,12,50];
+let multiplyByTwo = (el) => el * 2;
+let result = nums.map(multiplyByTwo);
+console.log(result);
+ */
 
+//!=============== своя реализация метода map========
 
-//   const arr = [1, 23, 14 ,5, 38, 111];
-//
-//   arr.sort(compareNum);
-//
-//   // console.log(arr.length);
+//Map
 //
-//   console.log(arr);
-//
-// !   метод sort - внимание, все из-за того что метод применяет алгоритм быстрой сортировки,
-//    нужно прописать callback функцию, так как метод будет сортировать как строки
-
-
-//  function compareNum(a, b) {
-//    return a - b;
-//  }
-
-
-//arr.pop(); //  удаляет последний элемент массива
-//arr.push(10);  // добавляет элемент в конец массива
-
-
-// arr.shift(); // удаляет первый элемент массива
-// arr.unshift(10); // добавляет первый элемент массива
-// минус 2-х этих методов в том, что из-за них элементы меняют свои индексы
-
-
-// const df = arr.pop();
-
-// console.log(df);
+// let newArray = arr.map(callback(currentValue[, index[, array]]) {
+// return element for newArray, after executing something
+// }[, thisArg]);
 
-// Перебрать массив
+/*
+let array2 = [4, 6, 8, 9, 12, 53, -17, 2, 5, 7, 31, 97, -1, 17];
 
-//обычный цикл
+Array.prototype.map2 = function (callback, thisArg) {
+	if (this == null) {
+		throw new Error("Cant iterate over undefined or null");
+	}
+	let context = this;
 
-//for (let i = 0; i < arr.length; i++) {
-//    console.log(arr[i]);
-//}
+	let O = Object(this);
 
-// с помощью for...of  // плюс такого метода перебора массива, то что можно использовать break & continue
+	if (arguments.length > 1) {
+		context = thisArg;
+	}
 
-// for (let value of arr) {
-//     console.log(value);
-// }
+	if (typeof callback !== "function") {
+		throw new Error("Callback is not a function");
+	}
 
-// метод forEach()  //не создает новый массив, как например метод map
+	let len = O.length;
 
-// arr.forEach( function (item, i, arr){
-// console.log(`${i}: ${item} внутри массива ${arr}`);
-// });
+	let newArray = [];
 
+	let i = 0;
 
-// метод arr.map, arr.every/some, arr.filter, arr.reduce - модифицируют массива, то есть создают новый массив
+	while (i < len) {
+		if (i in O) {
+			newArray[i] = callback.call(context, this[i], i, O);
+		}
 
+		i++;
+	}
 
-// Метод split - получаем из строчки - массив, метод join - преобразует в строчку
-// метод sort - сортирует массив, обращать внимание к сортировке числами, сортируется как строки
+	return newArray;
+};
 
-// const str = prompt("", "");
-// const products = str.split(",");
-// products.sort();
-// console.log(products.join(";"));
+let increase1 = (num) => num + 1;
+let mul2 = (num) => num * 2;
 
+console.log(array2.filter2(isPrime));
+console.log(array2.filter2(isPrime).map2(mul2).map2(increase1));
+*/
 
-// Понятие псевдомассивы - по факту это такой объект, похожий на массив,
-// но к нему нельзя применить методы массивов;
 
-
-//===========================================================================================
-
-//! Передача данных по ссылке и по значению
-
-// !!!! Есть глубокие и поверхностные копии объектов, в этом блоке разберем поверхностные копии
-
-// разберем поверхностные копии с помощью циклов
-
-//  function copy(mainObg) {
-//      let objCopy = {};
-
-//      let key;
-//      for (key in mainObg) {
-//          objCopy[key] = mainObg[key];
-//      }
-//      return objCopy;
-//  }
-
-//  const copy = (mainObg) => {
-//      let objCopy = {};
-//
-//      let key;
-//      for (key in mainObg) {
-//          objCopy[key] = mainObg[key];
-//      }
-//      return objCopy;
-//  };
-//
-// const number = {
-//     a: 2,
-//     b: 5,
-//     c: {
-//         x: 7,
-//         y: 4
-//     }
-// };
-//
-// const newNumbers = copy(number);
-//
-// newNumbers.a = 10;
-// newNumbers.c.x = 10; // переменная с - поменялась в двух объектах, так при замене мы обратились к ссылке
-//
-//
-// console.log(newNumbers);
-// console.log(number);
-//
-//
-// // C помощью Object.assign
-//
-// const add = {
-//     d: 17,
-//     e: 20
-// };
-//
-// console.log(Object.assign(number, add)); // первое значение мы устанавливаем - куда надо скопировать,
-//                                          // вторым значением откудо надо скопировать;
-//
-//
-// const fisrtNumber = Object.assign({}, add); // мы сделали клон объектов
-// fisrtNumber.d = 40;
-//
-// console.log(fisrtNumber);
-// console.log(add);
+//=================================================
 
-// разберем копию массивов
+//! метод reduce
 
-// const oldArray = ['a', 'b', 'c'];
-//
-// const newArray = oldArray.slice(); // создал новый массив
-//
-// newArray[1] = 'asdsadsadsa';
-//
-// console.log(newArray);
-// console.log(oldArray);
-//
-// // Spread операторы = оператор три точки
-//
-// const video = ['youtube', 'vimeo', 'rutube'],
-//     blogs = ['wordpress', 'livejornal', 'blogger'],
-//     internet = [...video, ...blogs, 'vk', 'facebook'];
-//
-// console.log(internet);
-
-// function log(a, b, c) {
-//     console.log(a);
-//     console.log(b);
-//     console.log(c);
-// }
-//
-// const num = [2 ,5, 9];
-//
-//
-// log(...num);
-//
-// // 4 способ создать поверхностных копий и опять с помощью spread оператора
-//
-// const array = ['a', 'b'];
-//
-// const sprArr = [...array];
-//
-// sprArr[2] = 'c';
-// sprArr[1] = 'p';
-//
-//
-// const q = {
-//     one: 1,
-//     two: 2
-// };
-//
-// const nwOb = {...q, three: 3};
-//
-// nwOb.two = 56565;
-//
-// console.log(array);
-// console.log(sprArr);
-//
-//
-// console.log(q);
-// console.log(nwOb);
+// Метод reduce — позволяет пройтись по всем элементам массива и собрать/посчитать единый результат,
+// который и будет возвращен этим методом.
 
-//===========================================================================================
+/*
+const array = [1,2,3,4,5];
 
+let total = array.reduce(function (acc, el) {
+	console.log('Acc', acc, 'Current elem', el);
+	return acc + el; //
+}, 10);
 
-// ООП (Объектно-Ориентированное Программирование) - наука о том, как делать правильную архитектуру
+console.log(total);
+*/
 
-//   let str = 'some';
-//   let strObj = new String(str);
-//
-//   console.log(typeof(str));    // string
-//   console.log(typeof(strObj)); // object
-//
-//   console.dir([1 ,3, 4]);
-//
-//  const soldier = {
-//    health:400,
-//    armor: 100,
-//      sayHello: function () {
-//        console.log('Hello');
-//      }
-//
-//  };
+// Изначально в acc значение 0, и при первой итерации асс = 1, значение аккумулирует. Reduce возвращает значение,
+// которое хранится в аккумуляторе. Мы можем передать вторым аргументом - начальное значение нашего асс(аккумулятора)
+// Мы можем сказать, что хотим начать с 10.( значением может быть и объект)
 
-//  const jonh = {
-//      health: 100
-//  };
+/*
+const array = ['apple','banan','peach','orange'];
 
+let  fruits = array.reduce((acc, el) => {
+	acc[el] = 1;
+	return acc; //
+}, {});
 
-//jonh.__proto__ = soldier; // объект john наследует прототип ( шаблон можно сказать) soldier
-                          // такой формат уже не надо использовать = устаревший,
-                          // сейчас используется Object.create,Object.setPrototypeOf, Object.getPrototypeOf
+console.log(fruits);
+*/
 
-//console.log(jonh.armor);
+//!=========своя реализация============
 
-// Object.setPrototypeOf(jonh, soldier);
+//Reduce
+// const array = ['apple','banana','peach','orange'];
 //
-// console.log(jonh.sayHello());
-
-//  const jonh = Object.create(soldier);
+// let fruits  = array.reduce((acc, elem) => {
+//     acc[elem] = 1;
+//     return acc;
+// }, {});
 //
-//  console.log(jonh.armor);
-
-//===========================================================================================
-
-// Рефакторинг кода - переписывание под новые условия, под новые задачи
-
-//===========================================================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(fruits);
 
+// Напишите алгоритм, который берет массив и перемещает все нули в конец,
+// сохраняя порядок других элементов.
 
+/*
+let moveZeros = (arr) =>
+	arr.reduceRight(
+		(acc, val) => (val === 0 ? [...acc, val] : [val, ...acc]),
+		[]
+	);
 
+console.log(moveZeros([false, 1, 0, 1, 2, 0, 1, 3, "a"])); // returns[false,1,1,2,1,3,"a",0,0]
 
+//Разворачивание массива массивов
+let flattened = [
+	[0, 1],
+	[2, 3],
+	[4, 5]
+].reduce((a, b) => a.concat(b));
+console.log(flattened);
 
+// Если дан двумерный массив целых чисел, верните выровненную версию массива
+//  со всеми целыми числами в отсортированном (возрастающем) порядке.
+// Пример: [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]],
+// ваша функция должна вернуть [1, 2, 3, 4, 5, 6, 7, 8, 9].
 
+function add(a, b) {
+	return a + b;
+}
+function subtract(a, b) {
+	return a - b;
+}
+function concatenate(a, b) {
+	return a.concat(b);
+}
 
+const flattenAndSort = (array) => {
+	return array.reduce(concatenate, []).sort(subtract);
+};
 
+console.log(flattenAndSort([[3, 2, 1], [4, 6, 5], [], [9, 7, 8]]));
 
+Array.prototype.reduce2 = function (f, result) {
+	let i = 0;
 
+	if (arguments.length < 2) {
+		i = 1;
+		result = this[0];
+	}
+	for (; i < this.length; i++) {
+		result = f(result, this[i], i, this);
+	}
+	return result;
+};
+let a = [1, 2, 3, 4];
 
+console.log(a.reduce(add), a.reduce2(add));
+console.log(a.reduce(add, 10), a.reduce2(add, 10));
 
+// arr.reduce(callback( accumulator, currentValue, [, index[, array]] )[, initialValue])
 
+Array.prototype.reduce3 = function (callback, initialValue) {
+	if (this == null) {
+		throw new Error("Cant iterate over undefined or null");
+	}
 
+	let result;
+	let i = 0;
 
+	let O = Object(this);
+	let len = O.length;
 
+	if (typeof callback !== "function") {
+		throw new Error("Callback is not a function");
+	}
 
+	if (arguments.length >= 2) {
+		result = initialValue;
+	} else {
+		if (len === 0) {
+			throw new Error("Reduce of empty array with no initial value");
+		}
+		result = O[i];
+		i++;
+	}
 
+	for (; i < this.length; i++) {
+		if (i in O) {
+			result = callback(result, O[i], i, O);
+		}
+	}
 
+	return result;
+};
 
+console.log([1, 2, 3, 4].reduce3(add));
+console.log(a.reduce3(concatenate, "X"), a.reduce(concatenate, "X"));
+*/
