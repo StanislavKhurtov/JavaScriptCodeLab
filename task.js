@@ -426,6 +426,18 @@ return +(arr.slice(arr.length-1))
 }
  */
 
+//!- Array Deep Count
+
+/*
+You are given an array. Complete the function that returns the number of ALL elements within an array,
+including any nested arrays.
+ */
+
+/*
+function deepCount(a){
+  return a.reduce((s,e)=>s+(Array.isArray(e)?deepCount(e):0),a.length);
+}
+ */
 
 
 
