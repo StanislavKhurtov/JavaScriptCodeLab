@@ -394,6 +394,38 @@ var countSheep = function (num){
 }
  */
 
+//! - Head, Tail, Init and Last
+
+/*
+Haskell has some useful functions for dealing with lists:
+
+$ ghci
+GHCi, version 7.6.3: http://www.haskell.org/ghc/  :? for help
+λ head [1,2,3,4,5]
+1
+λ tail [1,2,3,4,5]
+[2,3,4,5]
+λ init [1,2,3,4,5]
+[1,2,3,4]
+λ last [1,2,3,4,5]
+5
+ */
+
+/*
+function head(arr){
+return +(arr.slice(0,1))
+}
+function tail(arr){
+return (arr.slice(1))
+}
+function init(arr){
+return (arr.slice(0,arr.length-1))
+}
+function last(arr){
+return +(arr.slice(arr.length-1))
+}
+ */
+
 
 
 
