@@ -577,3 +577,32 @@ Return True if yes, False otherwise :)
 /*
 const hero = (bullets, dragons) => bullets / 2 >= dragons;
  */
+
+//!- Rock Paper Scissors!
+
+/*
+Let's play! You have to return which player won! In case of a draw return Draw!.
+
+Examples(Input1, Input2 --> Output):
+
+"scissors", "paper" --> "Player 1 won!"
+"scissors", "rock" --> "Player 2 won!"
+"paper", "paper" --> "Draw!"
+ */
+
+/*
+const rps = (p1, p2) => {
+
+  let winObj = {
+
+    'scissors': 'paper',
+    'paper': 'rock',
+    'rock': 'scissors',
+  }
+
+  return winObj[p1] === p2 ? "Player 1 won!" :
+         winObj[p2] === p1 ? "Player 2 won!" :
+         "Draw!";
+};
+
+ */
