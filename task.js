@@ -736,3 +736,21 @@ function expressionMatter(a, b, c) {
   return Math.max(a+b+c, a*b*c, (a+b)*c, a*(b+c));
 }
 */
+
+
+//! Grasshopper - Personalized Message
+
+/*
+Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+
+Use conditionals to return the proper message:
+
+case	return
+name equals owner	'Hello boss'
+otherwise	'Hello guest'
+
+ */
+
+/*
+const greet = (name, owner) => name === owner ? "Hello boss" : "Hello guest";
+ */
