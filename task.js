@@ -1551,3 +1551,23 @@ function checkForFactor (base, factor) {
   return base%factor===0
 }
  */
+
+//! Is it a palindrome?
+
+/*
+Write a function that checks if a given string (case insensitive) is a palindrome.
+ */
+
+/*
+function isPalindrome(x) {
+
+  let str = x.toLowerCase();
+  let half = str.length / 2;
+  let leftStr = str.slice(0, Math.floor(half));
+  let rightStr = str.slice(Math.ceil(half)).split("").reverse().join("");
+
+  return leftStr === rightStr;
+}
+ */
+
+//! 
