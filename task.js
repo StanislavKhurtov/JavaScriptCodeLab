@@ -1750,7 +1750,14 @@ setAlarm(true, false) -> true
  */
 
 /*
-const setAlarm = (e, v) => {return e && !v ? true : false};
+const setAlarm = (employed, vacation) => employed && !vacation;
+ */
+
+//!Vowel remover
+/*
+function shortcut(string){
+  return string.replace(/[aeiou]/g,'')
+}
  */
 
 //! 
