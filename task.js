@@ -1674,3 +1674,18 @@ function maps(x){
   return x.map(n => n * 2);
 }
  */
+
+//! Training JS #1: create your first JS function and print "Hello World!"
+
+/*
+In JavaScript, your code is running in a function, let us step by step complete your first JS function.
+ */
+
+/*
+helloWorld = function() {
+  var str = "Hello World!";
+  console.log( str );
+}
+ */
+
+// ! Name Shuffler
