@@ -1997,4 +1997,16 @@ const greet = lg => obj[lg] ? obj[lg] : "Welcome";
 
  */
 
-//!
+//!MakeUpperCase
+
+/*
+Write a function which converts the input string to uppercase.
+ */
+
+/*
+function makeUpperCase(str) {
+  return str.toUpperCase();
+}
+ */
+
+//! 
