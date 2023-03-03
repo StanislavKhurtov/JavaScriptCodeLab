@@ -1960,10 +1960,41 @@ For example, for [1, 2, 2] it should return 9 because
 
 /*
 function squareSum(numbers){
-  return numbers.reduce(function(sum, n){
-    return (n*n) + sum;
-  }, 0)
+  return numbers.reduce((sum,num) => sum + (num * num), 0);
 }
 */
+
+//!Welcome!
+
+/*
+Your start-up's BA has told marketing that your website has a large audience in Scandinavia
+and surrounding countries. Marketing thinks it would be great to welcome visitors to the site in their own language.
+Luckily you already use an API that detects the user's location, so this is an easy win.
+ */
+
+/*
+const obj = {
+  english: 'Welcome',
+  czech: 'Vitejte',
+  danish: 'Velkomst',
+  dutch: 'Welkom',
+  estonian: 'Tere tulemast',
+  finnish: 'Tervetuloa',
+  flemish: 'Welgekomen',
+  french: 'Bienvenue',
+  german: 'Willkommen',
+  irish: 'Failte',
+  italian: 'Benvenuto',
+  latvian: 'Gaidits',
+  lithuanian: 'Laukiamas',
+  polish: 'Witamy',
+  spanish: 'Bienvenido',
+  swedish: 'Valkommen',
+  welsh: 'Croeso'
+}
+
+const greet = lg => obj[lg] ? obj[lg] : "Welcome";
+
+ */
 
 //!
