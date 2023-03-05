@@ -2080,4 +2080,471 @@ function combat(health, damage) {
 }
  */
 
+//!Multiplication table for number
+
+/*
+Your goal is to return multiplication table for number that is always an integer from 1 to 10.
+
+For example, a multiplication table (string) for number == 5 looks like below:
+
+ */
+
+/*
+const multiTable = num => Array(10).fill(num).map((n, i) => `${i+1} * ${n} = ${(i+1) * n}`).join("\n");
+ */
+
+//! Grasshopper - Messi Goals
+
+/*
+Messi's Goal Total
+Use variables to find the sum of the goals Messi scored in 3 competitions
+
+Information
+Messi goal scoring statistics:
+
+Competition	Goals
+La Liga	43
+Champions League	10
+Copa del Rey	5
+ */
+
+/*
+var laLigaGoals = 43
+var championsLeagueGoals = 10
+var copaDelReyGoals = 5
+
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
+ */
+
+//!The Wide-Mouthed frog!
+
+/*
+The wide-mouth frog is particularly interested in the eating habits of other creatures.
+
+He just can't stop asking the creatures he encounters what they like to eat.
+But, then he meets the alligator who just LOVES to eat wide-mouthed frogs!
+
+When he meets the alligator, it then makes a tiny mouth.
+
+Your goal in this kata is to create complete the mouth_size method this method
+takes one argument animal which corresponds to the animal encountered by the frog.
+If this one is an alligator (case-insensitive) return small otherwise return wide.
+ */
+
+/*
+const mouthSize = animal => animal.toLowerCase() === "alligator" ? "small" : "wide";
+ */
+
+//! Plural
+
+/*
+We need a simple function that determines if a plural is needed or not.
+It should take a number, and return true if a plural should be used with that number or false if not.
+This would be useful when printing out a string such as 5 minutes, 14 apples, or 1 sun.
+
+You only need to worry about english grammar rules for this kata,
+where anything that isn't singular (one of something), it is plural
+(not one of something).
+
+All values will be positive integers or floats, or zero.
+ */
+
+/*
+function plural(n) {
+  return n !== 1;
+}
+ */
+
+//!Enumerable Magic #25 - Take the First N Element
+
+/*
+Create a function that accepts a list/array and a number n,
+and returns a list/array of the first n elements from the list/array.
+
+If you need help, here's a reference:
+ */
+
+/*
+function take(arr, n) {
+  return arr.slice(0, n);
+}
+ */
+
+
+//! Training JS #2: Basic data types--Number
+
+/*
+In javascript, Number is one of basic data types. It can be positive: 1,2,3,
+negative:-1,-100 , integer:123,456, decimal:3.1415926,-8.88 etc..
+
+Numbers can use operators such as + - * / %
+ */
+
+/*
+var v1=50;v2=100,v3=150,v4=200,v5=2,v6=250
+function equal1(){
+  var a=v1
+  var b=v1
+  return a+b;
+}
+//Please refer to the example above to complete the following functions
+function equal2(){
+  var a= v3  //set number value to a
+  var b=  v1 //set number value to b
+  return a-b;
+}
+function equal3(){
+  var a= v1  //set number value to a
+  var b= v5 //set number value to b
+  return a*b;
+}
+function equal4(){
+  var a=  v4 //set number value to a
+  var b=  v5 //set number value to b
+  return a/b;
+}
+function equal5(){
+  var a=  v2 //set number value to a
+  var b=  v3 //set number value to b
+  return a%b;
+}
+ */
+
+//!Exclamation marks series #11
+
+/*
+DESCRIPTION:
+Description:
+Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel.
+
+Examples
+replace("Hi!") === "H!!"
+replace("!Hi! Hi!") === "!H!! H!!"
+replace("aeiou") === "!!!!!"
+replace("ABCDE") === "!BCD!"
+ */
+
+/*
+function replace(s){
+  return s.replace(/[aeoiu]/ig, '!')
+}
+ */
+
+//! All Star Code Challenge #18
+
+/*
+Create a function that accepts a string and a single character,
+and returns an integer of the count of occurrences the 2nd argument is found in the first one.
+
+If no occurrences can be found, a count of 0 should be returned.
+
+("Hello", "o")  ==>  1
+("Hello", "l")  ==>  2
+("", "z")       ==>  0
+str_count("Hello", 'o'); // returns 1
+str_count("Hello", 'l'); // returns 2
+str_count("", 'z'); // returns 0
+ */
+
+/*
+function strCount(str, letter){
+  return str.split(letter).length-1
+}
+ */
+
+//============================================================
+
+//! Exclamation marks series #1
+
+/*
+Remove an exclamation mark from the end of a string. For a beginner kata, you can assume that the input data is
+always a string, no need to verify it.
+ */
+
+/*
+function remove(s){
+ return s.replace(/!$/,'');
+}
+ */
+
+//! Reversing Words in a String
+
+/*
+You need to write a function that reverses the words in a given string.
+A word can also fit an empty string. If this is not clear enough, here are some examples:
+
+As the input may have trailing spaces, you will also need to ignore unneccesary whitespace.
+
+Example (Input --> Output)
+
+"Hello World" --> "World Hello"
+"Hi There." --> "There. Hi"
+ */
+
+/*
+function reverse(string){
+  return string.split(' ').reverse().join(' ');
+}
+ */
+
+//! Holiday VIII - Duty Free
+
+/*
+The purpose of this kata is to work out just how many bottles of duty free whiskey you would have to buy such that
+the saving over the normal high street price would effectively cover the cost of your holiday.
+
+You will be given the high street price (normPrice), the duty free discount (discount) and the cost of the holiday.
+
+For example, if a bottle cost £10 normally and the discount in duty free was 10%, you would save £1 per bottle.
+If your holiday cost £500, the answer you should return would be 500.
+
+All inputs will be integers. Please return an integer. Round down.
+ */
+
+/*
+function dutyFree(normPrice, discount, hol){
+  return(Math.floor(hol / normPrice / discount * 100))
+}
+ */
+
+//! No zeros for heros
+
+/*
+Numbers ending with zeros are boring.
+
+They might be fun in your world, but not here.
+
+Get rid of them. Only the ending ones.
+
+1450 -> 145
+960000 -> 96
+1050 -> 105
+-1050 -> -105
+Zero alone is fine, don't worry about it. Poor guy anyway
+ */
+
+
+/*
+function noBoringZeros(n) {
+  return +(`${n}`.replace(/0+$/, ''))
+}
+ */
+
+//!Training JS #4: Basic data types--Array
+
+/*
+In javascript, Array is one of basic data types. To define an empty array, you can use var arr=new Array()
+ or var arr=[]
+
+Array has an attribute: length, if there is an array named arr, using arr.length to know how many elements are
+contained in the array.
+
+Each element in the array has an index, use arr[index] to get the value of element.
+
+index always start from 0, so the first element of array is arr[0], the last element of array is arr[arr.length-1].
+ */
+
+/*
+function getLength(arr){
+  //return length of arr
+  return arr.length;
+}
+function getFirst(arr){
+  //return the first element of arr
+  return arr[0];
+}
+function getLast(arr){
+  //return the last element of arr
+  return arr[arr.length-1];
+}
+function pushElement(arr){
+  var el=1;
+  //push
+  arr.push(4);
+  return arr;
+}
+function popElement(arr){
+  //pop an element from arr
+  arr.pop();
+  return arr;
+}
+ */
+
+//! Add Length
+
+/*
+What if we need the length of the words separated by a space to be added at
+the end of that same word and have it returned as an array?
+
+Example(Input --> Output)
+
+"apple ban" --> ["apple 5", "ban 3"]
+"you will win" -->["you 3", "will 4", "win 3"]
+Your task is to write a function that takes a String and returns an Array/list
+with the length of each word added to each element .
+
+Note: String will have at least one element; words will always be separated by a space.
+ */
+
+/*
+function addLength(str) {
+  return str.split(' ').map(word => `${word} ${word.length}`);
+}
+ */
+
+//!Hello, Name or World!
+
+/*
+Define a method hello that returns "Hello, Name!" to a given name, or says Hello, World!
+if name is not given (or passed as an empty String).
+
+Assuming that name is a String and it checks for user typos to return a name with a first capital
+letter (Xxxx).
+
+Examples:
+
+* With `name` = "john"  => return "Hello, John!"
+* With `name` = "aliCE" => return "Hello, Alice!"
+* With `name` not given
+  or `name` = ""        => return "Hello, World!"
+ */
+/*
+function hello(name) {
+  if (name === undefined || name === '') {
+    return 'Hello, World!';
+  } else {
+    return 'Hello, ' + name.charAt(0).toUpperCase() + name.slice(1).toLowerCase() + '!';
+  }
+}
+ */
+
+//! Grasshopper - Terminal game move function
+
+/*
+Terminal game move function
+In this game, the hero moves from left to right. The player rolls the dice
+and moves the number of spaces indicated by the dice two times.
+
+Create a function for the terminal game that takes the current position of
+the hero and the roll (1-6) and return the new position.
+
+Example:
+move(3, 6) should equal 15
+ */
+
+/*
+const move = (position, roll) => position + roll * 2
+ */
+
+//!Determine offspring sex based on genes XX and XY chromosomes
+
+/*
+The male gametes or sperm cells in humans and other mammals are heterogametic and contain one of two types of sex
+chromosomes. They are either X or Y. The female gametes or eggs however,
+contain only the X sex chromosome and are homogametic.
+
+The sperm cell determines the sex of an individual in this case. If a sperm cell containing an X chromosome fertilizes
+an egg, the resulting zygote will be XX or female. If the sperm cell contains a Y chromosome, then the resulting zygote
+will be XY or male.
+
+Determine if the sex of the offspring will be male or female based on the X or Y chromosome present in the male's sperm.
+
+If the sperm contains the X chromosome, return "Congratulations! You're going to have a daughter."; If the sperm
+contains the Y chromosome, return "Congratulations! You're going to have a son.";
+ */
+
+/*
+function chromosomeCheck(sperm) {
+  return `Congratulations! You're going to have a ${sperm === 'XY' ? 'son' : 'daughter'}.`
+}
+ */
+
+//!Grasshopper - Function syntax debugging
+
+/*
+Grasshopper - Function syntax debugging
+A student was working on a function and made some syntax mistakes while coding. Help them find their mistakes and
+fix them.
+ */
+
+/*
+function main (verb, noun){
+  return `${verb}${noun}`
+}
+ */
+
+//! Exclusive "or" (xor) Logical Operator
+
+/*
+Exclusive "or" (xor) Logical Operator
+Overview
+In some scripting languages like PHP, there exists a logical operator (e.g. &&, ||,
+and, or, etc.) called the "Exclusive Or" (hence the name of this Kata). The exclusive or evaluates two booleans.
+It then returns
+true if exactly one of the two expressions are true, false otherwise. For example:
+ */
+
+/*
+function xor(a, b) {
+  return a != b;
+}
+ */
+
+//! Fix your code before the garden dies!
+
+/*
+You have an award-winning garden and every day the plants need exactly
+40mm of water. You created a great piece of JavaScript to calculate the amount of
+water your plants will need when you have taken into consideration the amount of
+rain water that is forecast for the day. Your jealous neighbour hacked your computer and filled your code with bugs.
+
+Your task is to debug the code before your plants die!
+ */
+
+
+/*
+function rainAmount(mm){
+    if (mm < 40) {
+         return `You need to give your plant ${(40-mm)}mm of water`
+    };
+ return "Your plant has had more than enough water for today!"
+
+}
+ */
+
+
+//! Find the Remainder
+
+/*
+Write a function that accepts two integers and returns the remainder of dividing the larger value by the smaller value.
+
+Division by zero should return NaN.
+ */
+
+/*
+function remainder(a, b){
+  // Divide the larger argument by the smaller argument and return the remainder
+if( a > b && b === 0) {
+  return NaN;
+} else if ( b > a && a === 0) {
+ return NaN;
+}
+  return (a > b )? a % b : b % a;
+
+}
+ */
+
+
+//! Hex to Decimal
+/*
+Complete the function which converts hex number (given as a string) to a decimal number.
+ */
+
+/*
+
+function hexToDec(hexString){
+ return  parseInt(hexString, 16);
+}
+ */
+
 //!
