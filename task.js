@@ -2230,4 +2230,210 @@ function replace(s){
 }
  */
 
-//! 
+//! All Star Code Challenge #18
+
+/*
+Create a function that accepts a string and a single character,
+and returns an integer of the count of occurrences the 2nd argument is found in the first one.
+
+If no occurrences can be found, a count of 0 should be returned.
+
+("Hello", "o")  ==>  1
+("Hello", "l")  ==>  2
+("", "z")       ==>  0
+str_count("Hello", 'o'); // returns 1
+str_count("Hello", 'l'); // returns 2
+str_count("", 'z'); // returns 0
+ */
+
+/*
+function strCount(str, letter){
+  return str.split(letter).length-1
+}
+ */
+
+//============================================================
+
+//! Exclamation marks series #1
+
+/*
+Remove an exclamation mark from the end of a string. For a beginner kata, you can assume that the input data is
+always a string, no need to verify it.
+ */
+
+/*
+function remove(s){
+ return s.replace(/!$/,'');
+}
+ */
+
+//! Reversing Words in a String
+
+/*
+You need to write a function that reverses the words in a given string.
+A word can also fit an empty string. If this is not clear enough, here are some examples:
+
+As the input may have trailing spaces, you will also need to ignore unneccesary whitespace.
+
+Example (Input --> Output)
+
+"Hello World" --> "World Hello"
+"Hi There." --> "There. Hi"
+ */
+
+/*
+function reverse(string){
+  return string.split(' ').reverse().join(' ');
+}
+ */
+
+//! Holiday VIII - Duty Free
+
+/*
+The purpose of this kata is to work out just how many bottles of duty free whiskey you would have to buy such that
+the saving over the normal high street price would effectively cover the cost of your holiday.
+
+You will be given the high street price (normPrice), the duty free discount (discount) and the cost of the holiday.
+
+For example, if a bottle cost £10 normally and the discount in duty free was 10%, you would save £1 per bottle.
+If your holiday cost £500, the answer you should return would be 500.
+
+All inputs will be integers. Please return an integer. Round down.
+ */
+
+/*
+function dutyFree(normPrice, discount, hol){
+  return(Math.floor(hol / normPrice / discount * 100))
+}
+ */
+
+//! No zeros for heros
+
+/*
+Numbers ending with zeros are boring.
+
+They might be fun in your world, but not here.
+
+Get rid of them. Only the ending ones.
+
+1450 -> 145
+960000 -> 96
+1050 -> 105
+-1050 -> -105
+Zero alone is fine, don't worry about it. Poor guy anyway
+ */
+
+
+/*
+function noBoringZeros(n) {
+  return +(`${n}`.replace(/0+$/, ''))
+}
+ */
+
+//!Training JS #4: Basic data types--Array
+
+/*
+In javascript, Array is one of basic data types. To define an empty array, you can use var arr=new Array()
+ or var arr=[]
+
+Array has an attribute: length, if there is an array named arr, using arr.length to know how many elements are
+contained in the array.
+
+Each element in the array has an index, use arr[index] to get the value of element.
+
+index always start from 0, so the first element of array is arr[0], the last element of array is arr[arr.length-1].
+ */
+
+/*
+function getLength(arr){
+  //return length of arr
+  return arr.length;
+}
+function getFirst(arr){
+  //return the first element of arr
+  return arr[0];
+}
+function getLast(arr){
+  //return the last element of arr
+  return arr[arr.length-1];
+}
+function pushElement(arr){
+  var el=1;
+  //push
+  arr.push(4);
+  return arr;
+}
+function popElement(arr){
+  //pop an element from arr
+  arr.pop();
+  return arr;
+}
+ */
+
+//! Add Length
+
+/*
+What if we need the length of the words separated by a space to be added at
+the end of that same word and have it returned as an array?
+
+Example(Input --> Output)
+
+"apple ban" --> ["apple 5", "ban 3"]
+"you will win" -->["you 3", "will 4", "win 3"]
+Your task is to write a function that takes a String and returns an Array/list
+with the length of each word added to each element .
+
+Note: String will have at least one element; words will always be separated by a space.
+ */
+
+/*
+function addLength(str) {
+  return str.split(' ').map(word => `${word} ${word.length}`);
+}
+ */
+
+//!Hello, Name or World!
+
+/*
+Define a method hello that returns "Hello, Name!" to a given name, or says Hello, World!
+if name is not given (or passed as an empty String).
+
+Assuming that name is a String and it checks for user typos to return a name with a first capital
+letter (Xxxx).
+
+Examples:
+
+* With `name` = "john"  => return "Hello, John!"
+* With `name` = "aliCE" => return "Hello, Alice!"
+* With `name` not given
+  or `name` = ""        => return "Hello, World!"
+ */
+/*
+function hello(name) {
+  if (name === undefined || name === '') {
+    return 'Hello, World!';
+  } else {
+    return 'Hello, ' + name.charAt(0).toUpperCase() + name.slice(1).toLowerCase() + '!';
+  }
+}
+ */
+
+//! Grasshopper - Terminal game move function
+
+/*
+Terminal game move function
+In this game, the hero moves from left to right. The player rolls the dice
+and moves the number of spaces indicated by the dice two times.
+
+Create a function for the terminal game that takes the current position of
+the hero and the roll (1-6) and return the new position.
+
+Example:
+move(3, 6) should equal 15
+ */
+
+/*
+const move = (position, roll) => position + roll * 2
+ */
+
+//!
