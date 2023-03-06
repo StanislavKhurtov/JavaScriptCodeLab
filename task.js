@@ -2657,4 +2657,18 @@ function position(letter){
 }
  */
 
-//! 
+//! Training JS #7: if..else and ternary operator
+
+/*
+In JavaScript, if..else is the most basic conditional statement, it consists of three parts:condition, statement1, statement2, like this:
+
+if (condition) statementa
+else           statementb
+ */
+
+/*
+function saleHotdogs(n){
+    return n<5?100*n:n>=5 && n<10?95*n:n>=10?90*n:true;
+}
+
+ */
