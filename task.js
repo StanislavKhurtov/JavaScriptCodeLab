@@ -2660,7 +2660,8 @@ function position(letter){
 //! Training JS #7: if..else and ternary operator
 
 /*
-In JavaScript, if..else is the most basic conditional statement, it consists of three parts:condition, statement1, statement2, like this:
+In JavaScript, if..else is the most basic conditional statement,
+it consists of three parts:condition, statement1, statement2, like this:
 
 if (condition) statementa
 else           statementb
@@ -2795,7 +2796,8 @@ function sayHello( name, city, state ) {
 //!Training JS #3: Basic data types--String
 
 /*
-In javascript, String is one of basic data types. Use "" or '' to declare a string variable. It can be letters:a,b,c,A,B,C, numbers: 123..., Various symbol:@#$%^&* , Control symbol:\n,\t etc..
+In javascript, String is one of basic data types. Use "" or '' to declare a
+string variable. It can be letters:a,b,c,A,B,C, numbers: 123..., Various symbol:@#$%^&* , Control symbol:\n,\t etc..
 
 String can use operators +, Connect two or more strings together.
  */
@@ -2893,4 +2895,19 @@ function sumOfDifferences(arr) {
 }
  */
 
-//1
+//! String cleaning
+
+/*
+Your boss decided to save money by purchasing some cut-rate optical character
+recognition software for scanning in the text of old novels to your database.
+At first it seems to capture words okay, but you quickly notice
+that it throws in a lot of numbers at random places in the text.
+ */
+
+/*
+function stringClean(s){
+  return s.replace(/\d/g, "");
+}
+ */
+
+//!
