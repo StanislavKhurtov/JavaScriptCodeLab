@@ -3006,4 +3006,17 @@ as a string with 2 decimal places. (e.g. "21.00" NOT "21.0" or "21")
 const usdcny = usd => `${(usd*6.75).toFixed(2)} Chinese Yuan`;
  */
 
-//!
+//!Enumerable Magic - Does My List Include This?
+
+/*
+Create a method that accepts a list and an item, and returns true if the item belongs to the list, otherwise false.
+ */
+
+/*
+function include(arr, item){
+  return arr.includes(item);
+}
+ */
+
+
+//! 
