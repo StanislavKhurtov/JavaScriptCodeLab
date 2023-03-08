@@ -3097,4 +3097,22 @@ The test cases contain numbers only by mistake.
 correct = s => s.replace(/0/g,'O').replace(/1/g,'I').replace(/5/g,'S')
  */
 
-//! 
+//! Simple validation of a username with regex
+
+/*
+Write a simple regex to validate a username. Allowed characters are:
+
+lowercase letters,
+numbers,
+underscore
+Length should be between 4 and 16 characters (both included).
+ */
+
+/*
+function validateUsr(username) {
+  return /^([a-z0-9_]){4,16}$/.test(username)
+
+}
+ */
+
+//!
