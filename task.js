@@ -2977,7 +2977,8 @@ Find Mean
 Find the mean (average) of a list of numbers in an array.
 
 Information
-To find the mean (average) of a set of numbers add all of the numbers together and divide by the number of values in the list.
+To find the mean (average) of a set of numbers add all of the numbers together
+and divide by the number of values in the list.
 
 For an example list of 1, 3, 5, 7
  */
@@ -2986,6 +2987,23 @@ For an example list of 1, 3, 5, 7
 var findAverage = function (nums) {
   return nums.reduce((a,b)=>(a+b),0)/nums.length
 }
+ */
+
+//!USD => CNY
+
+/*
+Create a function that converts US dollars (USD) to Chinese Yuan (CNY) . The input is the amount of USD as an integer,
+ and the output should be a string that states the amount of Yuan followed by 'Chinese Yuan'
+
+Examples (Input -> Output)
+15  -> '101.25 Chinese Yuan'
+465 -> '3138.75 Chinese Yuan'
+The conversion rate you should use is 6.75 CNY for every 1 USD. All numbers should be represented
+as a string with 2 decimal places. (e.g. "21.00" NOT "21.0" or "21")
+ */
+
+/*
+const usdcny = usd => `${(usd*6.75).toFixed(2)} Chinese Yuan`;
  */
 
 //!
