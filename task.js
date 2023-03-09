@@ -3115,4 +3115,15 @@ function validateUsr(username) {
 }
  */
 
-//!
+//!Price of Mangoes
+
+/*
+mangoes. For a given quantity and price (per mango), calculate the total cost of the mangoes.
+ */
+/*
+
+function mango(quantity, price){
+let q=Math.floor(quantity/3)
+return (quantity-q)*price
+}
+ */
