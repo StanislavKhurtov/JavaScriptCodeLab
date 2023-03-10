@@ -138,3 +138,42 @@ Array.prototype.map = function (cb,context){
 }
  */
 
+
+
+//! !Javascript from the Inside #2: Filter
+
+/*
+Previously: Map
+
+#Your Task Implement our beloved Array,prototype.filter from scratch.
+
+Example of Filter
+
+var one_to_nine = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+var lower_than_six = (x) => x < 6
+var one_to_five = one_to_nine.filter(lower_than_six);
+// Expected
+[1, 2, 3, 4, 5]
+
+ */
+
+
+
+/*
+
+
+
+Array.prototype.filter = function (f, receiver) {
+    let len = this.length;
+    let acc = [];
+    for (let i = 0; i < len; i++) {
+        if (i in this && f.call(receiver, this[i], i, this)) {
+            acc.push(this[i]);
+        }
+    }
+    return acc;
+};
+
+
+ */
+
