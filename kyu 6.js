@@ -92,7 +92,7 @@ function recycle(array) {
  */
 
 
-//!Javascript Mathematician
+//!Javascript Mathematician = kyu 7!!!
 
 /*
 You are writing a function that takes two sets of arguments of arbitrary length.
@@ -114,4 +114,27 @@ const calculate = (...x) => (...y) => {
 };
  */
 
-//! 
+//!Javascript from the Inside #1 : Map
+
+/*
+#Description Your task is to implement our beloved Array.prototype.map function from a scratch, and yes, it has to be
+inside the Array's prototype. Don't know what a 'prototype' is? This could help you a little as well as this kata.
+
+Moving on, the defaults for Array.prototype.map, Array.prototype.reduce, Array.prototype.reduceRight and
+Array.prototype.forEach will be banned, in other words you'll have to create map from scratch.
+ */
+
+
+/*
+Array.prototype.map = function (cb,context){
+  const length = this.length
+  const arr = new Array(length)
+  for (let i=0;i<length;i++){
+    if (i in this){
+      arr[i]=cb.call(context,this[i],i,this)
+    }
+  }
+  return arr
+}
+ */
+
