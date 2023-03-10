@@ -67,4 +67,29 @@ function sortByBit(arr) {
 }
  */
 
+//! Let's Recycle!
+
+/*
+Task
+You will be given a list of objects. Each object has type, material, and possibly secondMaterial.
+The existing materials are: paper, glass, organic, and plastic.
+
+Your job is to sort these objects across the 4 recycling bins according to their material
+(and secondMaterial if it's present), by listing the type's of objects that should go into those bins.
+*/
+
+/*
+function recycle(array) {
+  const obj = {'paper': [], 'glass': [], 'organic':[], 'plastic': []};
+  for (let i of array) {
+    obj[i.material].push(i.type);
+    if (i.secondMaterial !== undefined){
+      obj[i.secondMaterial].push(i.type)
+    }
+  }
+  return [obj['paper'], obj['glass'], obj['organic'], obj['plastic']];
+}
+ */
+
+
 //! 
