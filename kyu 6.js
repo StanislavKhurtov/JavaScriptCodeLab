@@ -157,11 +157,7 @@ var one_to_five = one_to_nine.filter(lower_than_six);
 
  */
 
-
-
 /*
-
-
 
 Array.prototype.filter = function (f, receiver) {
     let len = this.length;
@@ -173,7 +169,20 @@ Array.prototype.filter = function (f, receiver) {
     }
     return acc;
 };
-
-
  */
+
+//!Power .bind()
+/*
+You probably know about Function.prototype.bind method in JavaScript. It returns a copy of the original function but
+this function will always be called in the specified context. The problem is that you can't rebind another context any
+ more.
+ */
+
+/*
+Function.prototype.bind = function (rootContext) {
+  return (childContext = rootContext) => this.call(childContext, childContext);
+};
+ */
+
+//! 
 
