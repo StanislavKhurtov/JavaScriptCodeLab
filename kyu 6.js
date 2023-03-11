@@ -347,4 +347,28 @@ var runLengthEncoding = function(str) {
 };
  */
 
-//!
+//!Walk the Object Path
+
+/*
+Implement the method find which takes in an two parameters object and path. The path will
+be a period-delimited string of properties that we will use to traverse through our object to find our target value.
+
+Check out this Codecast to get started! https://codecast.qualified.io/interaction/594197b92f524d001c1ab790
+ */
+
+
+/*
+function find(obj,path) {
+    path = path.split(/[.]/)
+    for(i in path){
+        if(obj.hasOwnProperty(path[i]) === true) {
+            obj = obj[path[i]];
+        }else {
+            return undefined;
+        }
+    }
+    return obj;
+}
+
+
+*/
