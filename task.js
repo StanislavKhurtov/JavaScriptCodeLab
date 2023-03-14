@@ -3347,3 +3347,22 @@ of functions together.
 /*
 const compose = (...fns) => arg => fns.reduceRight((res, fn) => fn(res), arg);
  */
+
+//! SantaClausable Interface
+
+/*
+You probably know, that in Javascript (and also Ruby) there is no concept of interfaces. There is only a concept of
+inheritance, but you can't assume that a certain method or property exists, just because it exists in the parent
+ prototype / class. We want to find out, whether a given object fulfils the requirements to implement the
+  "SantaClausable" interface. We need to implement a method which checks for this interface.
+ */
+
+/*
+function isSantaClausable(obj) {
+  return ['sayHoHoHo', 'distributeGifts', 'goDownTheChimney'].every(function(methodName) {
+    return typeof obj[methodName] == 'function';
+  });
+}
+ */
+
+//!
