@@ -3482,4 +3482,36 @@ class Dog extends Animal {
 }
  */
 
-//! 
+//! Fun with ES6 Classes #4 - Cubes and Setters
+/*
+Overview
+In Fun with ES6 Classes #3 - Cuboids, Cubes and Getters, we learned that if we knew all the dimensions
+(i.e. length, width, height) of a cuboid, we could easily work out its corresponding volume and
+ surface area. The way we achieved this in our code was by the use of getters which automatically
+ computed the volume and surface area of the cuboid whenever either one of length, width, height
+ changed. However, in the previouos exercise, one thing we could not do is define setters for surface
+ area or volume of a cuboid because for a given volume/SA, there were an infinite number of
+ possibilities to the dimensions of the cuboid.
+ */
+
+/*
+class Cube{
+      constructor(length){
+        this.length = length;
+    }
+    get surfaceArea() {
+        return this.length * this.length * 6;
+    }
+    get volume() {
+        return this.length * this.length  * this.length;
+    }
+    set surfaceArea(newArea){
+            this.length = Math.sqrt(newArea / 6) ;
+    }
+    set volume(newVolume){
+            this.length = Math.pow(newVolume, (1/3));
+    }
+}
+ */
+
+//!
