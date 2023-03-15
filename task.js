@@ -3591,4 +3591,15 @@ function openOrSenior(data){
 }
  */
 
+//! Find the stray number
+
+/*
+function stray(numbers) {
+  return numbers.find(
+    number => numbers.indexOf(number) === numbers.lastIndexOf(number)
+  );
+}
+ */
+
+
 //! 
