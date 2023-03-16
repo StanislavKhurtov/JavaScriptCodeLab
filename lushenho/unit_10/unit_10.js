@@ -237,16 +237,21 @@ function f13() {
 document.querySelector('.b-13').onclick = f13;
 
 
-// Task 14
+//! Task 14
 // Используя цикл выведите на страницу массив ar14 в обратном порядке. Разделитель - пробел.
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-14
 // Вывод в out-14
 
 let ar14 = [1, 2, 3, 'hello', 66];
+let res14 = "";
+ar14.reverse();
 
 function f14() {
-
+	for (let i = 0; i < ar14.length; i++) {
+		res14 += ar14[i] + " ";
+	}
+	document.querySelector('.out-14').innerHTML = res14;
 }
 
 document.querySelector('.b-14').onclick = f14;
