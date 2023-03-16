@@ -179,7 +179,7 @@ ar11[4] = a11;
 
 function f11() {
 	let i = 0;
-	while ( i < ar11.length) {
+	while (i < ar11.length) {
 		res11 += ar11[i] + " ";
 		i++;
 	}
@@ -189,16 +189,24 @@ function f11() {
 document.querySelector('.b-11').onclick = f11;
 
 
-// Task 12
+//! Task 12
 // Напишите функцию f12, которая меняет местами нулевой и последний элемент массива ar12 и выводит его в out-12. Разделитель - пробел. Последний элемент вычислять через длину массива.
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-12
 // Вывод в out-12
 
-let ar12 = ['test', 'west', 'list', 'class', 'best'];
+let ar12 = ['test', 'west', 'list', 'class', 'best'],
+	a12 = ar12[0],
+	res12 = "";
+ar12[0] = ar12[ar12.length - 1];
+ar12[ar12.length - 1] = a12;
+
 
 function f12() {
-
+	for (let i = 0; i < ar12.length; i++) {
+		res12 += ar12[i] + " ";
+	}
+	document.querySelector('.out-12').innerHTML = res12;
 }
 
 document.querySelector('.b-12').onclick = f12;
