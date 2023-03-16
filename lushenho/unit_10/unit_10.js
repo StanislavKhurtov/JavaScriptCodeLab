@@ -268,8 +268,8 @@ let res15 = "";
 
 function f15() {
 	let i = 0;
-	while ( i < ar15.length) {
-		if( ar15[i] > 0){
+	while (i < ar15.length) {
+		if (ar15[i] > 0) {
 			res15 += ar15[i] + " ";
 		}
 		i++;
@@ -302,9 +302,16 @@ document.querySelector('.b-16').onclick = f16;
 // Вывод в out-17
 
 let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
+let acc = "";
+
 
 function f17() {
-
+	for (let i = 0; i < ar17.length; i++) {
+		if( ar17[i] > 3 ) {
+			acc++;
+		}
+	}
+document.querySelector('.out-17').innerHTML = acc;
 }
 
 document.querySelector('.b-17').onclick = f17;
@@ -320,12 +327,12 @@ let ar18 = [15, 24, 13, 78, 21, 4, 45, 67];
 let max = ar18[0];
 
 function f18() {
-	for( let i = 0; i < ar18.length; i++){
+	for (let i = 0; i < ar18.length; i++) {
 		if (ar18[i] > max) {
 			max = ar18[i];
 		}
 	}
-document.querySelector('.out-18').innerHTML = max;
+	document.querySelector('.out-18').innerHTML = max;
 }
 
 document.querySelector('.b-18').onclick = f18;
@@ -341,7 +348,7 @@ let ar19 = [15, 424, 313, 78, 241, 4, 45, 67];
 let min = ar19[0];
 
 function f19() {
-	for( let i = 0; i < ar19.length; i++){
+	for (let i = 0; i < ar19.length; i++) {
 		if (ar19[i] < min) {
 			min = ar19[i]
 		}
