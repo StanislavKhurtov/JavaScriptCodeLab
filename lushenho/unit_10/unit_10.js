@@ -317,9 +317,15 @@ document.querySelector('.b-17').onclick = f17;
 // Вывод в out-18
 
 let ar18 = [15, 24, 13, 78, 21, 4, 45, 67];
+let max = ar18[0];
 
 function f18() {
-
+	for( let i = 0; i < ar18.length; i++){
+		if (ar18[i] > max) {
+			max = ar18[i];
+		}
+	}
+document.querySelector('.out-18').innerHTML = max;
 }
 
 document.querySelector('.b-18').onclick = f18;
@@ -332,9 +338,15 @@ document.querySelector('.b-18').onclick = f18;
 // Вывод в out-19
 
 let ar19 = [15, 424, 313, 78, 241, 4, 45, 67];
+let min = ar19[0];
 
 function f19() {
-
+	for( let i = 0; i < ar19.length; i++){
+		if (ar19[i] < min) {
+			min = ar19[i]
+		}
+	}
+	document.querySelector('.out-19').innerHTML = min;
 }
 
 document.querySelector('.b-19').onclick = f19;
