@@ -2547,4 +2547,1059 @@ function hexToDec(hexString){
 }
  */
 
+//Small enough? - Beginner
+
+/*
+You will be given an array and a limit value. You must check that all values in
+the array are below or equal to the limit value. If they are, return true. Else,
+return false.
+
+You can assume all values in the array are numbers.
+ */
+/*
+// !const smallEnough = (a, limit) => a.filter(n => n > limit).length === 0;
+*/
+
+//! Regular Ball Super Ball
+
+/*
+Create a class Ball. Ball objects should accept one argument for "ball type" when instantiated.
+
+If no arguments are given, ball objects should instantiate with a "ball type" of "regular."
+
+ball1 = new Ball();
+ball2 = new Ball("super");
+
+ball1.ballType     //=> "regular"
+ball2.ballType     //=> "super"
+ */
+
+/*
+class Ball{
+constructor(ballType='regular'){
+this.ballType = ballType}
+
+}
+ */
+
+//!How old will I be in 2099?
+/*
+Philip's just turned four and he wants to know how old he will be in various years in the future such as 2090 or 3044.
+ His parents can't keep up calculating this so they've begged you to help them out by writing a programme that can
+ answer Philip's endless questions.
+
+    Your task is to write a function that takes two parameters: the year of birth and the year to count years in
+     relation to. As Philip is getting more curious every day he may soon want to know how many years it was until he
+      would be born, so your function needs to work with both dates in the future and in the past.
+
+    Provide output in this format: For dates in the future: "You are ... year(s) old." For dates in the past:
+    "You will be born in ... year(s)." If the year of birth equals the year requested return: "You were born this very
+    year!"
+
+"..." are to be replaced by the number, followed and proceeded by a single space. Mind that you need to account for
+both "year" and "years", depending on the result.
+ */
+
+/*
+function  calculateAge(a,b) {
+  if (a>b&&+a-b==1)return `You will be born in ${+a-b} year.`
+  else if (a<b&&+b-a==1)return `You are ${b-a} year old.`
+  else if (a>b)return `You will be born in ${+a-b} years.`
+  else if (a<b) return `You are ${b-a} years old.`
+  return 'You were born this very year!'
+}
+ */
+
+//!Take the Derivative
+
+/*
+This function takes two numbers as parameters, the first number being the coefficient, and the second number being
+the exponent.
+
+Your function should multiply the two numbers, and then subtract 1 from the exponent. Then, it has to print out an
+expression (like 28x^7). "^1" should not be truncated when exponent = 2.
+ */
+
+/*
+function derive(coefficient,exponent) {
+  return `${coefficient*exponent}x^${exponent-1}`
+}
+ */
+
+
+//!Remove duplicates from list
+
+/*
+Define a function that removes duplicates from an array of numbers and returns it as a result.
+
+The order of the sequence has to stay the same.
+
+ */
+
+/*
+function distinct(a) {
+  return [...new Set(a)];
+}
+ */
+
+//!Find the position!
+/*
+When provided with a letter, return its position in the alphabet.
+
+Input :: "a"
+
+Ouput :: "Position of alphabet: 1"
+ */
+
+/*
+function position(letter){
+  return `Position of alphabet: ${letter.charCodeAt()-96}`
+}
+ */
+
+//! Training JS #7: if..else and ternary operator
+
+/*
+In JavaScript, if..else is the most basic conditional statement,
+it consists of three parts:condition, statement1, statement2, like this:
+
+if (condition) statementa
+else           statementb
+ */
+
+/*
+function saleHotdogs(n){
+    return n<5?100*n:n>=5 && n<10?95*n:n>=10?90*n:true;
+}
+
+ */
+// !Bin to Decimal
+
+/*
+Complete the function which converts a binary number (given as a string) to a decimal number.
+ */
+
+
+/*
+function binToDec(bin){
+  return parseInt(bin,2);
+}
+ */
+
+//! Training JS #5: Basic data types--Object
+
+/*
+In javascript, Object is one of basic data types.
+Define an Object can use var obj=new Object() or var obj={}
+
+You can define the object attributes during initialization,
+like this:
+
+var animal={name:"dog"}
+you can also set/get some properties after the object
+definition, like this:
+
+var animal={}
+animal.name="dog"  (or animal["name"]="dog")
+ */
+
+/*
+function animal(obj){
+  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+}
+ */
+
+//!5 without numbers !!
+
+/*
+Write a function that always returns 5
+
+Sounds easy right? Just bear in mind that you can't use any of the following characters: 0123456789*+-/
+
+Good luck :)
+ */
+
+/*
+function unusualFive() {
+  return ['banan', 'orange', 'apple', 'kiwi', 'lemon'].length;
+}
+ */
+
+//! No Loops 2 - You only need one
+
+/*
+*** No Loops Allowed ***
+
+You will be given an array a and a value x. All you need to do is check whether the provided array contains the value,*
+*  without using a loop.
+
+Array can contain numbers or strings. x can be either. Return true if the array contains*  the value, false if not.
+* With strings you will need to account for case.
+ */
+
+/*
+function check(a, x) {
+  return a.includes(x);
+}
+ */
+
+//! L1: Bartender, drinks!
+
+/*
+Complete the function that receives as input a string, and produces outputs according
+to the following table:
+
+Input	Output
+"Jabroni"	"Patron Tequila"
+"School Counselor"	"Anything with Alcohol"
+"Programmer"	"Hipster Craft Beer"
+"Bike Gang Member"	"Moonshine"
+"Politician"	"Your tax dollars"
+"Rapper"	"Cristal"
+anything else	"Beer"
+ */
+
+/*
+function getDrinkByProfession(param) {
+  param = param.toLowerCase();
+
+  switch(param) {
+    case "jabroni": return "Patron Tequila";
+    case "school counselor": return "Anything with Alcohol";
+    case "programmer": return "Hipster Craft Beer";
+    case "bike gang member": return "Moonshine";
+    case "politician": return  "Your tax dollars";
+    case "rapper": return "Cristal";
+    default: return "Beer";
+  }
+}
+ */
+
+//!Welcome to the City
+
+/*
+Create a method sayHello/say_hello/SayHello that takes as input a name, city, and state to welcome a person. Note that
+ name will be an array consisting of one or more values that should be joined together with one space between each, and
+ the length of the name array in test cases will vary.
+
+Example:
+
+sayHello(['John', 'Smith'], 'Phoenix', 'Arizona')
+ */
+
+/*
+function sayHello( name, city, state ) {
+    return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+}
+ */
+
+//!Training JS #3: Basic data types--String
+
+/*
+In javascript, String is one of basic data types. Use "" or '' to declare a
+string variable. It can be letters:a,b,c,A,B,C, numbers: 123..., Various symbol:@#$%^&* , Control symbol:\n,\t etc..
+
+String can use operators +, Connect two or more strings together.
+ */
+
+/*
+var a1="A",a2="a",b1="B",b2="b",c1="C",c2="c",d1="D",d2="d",e1="E",e2="e",n1="N",n2="n"
+function Dad(){
+  //select some variable to combine "Dad"
+  return d1+a2+d2;
+}
+function Bee(){
+  //select some variable to combine "Bee"
+  return b1+e2+e2;
+}
+function banana(){
+  //select some variable to combine "banana"
+  return b2+a2+n2+a2+n2+a2;
+}
+
+//answer some questions if you finished works above
+function answer1(){
+  //the answer should be "yes" or "no"
+  return "no";
+}
+function answer2(){
+  //the answer should be "yes" or "no"
+  return "no";
+}
+function answer3(){
+  //the answer should be "yes" or "no"
+  return "yes";
+}
+ */
+
+//! Printing Array elements with Comma delimiters
+
+/*
+nput: Array of elements
+
+["h","o","l","a"]
+
+Output: String with comma delimited elements of the array in th same order.
+
+"h,o,l,a"
+
+Note: if this seems too simple for you try the next level
+
+
+ */
+
+/*
+function printArray(array){
+  return array.join()
+}
+ */
+
+//!Multiple of index
+
+/*
+Return a new array consisting of elements which are multiple of their own index in input array (length > 1).
+
+Some cases:
+[22, -6, 32, 82, 9, 25] =>  [-6, 32, 25]
+
+[68, -1, 1, -7, 10, 10] => [-1, 10]
+
+[-56,-85,72,-26,-14,76,-27,72,35,-21,-67,87,0,21,59,27,-92,68] => [-85, 72, 0, 68]
+ */
+
+
+/*
+function multipleOfIndex(array) {
+  return array.filter((num, i) => num % i === 0);
+}
+ */
+
+//! Sum of differences in array
+
+/*
+Your task is to sum the differences between consecutive pairs in the array in descending order.
+
+Example
+[2, 1, 10]  -->  9
+In descending order: [10, 2, 1]
+
+Sum: (10 - 2) + (2 - 1) = 8 + 1 = 9
+
+If the array is empty or the array has only one element the result should be 0 (Nothing in Haskell, None in Rust).
+ */
+
+/*
+
+function sumOfDifferences(arr) {
+    return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
+}
+ */
+
+//! String cleaning
+
+/*
+Your boss decided to save money by purchasing some cut-rate optical character
+recognition software for scanning in the text of old novels to your database.
+At first it seems to capture words okay, but you quickly notice
+that it throws in a lot of numbers at random places in the text.
+ */
+
+/*
+function stringClean(s){
+  return s.replace(/\d/g, "");
+}
+ */
+
+//! simple calculator
+
+/*
+You are required to create a simple calculator that returns the result of addition, subtraction,
+multiplication or division of two numbers.
+
+Your function will accept three arguments:
+The first and second argument should be numbers.
+The third argument should represent a sign indicating the operation to perform on these two numbers.
+
+if the variables are not numbers or the sign does not belong to the list above a message "unknown
+value" must be returned.
+ */
+
+/*
+const calculator = (a,b,sign) => {
+  if(sign !== '+' && sign !== '-' && sign !== '/' && sign !== '*') {
+    return 'unknown value';
+  } else if(typeof a !== 'number' || typeof b !== 'number') {
+    return 'unknown value';
+  } else if(sign === '+') {
+    return a + b;
+  } else if(sign === '-') {
+    return a - b;
+  } else if(sign === '*') {
+    return a * b;
+  } else if(sign === '/') {
+    return a / b;
+  }
+}
+ */
+
+//! Do you speak "English"?
+
+/*
+Given a string of arbitrary length with any ascii characters. Write a function to determine
+whether the string contains the whole word "English".
+
+The order of characters is important -- a string "abcEnglishdef" is correct but "abcnEglishsef"
+is not correct.
+
+Upper or lower case letter does not matter -- "eNglisH" is also correct.
+
+Return value as boolean values, true for the string to contains "English", false for it does not.
+ */
+
+/*
+function spEng(sentence){
+
+  for (let i = 0; i < sentence.length - 6; i++) {
+
+    if (sentence.slice(i, i + 7).toLowerCase() === "english") {
+      return true;
+    }
+  }
+
+  return false;
+}
+ */
+
+//!Grasshopper - Array Mean
+
+/*
+Find Mean
+Find the mean (average) of a list of numbers in an array.
+
+Information
+To find the mean (average) of a set of numbers add all of the numbers together
+and divide by the number of values in the list.
+
+For an example list of 1, 3, 5, 7
+ */
+
+/*
+var findAverage = function (nums) {
+  return nums.reduce((a,b)=>(a+b),0)/nums.length
+}
+ */
+
+//!USD => CNY
+
+/*
+Create a function that converts US dollars (USD) to Chinese Yuan (CNY) . The input is the amount of USD as an integer,
+ and the output should be a string that states the amount of Yuan followed by 'Chinese Yuan'
+
+Examples (Input -> Output)
+15  -> '101.25 Chinese Yuan'
+465 -> '3138.75 Chinese Yuan'
+The conversion rate you should use is 6.75 CNY for every 1 USD. All numbers should be represented
+as a string with 2 decimal places. (e.g. "21.00" NOT "21.0" or "21")
+ */
+
+/*
+const usdcny = usd => `${(usd*6.75).toFixed(2)} Chinese Yuan`;
+ */
+
+//!Enumerable Magic - Does My List Include This?
+
+/*
+Create a method that accepts a list and an item, and returns true if the item belongs to the list, otherwise false.
+ */
+
+/*
+function include(arr, item){
+  return arr.includes(item);
+}
+ */
+
+//!Lario and Muigi Pipe Problem
+
+/*
+Issue
+Looks like some hoodlum plumber and his brother has been running around and damaging your stages again.
+
+The pipes connecting your level's stages together need to be fixed before you receive any more complaints.
+
+Pipes list is correct when each pipe after the first index is greater (+1) than the previous one, and that
+ there is no duplicates.
+ */
+
+
+/*
+function pipeFix(numbers){
+  let q=Math.max.apply(null,numbers)
+  let result =[]
+  for (let i=Math.min.apply(null,numbers); i<=q;i++) result.push(i)
+return result
+}
+ */
+
+//!How many stairs will Suzuki climb in 20 years?
+
+/*
+Suzuki is a monk who climbs a large staircase to the monastery as part of a ritual.
+Some days he climbs more stairs than others depending on the number of students he must train in the
+morning. He is curious how many stairs might be climbed over the next 20 years and has spent a year
+marking down his daily progress.
+
+The sum of all the stairs logged in a year will be used for estimating the number he might climb in 20.
+
+20_year_estimate = one_year_total * 20
+ */
+
+/*
+function stairsIn20(s){
+  return   s
+    .reduce((arr, day) => arr.concat(...day), [])
+    .reduce((total, stairs) => total + stairs, 0) * 20
+}
+ */
+
+
+//!Area of a Square
+
+/*
+Complete the function that calculates the area of the red square, when the length of the circular arc A is given
+as the input. Return the result rounded to two decimals.
+ */
+
+/*
+function squareArea(A){
+  return Number(Math.pow(2 * A / 3.1416, 2).toFixed(2))
+
+}
+ */
+
+//!Correct the mistakes of the character recognition software
+
+/*
+Character recognition software is widely used to digitise printed texts.
+This the texts can be edited, searched and stored on a computer.
+
+When documents (especially pretty old ones written with a typewriter),
+are digitised character recognition softwares often make mistakes.
+
+Your task is correct the errors in the digitised text. You only have to handle the following mistakes:
+
+S is misinterpreted as 5
+O is misinterpreted as 0
+I is misinterpreted as 1
+The test cases contain numbers only by mistake.
+ */
+
+/*
+correct = s => s.replace(/0/g,'O').replace(/1/g,'I').replace(/5/g,'S')
+ */
+
+//! Simple validation of a username with regex
+
+/*
+Write a simple regex to validate a username. Allowed characters are:
+
+lowercase letters,
+numbers,
+underscore
+Length should be between 4 and 16 characters (both included).
+ */
+
+/*
+function validateUsr(username) {
+  return /^([a-z0-9_]){4,16}$/.test(username)
+
+}
+ */
+
+//!Price of Mangoes
+
+/*
+mangoes. For a given quantity and price (per mango), calculate the total cost of the mangoes.
+ */
+/*
+
+function mango(quantity, price){
+let q=Math.floor(quantity/3)
+return (quantity-q)*price
+}
+ */
+
+//! Return the day
+
+/*
+Complete the function which returns the weekday according to the input number:
+
+1 returns "Sunday"
+2 returns "Monday"
+3 returns "Tuesday"
+4 returns "Wednesday"
+5 returns "Thursday"
+6 returns "Friday"
+7 returns "Saturday"
+Otherwise returns "Wrong, please enter a number between 1 and 7"
+ */
+
+/*
+function whatday(num) {
+  switch(num) {
+    case 1:
+      return "Sunday";
+    case 2:
+      return "Monday";
+    case 3:
+      return "Tuesday";
+    case 4:
+      return "Wednesday";
+    case 5:
+      return "Thursday";
+    case 6:
+      return "Friday";
+    case 7:
+      return "Saturday";
+    default:
+      return 'Wrong, please enter a number between 1 and 7';
+  }
+}
+ */
+
+//! Training JS #8: Conditional statement--switch
+
+/*
+In JavaScript, switch can replace multiple if statements.
+ */
+
+/*
+function howManydays(month){
+  switch (month){
+  case 1:return 31;
+  case 2:return 28;
+  case 3:return 31;
+  case 4:return 30;
+  case 5:return 31;
+  case 6:return 30;
+  case 7:return 31;
+  case 8:return 31;
+  case 9:return 30;
+  case 10:return 31;
+  case 11:return 30;
+  case 12:return 31;
+
+  }
+  return month;
+}
+ */
+// Define a card suit
+
+/*
+You get any card as an argument. Your task is to return the suit of this card (in lowercase).
+
+Our deck (is preloaded):
+
+('3♣') -> return 'clubs'
+('3♦') -> return 'diamonds'
+('3♥') -> return 'hearts'
+('3♠') -> return 'spades'
+ */
+
+/*
+function defineSuit(card) {
+    if (card.includes('♣')) return 'clubs'; if (card.includes('♠')) return 'spades';
+    if (card.includes('♥')) return 'hearts'; if (card.includes('♦')) return 'diamonds';
+}
+*/
+
+//!Remove First and Last Character Part Two
+
+/*
+This is a spin off of my first kata.
+
+You are given a string containing a sequence of character sequences separated by commas.
+
+Write a function which returns a new string containing the same character sequences except the first and the last ones
+ but this time separated by spaces.
+
+If the input string is empty or the removal of the first and last items would cause the resulting string to be empty,
+return an empty value (represented as a generic value NULL in the examples below).
+ */
+
+/*
+function array(arr){
+  return arr.split(',').slice(1,-1).join(' ')|| null
+
+}
+ */
+
+//! Jaden Casing Strings
+
+/*
+Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid (2010)
+and After Earth (2013). Jaden is also known for some of his philosophy that he delivers via Twitter.
+When writing on Twitter, he is known for almost always capitalizing every word. For simplicity, you'll
+ have to capitalize each word, check out how contractions are expected to be in the example below.
+
+Your task is to convert strings to how they would be written by Jaden Smith. The strings
+ are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed
+ them.
+
+Example:
+
+Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
+Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
+ */
+
+/*
+
+ */
+
+//! 7 - First-Class Function Factory
+/*
+Write a function, factory, that takes a number as its parameter and returns another function.
+
+The returned function should take an array of numbers as its parameter, and return an array of
+those numbers multiplied by the number that was passed into the first function.
+
+In the example below, 5 is the number passed into the first function. So it returns a function
+that takes an array and multiplies all elements in it by five.
+
+Translations and comments (and upvotes) welcome!
+
+Example
+var fives = factory(5);       // returns a function - fives
+var myArray = [1, 2, 3];
+fives(myArray);               //returns [5, 10, 15];
+ */
+
+/*
+function factory(x){
+    return array => array.map( a => a*x );
+}
+ */
+
+//!The wheat/rice and chessboard problem
+
+
+/*
+I assume most of you are familiar with the ancient legend of the rice (but I see wikipedia suggests wheat,
+ for some reason) problem, but a quick recap for you: a young man asks as a compensation only 1 grain of rice for the
+ first square, 2 grains for the second, 4 for the third, 8 for the fourth and so on, always doubling the previous.
+
+Your task is pretty straightforward (but not necessarily easy): given an amount of grains, you need to return up to
+ which square of the chessboard one should count in order to get at least as many.
+ */
+
+/*
+function squaresNeeded(grains){
+  return Math.ceil(Math.log2(grains+1))
+}
+ */
+
+//! Function Composition
+
+/*
+Function composition is a mathematical operation that mainly presents itself in lambda calculus and
+computability. It is explained well here, but this is my explanation, in simple mathematical notation:
+
+f3 = compose( f1 f2 )
+   Is equivalent to...
+f3(a) = f1( f2( a ) )
+Your task is to create a compose function to carry out this task, which will be passed two functions
+or lambdas. Ruby functions will be passed, and should return, either a proc or a lambda. Remember
+that the resulting composed function may be passed multiple arguments!
+
+compose(f , g)(x)
+=> f( g( x ) )
+This kata is not available in haskell; that would be too easy!
+ */
+
+/*
+const compose = (f,g) => (...args) => f(g(...args));
+ */
+
+//! Function composition 1
+/*
+Javascript functions can be combined to form new functions. For example the functions addOne and multTwo can be
+combined to form a new function which first adds one and then multiplies by two, as follows:
+
+const addOne = (a) => a + 1
+const multTwo = (b) => b * 2
+const addOneMultTwo = (c) => multTwo(addOne(c))
+
+addOneMultTwo(5) // returns 12
+Combining functions like this is called function composition. Functional programming libraries in Javascript such as
+Ramda include a generic compose function which does the heavy lifting of combining functions for you. So you could
+implement addOneMultTwo as follows:
+
+const addOneMultTwo = compose(multTwo, addOne)
+
+addOneMultTwo(5) // returns 12
+A simple implementation of compose, could work as follows:
+
+const compose = (f, g) => (a) => f(g(a))
+The arguments f and g are unary functions (i.e. functions which take one argument). The problem with this compose
+function is that it only composes two functions. Your task is to write a compose function which can compose any number
+of functions together.
+ */
+
+/*
+const compose = (...fns) => arg => fns.reduceRight((res, fn) => fn(res), arg);
+ */
+
+//! SantaClausable Interface
+
+/*
+You probably know, that in Javascript (and also Ruby) there is no concept of interfaces. There is only a concept of
+inheritance, but you can't assume that a certain method or property exists, just because it exists in the parent
+ prototype / class. We want to find out, whether a given object fulfils the requirements to implement the
+  "SantaClausable" interface. We need to implement a method which checks for this interface.
+ */
+
+/*
+function isSantaClausable(obj) {
+  return ['sayHoHoHo', 'distributeGifts', 'goDownTheChimney'].every(function(methodName) {
+    return typeof obj[methodName] == 'function';
+  });
+}
+ */
+
+//!JavaScript class-like objects
+
+/*
+For this exercise you should create a JavaScript class like object called "Animal" that takes in
+ "name" and "type" arguments. It should have a toString method that returns a human readable string
+ indicating the argument information passed in. It should also allow the name property to be set.
+
+The following is an example of how the final code would be used and what the expected return values
+should be:
+
+var dog = new Animal('Max', 'dog');
+dog.toString(); // should return 'Max is a dog'
+dog.type; // should == 'dog'
+dog.name; // should == 'Max'
+dog.name = 'Lassie'; // should set name to 'Lassie'
+ */
+
+/*
+class Animal {
+  constructor(name, type) {
+    this.name = name;
+    this.type = type;
+  }
+  toString() {
+    return `${this.name} is a ${this.type}`;
+  }
+}
+ */
+
+//! The Newest Function
+
+/*
+You're a junior dev fresh out of a three-month web development bootcamp. You've just taken on a
+lucrative contract from a trendy startup. You'll get paid more money than you'd ever thought you'd
+have. It's somewhat unclear what product or service this startup even sells, and their API
+documentation might as well have been written in Brainfuck, but you'd better learn fast, or you won't
+finish before the deadline and get paid.
+
+Your assignment today is to write a function in JavaScript. It seems simple enough, but the CEO
+ insists that all developers who work at his company only use the absolute cutting-edge of technology.
+  You must use only the newest of features and frameworks. But such new software tends to be rife with bugs...
+
+Create a function that won't throw an error no matter how new it is.
+ */
+
+/*
+let newFunction = function newFunc() {
+  return newFunc;
+};
+ */
+
+//!Fun with ES6 Classes #2 - Animals and Inheritance
+
+
+/*
+Overview
+Preloaded for you in this Kata is a class Animal:
+
+class Animal {
+  constructor(name, age, legs, species, status) {
+    this.name = name;
+    this.age = age;
+    this.legs = legs;
+    this.species = species;
+    this.status = status;
+  }
+  introduce() {
+    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+  }
+}
+ */
+
+/*
+class Shark extends Animal {
+  constructor(name, age, status) {
+    super();
+    this.name = name;
+    this.age = age;
+    this.legs = 0;
+    this.status = status;
+    this.species = "shark";
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, age, status) {
+    super();
+    this.name = name;
+    this.age = age;
+    this.status = status;
+    this.legs = 4;
+    this.species = "cat";
+  }
+  introduce() {
+    return `Hello, my name is ${this.name} and I am ${this.age} years old.  Meow meow!`;
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, age, status, master = "") {
+    super();
+    this.master = master;
+    this.name = name;
+    this.age = age;
+    this.status = status;
+    this.legs = 4;
+    this.species = "dog";
+  }
+  introduce() {
+    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+  }
+  greetMaster() {
+    return `Hello ${this.master}`;
+  }
+}
+ */
+
+//! Fun with ES6 Classes #4 - Cubes and Setters
+/*
+Overview
+In Fun with ES6 Classes #3 - Cuboids, Cubes and Getters, we learned that if we knew all the dimensions
+(i.e. length, width, height) of a cuboid, we could easily work out its corresponding volume and
+ surface area. The way we achieved this in our code was by the use of getters which automatically
+ computed the volume and surface area of the cuboid whenever either one of length, width, height
+ changed. However, in the previouos exercise, one thing we could not do is define setters for surface
+ area or volume of a cuboid because for a given volume/SA, there were an infinite number of
+ possibilities to the dimensions of the cuboid.
+ */
+
+/*
+class Cube{
+      constructor(length){
+        this.length = length;
+    }
+    get surfaceArea() {
+        return this.length * this.length * 6;
+    }
+    get volume() {
+        return this.length * this.length  * this.length;
+    }
+    set surfaceArea(newArea){
+            this.length = Math.sqrt(newArea / 6) ;
+    }
+    set volume(newVolume){
+            this.length = Math.pow(newVolume, (1/3));
+    }
+}
+ */
+
+//!Sum of two lowest positive integers
+/*
+Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4
+positive integers. No floats or non-positive integers will be passed.
+
+For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
+
+[10, 343445353, 3453445, 3453545353453] should return 3453455.
+ */
+
+/*
+function sumTwoSmallestNumbers(numbers) {
+  let a=numbers.sort((a,b)=>a-b)
+  return a[0]+a[1]
+};
+ */
+
+//! Simple Fun #176: Reverse Letter
+
+/*
+Given a string str, reverse it and omit all non-alphabetic characters.
+
+Example
+For str = "krishan", the output should be "nahsirk".
+
+For str = "ultr53o?n", the output should be "nortlu".
+
+Input/Output
+[input] string str
+A string consists of lowercase latin letters, digits and symbols.
+
+[output] a string
+ */
+
+
+/*
+reverseLetter=(s)=>s.replace(/[^a-z]/gi,'').split('').reverse().join('');
+ */
+
+//! Anagram Detection
+/*
+An anagram is the result of rearranging the letters of a word to produce a new word (see wikipedia).
+
+Note: anagrams are case insensitive
+
+Complete the function to return true if the two arguments given are anagrams of each other; return
+false otherwise.
+
+Examples
+"foefet" is an anagram of "toffee"
+
+"Buckethead" is an anagram of "DeathCubeK"
+ */
+
+
+/*
+function isAnagram (test, original) {
+  return test.toLowerCase().split("").sort().join("") === original.toLowerCase().split("").sort().join("");
+}
+ */
+
+//!Categorize New Member
+
+/*
+function openOrSenior(data){
+  return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open');
+}
+ */
+
+//! Categorize New Member
+
+/*
+function openOrSenior(data){
+  return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open');
+}
+ */
+
+//! Find the stray number
+
+/*
+function stray(numbers) {
+  return numbers.find(
+    number => numbers.indexOf(number) === numbers.lastIndexOf(number)
+  );
+}
+ */
+
+
 //!
