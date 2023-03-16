@@ -211,7 +211,7 @@ function f12() {
 
 document.querySelector('.b-12').onclick = f12;
 
-// Task 13
+//! Task 13
 // Выведите массив ar13 в out-13 в формате индекс пробел значение пробел.
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-13
@@ -221,8 +221,16 @@ document.querySelector('.b-12').onclick = f12;
 
 
 let ar13 = ['test', 'west', 'list', 'class', 'best'];
+let res13 = "";
 
 function f13() {
+
+	let i = 0;
+	while (i < ar13.length) {
+		res13 += i + " " + ar13[i] + " ";
+		i++;
+	}
+	document.querySelector('.out-13').innerHTML = res13;
 
 }
 
