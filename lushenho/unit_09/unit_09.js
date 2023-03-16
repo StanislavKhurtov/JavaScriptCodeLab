@@ -264,7 +264,7 @@ function f19() {
 		res19 += elem[i].getAttribute("data-b") + " ";
 		i++
 	}
-document.querySelector('.out-19').innerHTML = res19;
+	document.querySelector('.out-19').innerHTML = res19;
 }
 
 document.querySelector('.b-19').onclick = f19;
@@ -273,7 +273,7 @@ document.querySelector('.b-19').onclick = f19;
 // Добавьте кнопку .b-20, которая запускает функцию f20. Функция с помощью setAttribute присваивает атрибут title="go" в div.out-20.
 
 function f20() {
-
+	document.querySelector('.out-20').setAttribute('title', "go");
 }
 
 document.querySelector('.b-20').onclick = f20;
