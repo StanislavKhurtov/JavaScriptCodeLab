@@ -256,16 +256,25 @@ function f14() {
 
 document.querySelector('.b-14').onclick = f14;
 
-// Task 15
+//! Task 15
 // Используя цикл выведите на страницу элементы массива ar15, которые больше нуля. Разделитель - пробел.
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-15
 // Вывод в out-15
 
 let ar15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
+let res15 = "";
+
 
 function f15() {
-
+	let i = 0;
+	while ( i < ar15.length) {
+		if( ar15[i] > 0){
+			res15 += ar15[i] + " ";
+		}
+		i++;
+	}
+	document.querySelector('.out-15').innerHTML = res15;
 }
 
 document.querySelector('.b-15').onclick = f15;
