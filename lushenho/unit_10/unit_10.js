@@ -164,7 +164,7 @@ function f10() {
 document.querySelector('.b-10').onclick = f10;
 
 
-// Task 11
+//! Task 11
 // Напишите функцию, которая меняет местами второй (индекс 2) и четвертый (индекс 4) элемент массива ar11 и выводит его в out-11. Разделитель - пробел.
 
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
@@ -172,9 +172,18 @@ document.querySelector('.b-10').onclick = f10;
 // Вывод в out-11
 
 let ar11 = [2, 3, 4, 5, 6, 7];
+let res11 = "";
+let a11 = ar11[2];
+ar11[2] = ar11[4];
+ar11[4] = a11;
 
 function f11() {
-
+	let i = 0;
+	while ( i < ar11.length) {
+		res11 += ar11[i] + " ";
+		i++;
+	}
+	document.querySelector('.out-11').innerHTML = ar11
 }
 
 document.querySelector('.b-11').onclick = f11;
