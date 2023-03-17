@@ -290,6 +290,16 @@ let ar16_odd = [];
 let ar16_even = [];
 
 function f16() {
+	for (let i = 0; i < ar16.length; i++) {
+		if (ar16[i] % 2 == 0) {
+			ar16_even[i] = ar16[i];
+		}
+		if (ar16[i] % 2 !== 0) {
+			ar16_odd[i] = ar16[i];
+		}
+	}
+	document.querySelector('.out-16-odd').innerHTML = ar16_odd.join(' ');
+	document.querySelector('.out-16-even').innerHTML = ar16_even.join(' ');
 
 }
 
@@ -307,11 +317,11 @@ let acc = "";
 
 function f17() {
 	for (let i = 0; i < ar17.length; i++) {
-		if( ar17[i] > 3 ) {
+		if (ar17[i] > 3) {
 			acc++;
 		}
 	}
-document.querySelector('.out-17').innerHTML = acc;
+	document.querySelector('.out-17').innerHTML = acc;
 }
 
 document.querySelector('.b-17').onclick = f17;
