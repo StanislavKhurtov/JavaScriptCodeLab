@@ -47,10 +47,11 @@ document.querySelector('.b-3').onclick = f3;
 // Напишите функцию f4, которая применяет метод push к массиву d1, данные для массива берите из i-4, а затем выводит его (showArr) в .out-4
 // функция выполняется при нажатии кнопки b-4
 
-
+let inp1 = document.querySelector('.i-4');
 function f4() {
-
+	+d1.push(inp1.value);
 	showArr('.out-4', d1);
+	inp1.value = "";
 }
 
 document.querySelector('.b-4').onclick = f4;
@@ -59,24 +60,29 @@ document.querySelector('.b-4').onclick = f4;
 // Напишите функцию f5, которая применяет метод unshift к массиву d1, данные для массива берите из i-5, а затем выводит его (showArr) в .out-5
 // функция выполняется при нажатии кнопки b-5
 
-function f5() {
+let inp2 = document.querySelector('.i-5');
 
+function f5() {
+	d1.unshift(inp2.value)
 	showArr('.out-5', d1);
+	inp2.value = ""
 }
 
 document.querySelector('.b-5').onclick = f5;
 
-// Task 6
+//! Task 6
 // Напишите функцию f6, которая эмулирует работу метода push применительно к массиву d6. Т.е. добавляет значение из i-6 как последний элемент в массив d6. Эмуляция, значит, что мы получим результат аналогичный методу push без применения его. Эмуляция заключается в присвоение значения как последнего элемента массива. Как вычислить индекс последнего элемента используя длину массива - вы знаете из предыдущего урока. Повторный запуск функции должен также приводить к добавлению элемента.
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-6
 // Вывод в out-6
 
 let d6 = ['test', 5, 12];
+let inp6 = document.querySelector('.i-6');
 
 function f6() {
-
+	d6[d6.length - 1] += " " + inp6.value;
 	showArr('.out-6', d6);
+	inp6.value = "";
 }
 
 document.querySelector('.b-6').onclick = f6;
@@ -90,8 +96,9 @@ document.querySelector('.b-6').onclick = f6;
 let d7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
 function f7() {
-
+	d7.length = d7.length - 1;
 	showArr('.out-7', d7);
+	console.log(d7)
 }
 
 document.querySelector('.b-7').onclick = f7;
