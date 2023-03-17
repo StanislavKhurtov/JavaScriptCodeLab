@@ -15,7 +15,7 @@ let inp = document.querySelector('.i-1');
 function f1() {
 	d1.push(inp.value);
 	showArr('.out-1', d1);
-	inp.value="";
+	inp.value = "";
 }
 
 document.querySelector('.b-1').onclick = f1;
@@ -25,7 +25,8 @@ document.querySelector('.b-1').onclick = f1;
 // функция выполняется при нажатии кнопки b-2
 
 function f2() {
-
+	let a = d1.pop();
+	console.log(a);
 	showArr('.out-2', d1);
 }
 
@@ -36,7 +37,7 @@ document.querySelector('.b-2').onclick = f2;
 // функция выполняется при нажатии кнопки b-3
 
 function f3() {
-
+	d1.shift();
 	showArr('.out-3', d1);
 }
 
