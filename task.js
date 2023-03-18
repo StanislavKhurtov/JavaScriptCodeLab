@@ -3618,7 +3618,11 @@ const getSize=(width, height, depth) => [
 ];
  */
 
-//!
+//!Calculate average
+
+/*
+
+ */
 
 
 
