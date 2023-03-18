@@ -3601,9 +3601,16 @@ function stray(numbers) {
 }
  */
 
+//! Beginner Series #2 Clock
 
-<<<<<<< HEAD
-//!
-=======
+/*
+function past(h, m, s){
+  return ((h*3600)+(m*60)+s)*1000;
+}
+ */
+
+
 //! 
->>>>>>> 1301609aa3ac1be36c401f786e09f59ae5be150d
+
+
+
