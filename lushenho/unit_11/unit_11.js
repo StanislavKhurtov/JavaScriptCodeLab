@@ -110,10 +110,18 @@ document.querySelector('.b-7').onclick = f7;
 // Вывод в out-8
 
 let d8 = [2, '4', 12, 67, 'hello'];
+let inp8 = document.querySelector('.i-8');
+let count = [];
 
 function f8() {
+	count[0] = inp8.value;
+	for (let i = 0; i < d8.length; i++) {
+		count[i + 1] = d8[i];
+	}
+	d8 = count;
 
 	showArr('.out-8', d8);
+	console.log(d8)
 }
 
 document.querySelector('.b-8').onclick = f8;
@@ -127,7 +135,7 @@ document.querySelector('.b-8').onclick = f8;
 let d9 = [100, 200, 300, 400, 700, 121];
 
 function f9() {
-
+	d9.splice(0, 1);
 	showArr('.out-9', d9);
 }
 
@@ -140,8 +148,10 @@ document.querySelector('.b-9').onclick = f9;
 // Вывод в out-10
 
 let d10 = [3, 14, 15, 92, 6];
+let i11 = document.querySelector('.i-11');
 
 function f10() {
+	d10.reverse()
 
 	showArr('.out-10', d10);
 }
@@ -304,3 +314,12 @@ function f20() {
 }
 
 document.querySelector('.b-20').onclick = f20;
+
+
+
+
+
+
+
+
+
