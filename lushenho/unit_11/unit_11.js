@@ -148,7 +148,7 @@ document.querySelector('.b-9').onclick = f9;
 // Вывод в out-10
 
 let d10 = [3, 14, 15, 92, 6];
-let i11 = document.querySelector('.i-11');
+
 
 function f10() {
 	d10.reverse()
@@ -166,9 +166,13 @@ document.querySelector('.b-10').onclick = f10;
 // Вывод в out-11
 
 let d11 = [2, 3, 4, 5, 6, 7];
+let i11 = document.querySelector('.i-11');
+let out11 = document.querySelector('.out-11');
 
 function f11() {
-
+	let number = parseInt(i11.value);
+	let index = d11.indexOf(number);
+	out11.innerHTML = index !== -1 ? index : "Такого числа нет в массиве";
 }
 
 document.querySelector('.b-11').onclick = f11;
