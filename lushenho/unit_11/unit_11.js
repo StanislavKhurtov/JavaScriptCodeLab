@@ -166,13 +166,11 @@ document.querySelector('.b-10').onclick = f10;
 // Вывод в out-11
 
 let d11 = [2, 3, 4, 5, 6, 7];
-let i11 = document.querySelector('.i-11');
-let out11 = document.querySelector('.out-11');
 
 function f11() {
-	let number = parseInt(i11.value);
+	let number = parseInt(document.querySelector('.i-11').value);
 	let index = d11.indexOf(number);
-	out11.innerHTML = index !== -1 ? index : "Такого числа нет в массиве";
+	document.querySelector('.out-11').innerHTML = index !== -1 ? index : "Такого числа нет в массиве";
 }
 
 document.querySelector('.b-11').onclick = f11;
@@ -187,7 +185,17 @@ document.querySelector('.b-11').onclick = f11;
 let d12 = [6, 62, 60, 70, 1, 5];
 
 function f12() {
+	let number = parseInt(document.querySelector('.i-12').value);
+	let a = number;
+	let b = "Такого номера нет или вы ввели не цифры";
 
+	for (let i = 0; i < d12.length; i++) {
+		if (d12[i] === a) {
+			b = i;
+			break;
+		}
+	}
+	document.querySelector('.out-12').innerHTML = b;
 }
 
 document.querySelector('.b-12').onclick = f12;
@@ -297,9 +305,16 @@ document.querySelector('.b-18').onclick = f18;
 // Вывод в out-19
 
 let d19 = ['Your', 'payment', 'method', 'will', 'automatically', 'be', 'charged', 'in', 'advance', 'every'];
-let maxString = '';
+
 
 function f19() {
+	let maxString = '';
+	for (let i = 0; i < d19.length; i++) {
+		if (d19[i].length > maxString.length) {
+			maxString = d19[i];
+		}
+	}
+	document.querySelector(".out-19").innerHTML = maxString;
 
 }
 
@@ -314,7 +329,7 @@ document.querySelector('.b-19').onclick = f19;
 let d20 = [4, 5, 6, 7, 8, 9, 10];
 
 function f20() {
-
+	document.querySelector(".out-20").innerHTML = d20.join('');
 }
 
 document.querySelector('.b-20').onclick = f20;
