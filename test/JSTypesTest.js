@@ -1,6 +1,6 @@
 /*
 
-1. What is the result of: 12 && '12'?
+!1. What is the result of: 12 && '12'?
 
 12
 
@@ -12,7 +12,7 @@ true
 
 false
 
-2. What is the result of: '80' + 71.2?
+!2. What is the result of: '80' + 71.2?
 
 151.2
 
