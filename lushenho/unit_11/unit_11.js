@@ -294,8 +294,15 @@ document.querySelector('.b-17').onclick = f17;
 // Вывод в out-18
 
 let d18 = ['b', 'c', '45', 'e', 'z', 'y'];
+let inp18 = document.querySelector('.i-18');
 
 function f18() {
+	let a = inp18.value;
+	if ( d18.includes(a)) {
+		document.querySelector('.out-18').innerHTML = a;
+	} else {
+		document.querySelector('.out-18').innerHTML = "Совпадений не найдено";
+	}
 
 }
 
