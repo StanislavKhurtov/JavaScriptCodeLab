@@ -275,7 +275,7 @@ let d161 = [5, 6, 7, 8, 9];
 let d162 = [23, 24, 56, 87];
 
 function f16() {
-
+	d16 = d161.concat(d162)
 	showArr('.out-16', d16);
 }
 
@@ -292,6 +292,13 @@ let d171 = ['a', 'b', 'c', 'd'];
 let d172 = [1, 2, 3, 4, 5];
 
 function f17() {
+	for (let i = 0; i < d171.length; i++) {
+		d17.push(d171[i]);
+	}
+	for (let j = 0; j < d172.length; j++) {
+		d17.push(d172[j]);
+	}
+
 
 	showArr('.out-17', d17);
 }
