@@ -229,9 +229,15 @@ document.querySelector('.b-13').onclick = f13;
 
 let d14 = [];
 
-function f14() {
 
-	showArr('.out-14', d14);
+function f14() {
+	let inp14 = parseInt(document.querySelector('.i-14').value)
+
+	for (let i = 0; i < inp14; i++) {
+		d14.push(inp14);
+	}
+
+	document.querySelector('.out-14').innerHTML = d14;
 }
 
 document.querySelector('.b-14').onclick = f14;
@@ -298,7 +304,7 @@ let inp18 = document.querySelector('.i-18');
 
 function f18() {
 	let a = inp18.value;
-	if ( d18.includes(a)) {
+	if (d18.includes(a)) {
 		document.querySelector('.out-18').innerHTML = a;
 	} else {
 		document.querySelector('.out-18').innerHTML = "Совпадений не найдено";
