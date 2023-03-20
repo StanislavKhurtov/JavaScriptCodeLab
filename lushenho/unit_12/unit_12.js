@@ -191,6 +191,18 @@ function f9() {
 		[21, -34, -43],
 		[44, -56]
 	];
+	let i = 0;
+	while (i < a9.length) {
+		let k = 0;
+		while (k < a9[i].length) {
+			if (a9[i][k] > 0) {
+				out += a9[i][k] + " ";
+			}
+			k++;
+		}
+		i++;
+	}
+	document.querySelector('.out-9').innerHTML = out;
 
 
 }
@@ -209,12 +221,24 @@ function f10() {
 		['st', 21, -34, -43],
 		[44, -56, 'task']
 	];
+	let i = 0;
+	while (i < a10.length) {
+		let k = 0;
+		while (k < a10[i].length) {
+			if (typeof (a10[i][k]) === 'string') {
+				out += a10[i][k] + " ";
+			}
+			k++;
+		}
+		i++;
+	}
+	document.querySelector('.out-10').innerHTML = out;
 }
 
 document.querySelector('.b-10').onclick = f10;
 
 
-// Task 11
+//! Task 11
 // При нажатии b-11 выполняете функцию f11. Функция должна вывести в out-11 значения из массива a11, причем каждый вложенный массив должен идти в обратном порядке. Вывод через пробел. Т.е. вы должны получить в out-10 строку вида 6 5 4 8 7 13 12 11 10 9. Решаем задачу двумя циклами, без reverse.
 
 let a11 = [
@@ -225,6 +249,17 @@ let a11 = [
 
 function f11() {
 	let out = '';
+	let i = 0;
+	while (i < a11.length) {
+		let s = a11[i].length - 1;
+		while (s >= 0) {
+			out += a11[i][s] + " ";
+			s--;
+		}
+		i++;
+	}
+
+	document.querySelector('.out-11').innerHTML = out;
 }
 
 document.querySelector('.b-11').onclick = f11;
