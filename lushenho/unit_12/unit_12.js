@@ -120,7 +120,7 @@ function f6() {
 
 document.querySelector('.b-6').onclick = f6;
 
-// Task 7
+//! Task 7
 // При нажатии b-7 выполняете функцию f7. Функция должна вывести в out-7 четные значения из массива a7. Как видите, вложенные массивы имеют разную длину, значит, предыдущий вариант уже не работает. Используем цикл. Вывод - через пробел.
 
 function f7() {
@@ -132,12 +132,19 @@ function f7() {
 		[21, 34, 43],
 		[44, 56]
 	];
-	for (let i = 0; i < a7.length; i++) {
-		for (let k = 0; k < a7[i].length; k++) {
-			if (a7[i][k] % 2 == 0) out += a7[i][k] + ' ';
+	let i = 0;
+	while (i < a7.length) {
+		let k = 0;
+		while (k < a7[i].length) {
+			if (a7[i][k] % 2 === 0) {
+				out += a7[i][k] + " ";
+			}
+			k++;
 		}
+		i++;
 	}
 	document.querySelector('.out-7').innerHTML = out;
+
 
 }
 
@@ -156,7 +163,18 @@ function f8() {
 		[44, 56]
 	];
 
-
+	let i = 0;
+	while (i < a8.length) {
+		let k = 0;
+		while (k < a8[i].length) {
+			if (a8[i][k] % 2 !== 0) {
+				out += a8[i][k] + " ";
+			}
+			k++;
+		}
+		i++;
+	}
+	document.querySelector('.out-8').innerHTML = out;
 }
 
 document.querySelector('.b-8').onclick = f8;
