@@ -75,9 +75,14 @@ let a4 = {
 	"odd": "hi",
 	"mix": "mix"
 };
-function f4() {
 
-	// return out;
+function f4() {
+	let out = "";
+	for (let el in a4) {
+		out += el + " " + "---" + " " + a4[el] + "<br>"
+	}
+
+	return out;
 }
 
 document.querySelector('.b-4').onclick = () => {
@@ -91,9 +96,13 @@ document.querySelector('.b-4').onclick = () => {
 function f5(arr, block) {
 	let out = '';
 	// цикл
+	for (let el in arr) {
+		out += `${el} : ${arr[el]} <br>`;
+	}
 	// формат вывода `${key} : ${arr[key]} <br>`;
 	//
 	// тут вывод в блок block
+	document.querySelector(block).innerHTML = out;
 }
 
 // давайте протестируем f5
@@ -114,9 +123,21 @@ let a6 = {
 	"b": 17,
 	"e": 22
 };
+let inp61 = document.querySelector('.i-61');
+let inp62 = document.querySelector('.i-61');
 
 function f6() {
+	let arr = {};
+	let out = "";
+	let a = inp61.value,
+		b = inp62.value;
 
+	for (let key in arr) {
+		key = a;
+		arr[key] = b;
+		out += key + " " + "===" + " " + arr[key];
+	}
+	document.querySelector('.out-6').innerHTML = out;
 }
 
 document.querySelector('.b-6').onclick = f6;
@@ -124,10 +145,6 @@ document.querySelector('.b-6').onclick = f6;
 // Task 7
 // Добавьте input .i-7. При нажатии b-7 выполняете функцию f7. Функция должна получать из i-7 ключ. Если такой ключ есть в a7 то выводить 1 в out-7, если нет - 0.
 
-let a7 = {
-	"b": 17,
-	"e": 22
-};
 
 
 function f7() {
