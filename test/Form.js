@@ -51,3 +51,21 @@ put
 pull
 
 delete
+6. Какие протоколы передачи данных используются в HTML-формах?
+
+TCP/IP
+
+UDP
+
+FTP
+
+DNS
+
+HTTP]
+
+HTTPS]
+
+NTP
+
+SSH
+
