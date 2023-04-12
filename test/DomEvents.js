@@ -124,7 +124,7 @@ removeEventListener]
 
 Это свойство объекта event которое указывает на самый глубокий элемент, вызывающий событие.
 
-14. Верно ли, что elem.target !== elem.currentTarget?
+! Не верно 14. Верно ли, что elem.target !== elem.currentTarget?
 
 Да]
 
