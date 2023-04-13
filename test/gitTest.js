@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*
 ! 1) Что делает команда git add?
 
@@ -536,4 +536,3 @@ git status
 git diff
 
 */
->>>>>>> 1301609aa3ac1be36c401f786e09f59ae5be150d

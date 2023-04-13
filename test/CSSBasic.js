@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*
 
 1. В записи {padding: 10px 15px 20px 25px;} отступ сверху будет равен:
@@ -684,5 +684,6 @@ line-through]
 
 #id-name]
 
->>>>>>> 1301609aa3ac1be36c401f786e09f59ae5be150d
 id-name
+
+*/
