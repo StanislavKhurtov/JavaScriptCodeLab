@@ -55,6 +55,7 @@
 //<h2>Hello <span>everyone</span></h2>
 // Замените с помощью querySelector текст everyone на world.
 
+//document.querySelector("h2 span").innerHTML = "world";
 
 
 // Task 10.
