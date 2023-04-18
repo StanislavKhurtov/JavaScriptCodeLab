@@ -34,22 +34,28 @@
 
 // Task 6.
 // Создайте две переменные e3 = 3 и f3 = 'Hello'. Выведите на страницу  в .out-6 результат сложения двух переменных.
-
-// document.querySelector('.out-6').textContent =
+//const e3 = 3,
+//f3 = 'Hello';
+//document.querySelector('.out-6').textContent = e3 + f3;
 
 // Task 7.
 // Создайте две переменные e4 = 3 и f4 = 'Hello'. Выведите на страницу  в .out-7 результат умножения двух переменных.
 
-// document.querySelector('.out-7').textContent =
+//const e4 = 3,
+// f4 = 'Hello';
+//document.querySelector('.out-7').textContent = e4 * f4;
 
 // Task 8.
 // Создайте input и кнопку. По нажатию на кнопку выполняется функция, которая выводит в консоль то, что пользователь ввел в input.
 
-//function t8() {
-//
-//}
-//
-//document.querySelector('.b-8').onclick = t8;
+const input8 = document.querySelector('.input8');
+
+//document.querySelector('.b-8').addEventListener('click', function () {
+//	document.querySelector(".out-8").innerHTML = input8.value;
+//	input8.value = "";
+//})
+
+
 
 // Task 9.
 // Создайте input и кнопку. По нажатию на кнопку выполняется функция, которая выводит на страницу,  что пользователь ввел в input. Добавьте очистку input после нажатия кнопки.
