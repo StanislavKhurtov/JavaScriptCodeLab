@@ -95,16 +95,27 @@
 // Task 12.
 // Создайте два input (i-12_1 и i-12-2) и кнопку. В первый input пользователь вводит имя, во второе фамилию. При нажатии кнопки выполняется функция, которая выводит в .out-12 строку 'Hello имя фамилия', где имя - имя пользователя и фамилия - введенная фамилия.
 
+//const a = document.querySelector('.i-12_1'),
+//	b = document.querySelector('.i-12_2');
+
 //function t12() {
-//
+//	let name = a.value;
+//	let surname = b.value;
+//	document.querySelector('.out-12').innerHTML = `Hello ${name} ${surname}`;
+//	a.value = "";
+//	b.value = ""
 //}
-//
+
 //document.querySelector('.b-12').onclick = t12;
-//
+
 // Task 13.
 // Создайте два input и кнопку. В input пользователь вводит числа. При нажатии кнопки выполняется функция, которая выводит сумму данных двух чисел на страницу в .out-13.
 
+//const a = document.querySelector('.i-13_1'),
+//	b = document.querySelector('.i-13_2');
+//
 //function t13() {
+//document.querySelector('.out-13').innerHTML = +a.value + +b.value;
 //
 //}
 //
@@ -113,7 +124,7 @@
 // Task 14.
 // Создайте input .i-14 и пропишите ему в html value = 77. С помощью JS измените value на 'Hello'.
 
-// document.querySelector('.i-14').value =
+//document.querySelector('.i-14').value = 'Hello';
 
 // Task 15.
 // Создайте input i-15 и получите его в переменную y. В js выполните следующее присвоение: y.style.border = '2px solid red' . Изучите результат операции.
