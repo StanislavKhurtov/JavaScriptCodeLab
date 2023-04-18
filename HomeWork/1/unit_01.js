@@ -42,6 +42,7 @@
 // Task 7.
 // Создайте на странице div с id=two. С помощью document.getElementById запишите в данный элемент результат умножения 12 на 12. Умножение можно сделать с помощью знака звездочки ( цифра 8).
 
+//document.getElementById("two").innerHTML = 12 * 22;
 
 // Task 8.
 // Создайте div с классом one. С помощью document.querySelector запишите в данный элемент текст 'Hello World'.
