@@ -129,24 +129,30 @@
 // Task 15.
 // Создайте input i-15 и получите его в переменную y. В js выполните следующее присвоение: y.style.border = '2px solid red' . Изучите результат операции.
 
-// let y =
-// y.style.border =
+//let y = document.querySelector('.i-15');
+//y.style.border = '2px solid red';
 
 // Task 16.
 // Создайте два input type=number, куда пользователь может ввести числа. Выведите на страницу сумму данных чисел по нажатию кнопки b-16
 
-//function t16() {
+//const a = document.querySelector('.i-16-1'),
+//b = document.querySelector('.i-16-2');
 //
+//function t16() {
+//	document.querySelector('.out-16').innerHTML = +a.value + +b.value;
 //}
 //
 //document.querySelector('.b-16').onclick = t16;
 
 // Task 17.
 // Создайте input type="text" куда пользователь может ввести строку и число. Создайте функцию, которая запускается по нажатию на кнопку. Получите значение из input в переменную t. А затем сделайте операцию t = parseInt(t), и результат операции выведите в out-17. Прочитайте за эту операцию. Попробуйте по очереди вводить 44, 44aaa, 44.3, a45 . Изучите вывод.
-
+//const text = document.querySelector('.i-17');
+//
 //function t17() {
 //
-//
+//	let t = text.value;
+//	t = parseInt(t)
+//	document.querySelector('.out-17').innerHTML = t;
 //}
 //
 //document.querySelector('.b-17').onclick = t17;
