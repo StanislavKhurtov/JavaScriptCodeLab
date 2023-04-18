@@ -28,12 +28,14 @@
 // С помощью alert выведите результат операции:
 //    2019 - 200
 
-alert(2019 - 200)
+//alert(2019 - 200)
 
 
 
 // Task 6.
 // Создайте на странице div с id=one. С помощью document.getElementById запишите в данный элемент текст 'Hello World'.
+
+// document.getElementById("one").innerHTML = 'Hello World';
 
 
 
