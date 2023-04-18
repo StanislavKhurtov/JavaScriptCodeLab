@@ -47,6 +47,8 @@
 // Task 8.
 // Создайте div с классом one. С помощью document.querySelector запишите в данный элемент текст 'Hello World'.
 
+//document.querySelector(".one").innerHTML = 'Hello World!!!!!';
+
 
 // Task 9.
 // Создайте следующую верстку на странице:
