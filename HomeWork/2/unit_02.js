@@ -48,7 +48,7 @@
 // Task 8.
 // Создайте input и кнопку. По нажатию на кнопку выполняется функция, которая выводит в консоль то, что пользователь ввел в input.
 
-const input8 = document.querySelector('.input8');
+//const input8 = document.querySelector('.input8');
 
 //document.querySelector('.b-8').addEventListener('click', function () {
 //	document.querySelector(".out-8").innerHTML = input8.value;
@@ -60,26 +60,34 @@ const input8 = document.querySelector('.input8');
 // Task 9.
 // Создайте input и кнопку. По нажатию на кнопку выполняется функция, которая выводит на страницу,  что пользователь ввел в input. Добавьте очистку input после нажатия кнопки.
 
-//function t9() {
+//const btn = document.querySelector('.b-9');
+//const input9 = document.querySelector('.i-9');
 //
-//}
-//
-//document.querySelector('.b-9').onclick = t9;
+//btn.addEventListener('click', function () {
+//	document.querySelector('.out-9').innerHTML = input9.value;
+//	input9.value = "";
+//})
 
 // Task 10.
 // Создайте input и кнопку. По нажатию на кнопку выполняется функция, которая выводит на страницу число, которое ввел пользователь умноженное на 10.
 
+//const inp10 = document.querySelector('.i-10');
+//
 //function t10() {
-//
+//	document.querySelector('.out-10').innerHTML = inp10.value * 10;
+//	inp10.value = "";
 //}
-//
+
 //document.querySelector('.b-10').onclick = t10;
 
 // Task 11.
 // Создайте input и кнопку. По нажатию на кнопку выполняется функция, которая выводит на страницу в .out-11 число, которое ввел пользователь и к нему добавленное число 10.
 
-//function t11() {
+//const inp11 = document.querySelector('.i-11');
 //
+//function t11() {
+//	document.querySelector('.out-11').innerHTML = +inp11.value + 10;
+//	inp11.value = "";
 //}
 //
 //document.querySelector('.b-11').onclick = t11;
