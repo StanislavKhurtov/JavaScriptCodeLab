@@ -1,31 +1,30 @@
 // Task 1
 // Создайте button.b-1 - при нажатии на него выводите alert с номером задачи. Номер задачи просто пропишите вручную.
 
-function f1() {
+//function f1() {
+//	alert("Task #1");
+//}
 
-}
-
-document.querySelector('.b-1').onclick = f1;
+//document.querySelector('.b-1').onclick = f1;
 
 
 // Task 2
 // Создайте input.b-2 type=button - при нажатии на него выводите alert с номером задачи. Номер задачи просто пропишите вручную.
 
-function f2() {
+//function f2() {
+//	alert("Task #2");
+//}
 
-}
-
-document.querySelector('.b-2').onclick = f2;
-
+//document.querySelector('.b-2').onclick = f2;
 
 // Task 3
 // Создайте p.p-3 - при нажатии на него выводите alert с номером задачи.
 
-function f3() {
+//function f3() {
+//alert("Task #3")
+//}
 
-}
-
-document.querySelector('.p-3').onclick = f3;
+//document.querySelector('.p-3').onclick = f3;
 
 
 // Task 4. Создайте input(checkbox).i-4 и button.b-4 - при нажатии на кнопку выводите true если checkbox выбран и false если не выбран. Вывод везде в задачах, где не указано другое, осуществляется в div.out-номер задачи. В данном случае div.out-4
@@ -46,7 +45,7 @@ function f5() {
 document.querySelector('.b-5').onclick = f5;
 
 
-// Task 6. 
+// Task 6.
 //Создайте input(hidden).i-6 и button.b-6 - при нажатии на кнопку выводите value из input в div.out-6
 
 function f6() {
@@ -68,21 +67,21 @@ document.querySelector('.b-7').onclick = f7;
 // Создайте div.out-8 и кнопку .b-8. При нажатии кнопки создавайте внутри div.out-8 элемент input.i-81 и кнопку .b-81 (innerHTML). Добавьте на созданную кнопку событие клик и запуск функции f81. Функция должна в .out-81 выводить value созданного input.i-81.
 
 function f8() {
-    // кнопку создаем через ....innerHTML = '<button....</button>
-    // т.е. как строку и в ставляем на страницу
-    //  потом получаем кнопку со страницы и вешаем событие
-    //    вашасозданнаякнопка.onclick = f81;
-    //
+	// кнопку создаем через ....innerHTML = '<button....</button>
+	// т.е. как строку и в ставляем на страницу
+	//  потом получаем кнопку со страницы и вешаем событие
+	//    вашасозданнаякнопка.onclick = f81;
+	//
 }
 
-function f81 () {
+function f81() {
 
 }
 
 document.querySelector('.b-8').onclick = f8;
 
 // Task 9
-//Создайте один input(radio).r-9  и button.b-9 - при нажатии на button если radio.r-9 выбран (активен, checked) выводите в .out-9 - value прописанное в r-9, либо 0 если не активен. 
+//Создайте один input(radio).r-9  и button.b-9 - при нажатии на button если radio.r-9 выбран (активен, checked) выводите в .out-9 - value прописанное в r-9, либо 0 если не активен.
 
 function f9() {
 
@@ -150,7 +149,7 @@ document.querySelector('.b-15').onclick = f15;
 // Создайте select.s-16 и button.b-16 - при нажатии на кнопку выводите в out-16 value выбранного option из s-16.
 
 function f16() {
-    // для получения выбранного option просто получите select в переменную и select.value;
+	// для получения выбранного option просто получите select в переменную и select.value;
 
 }
 
@@ -186,14 +185,14 @@ document.querySelector('.b-19').onclick = f19;
 // Task 20
 // Создайте форму .f-20. В ней input(text) и input(password) - и кнопку button.b-20. По нажатию кнопки выводите значение из input text и password в out-20 через пробел. Используйте form.elements (читать)
 
-// очень внимательно изучите верстку!!! 
+// очень внимательно изучите верстку!!!
 // обратите внимание, что мы не используем class, а присвоили name!!!
 
 function f20(e) {
-    e.preventDefault(); // чтобы форма не перезагружала страницу!!!!
-    let form = document.querySelector('.f-20');
-    console.log(form.elements);
-    console.log(form.elements['username'].value); // так можно обратиться к элементу внутри формы
+	e.preventDefault(); // чтобы форма не перезагружала страницу!!!!
+	let form = document.querySelector('.f-20');
+	console.log(form.elements);
+	console.log(form.elements['username'].value); // так можно обратиться к элементу внутри формы
 
 }
 
