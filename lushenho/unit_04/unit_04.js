@@ -28,7 +28,7 @@ function f3() {
 document.querySelector('.p-3').onclick = f3;
 
 
-//! Task 4. 
+//! Task 4.
 //Создайте input(checkbox).i-4 и button.b-4 - при нажатии на кнопку выводите true если checkbox выбран и false если не выбран. Вывод везде в задачах, где не указано другое, осуществляется в div.out-номер задачи. В данном случае div.out-4
 
 function f4() {
@@ -58,7 +58,7 @@ function f5() {
 document.querySelector('.b-5').onclick = f5;
 
 
-//! Task 6. 
+//! Task 6.
 //Создайте input(hidden).i-6 и button.b-6 - при нажатии на кнопку выводите value из input в div.out-6
 
 function f6() {
@@ -86,8 +86,6 @@ function f7() {
 	} else {
 		div72.textContent = 0;
 	}
-
-
 }
 
 document.querySelector('.b-7').onclick = f7;
@@ -115,7 +113,7 @@ function f81() {
 document.querySelector('.b-8').onclick = f8;
 
 //! Task 9
-//Создайте один input(radio).r-9  и button.b-9 - при нажатии на button если radio.r-9 выбран (активен, checked) выводите в .out-9 - value прописанное в r-9, либо 0 если не активен. 
+//Создайте один input(radio).r-9  и button.b-9 - при нажатии на button если radio.r-9 выбран (активен, checked) выводите в .out-9 - value прописанное в r-9, либо 0 если не активен.
 
 function f9() {
 
@@ -263,7 +261,7 @@ document.querySelector('.b-19').onclick = f19;
 // Task 20
 // Создайте форму .f-20. В ней input(text) и input(password) - и кнопку button.b-20. По нажатию кнопки выводите значение из input text и password в out-20 через пробел. Используйте form.elements (читать)
 
-// очень внимательно изучите верстку!!! 
+// очень внимательно изучите верстку!!!
 // обратите внимание, что мы не используем class, а присвоили name!!!
 
 function f20(e) {
