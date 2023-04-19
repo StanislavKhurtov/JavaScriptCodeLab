@@ -155,33 +155,60 @@
 // Task 10
 // Дан select s-100. По нажатию кнопки, выведите value выбранного option в out-10.
 
-function f10() {
+//function f10() {
+//	let select = document.querySelector('.s-100').value;
+//	switch (select) {
+//		case '6':
+//			document.querySelector('.out-10').innerHTML = 'six';
+//			break;
+//		case '7':
+//			document.querySelector('.out-10').innerHTML = 'seven';
+//			break;
+//		case '11':
+//			document.querySelector('.out-10').innerHTML = 'eleven';
+//			break;
+//		case '9':
+//			document.querySelector('.out-10').innerHTML = 'nine';
+//			break;
+//	}
+//}
 
-}
-
-document.querySelector('.b-10').onclick = f10;
+//document.querySelector('.b-10').onclick = f10;
 
 // Task 11
 // Дан select s-110. По изменению состояния select (событие onchange) выведите value выбранного option в out-11.
 
-function f11() {
+//function f11() {
+//	let select = document.querySelector('.s-110').value;
+//	switch (select) {
+//		case '6':
+//			document.querySelector('.out-11').innerHTML = select;
+//			break;
+//		case '7':
+//			document.querySelector('.out-11').innerHTML = select;
+//			break;
+//		case '11':
+//			document.querySelector('.out-11').innerHTML = select;
+//			break;
+//		case '9':
+//			document.querySelector('.out-11').innerHTML = select;
+//			break;
+//	}
+//}
 
-}
-
-document.querySelector('.s-110').onchange = f11;
+//document.querySelector('.s-110').onchange = f11;
 
 // Task 12
 // Дан input i-120. По нажатию кнопки получите значение из input  в переменную, а затем выведите в out-12 typeof полученной переменной. Typeof позволяет определить тип данных. Обратите внимание, данная задача уже решена, нужно убрать комментарии и изучить работу.
 
-let i120 = document.querySelector('.i-120');
-
-function f12() {
-	let v = i120.value;
-	document.querySelector('.out-12').innerHTML = (typeof v);
-
-}
-
-document.querySelector('.b-12').onclick = f12;
+//let i120 = document.querySelector('.i-120');
+//
+//function f12() {
+//	let v = i120.value;
+//	document.querySelector('.out-12').innerHTML = (typeof v);
+//}
+//
+//document.querySelector('.b-12').onclick = f12;
 
 // Task 13
 // Дан input i-130. В отличие от предыдущего задания - input type number. По нажатию кнопки получите значение из input  в переменную, а затем выведите в out-13 typeof полученной переменной. Typeof позволяет определить тип данных. Если вы правильно все сделали - то удивительно, но тип данных будет string! Подумайте почему так?
