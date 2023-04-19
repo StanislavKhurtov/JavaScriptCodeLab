@@ -53,28 +53,49 @@
 
 // Task 4. Создайте на странице input[type=number] с классом i-4, куда пользователь может ввести год своего рождения. Есть кнопка b-4 которая запускает функцию f4. Функция должна вывести в  .out-4 число 1 если пользователю больше или равно 18 лет, и 0 если меньше.
 
-function f4() {
-
-}
-
-document.querySelector('.b-4').onclick = f4;
+//function f4() {
+//	let inp = +document.querySelector('.i-4').value;
+//	let date = new Date();
+//	let year = date.getFullYear();
+//	let res = year - inp;
+//
+//	if (res >= 18) {
+//		document.querySelector('.out-4').innerHTML = 1;
+//	} else {
+//		document.querySelector('.out-4').innerHTML = 0;
+//	}
+//}
+//
+//document.querySelector('.b-4').onclick = f4;
 
 // Task 5. Создайте на странице input[type=number] с классом i-5, куда пользователь может ввести число. Есть кнопка b-5 которая запускает функцию f5. Функция должна вывести в  .out-5 символ m если число меньше нуля, 0 если число равно нулю и 1 если больше.
 
-function f5() {
+//function f5() {
+//	let inp = +document.querySelector('.i-5').value;
+//	if (inp < 0 ) {
+//		document.querySelector('.out-5').innerHTML = "m";
+//	} else if(inp == 0) {
+//		document.querySelector('.out-5').innerHTML = 0;
+//	} else {
+//		document.querySelector('.out-5').innerHTML = 1;
+//	}
+//}
 
-}
-
-document.querySelector('.b-5').onclick = f5;
+//document.querySelector('.b-5').onclick = f5;
 
 
 // Task 6. Создайте на странице input[type=number] с классом i-6, куда пользователь может ввести число. Есть кнопка b-6 которая запускает функцию f6. Функция должна вывести в  .out-6  слово even если число четное и odd если нечетное. Для проверки четности используется целочисленный остаток от деления на 2 (оператор %). Если остаток равен нулю  - четное, нет - нечетное.
 
-function f6() {
+//function f6() {
+//	let inp = +document.querySelector('.i-6').value;
+//	if (inp % 2 == 0) {
+//		document.querySelector('.out-6').innerHTML = "even";
+//	} else {
+//		document.querySelector('.out-6').innerHTML = "odd";
+//	}
+//}
 
-}
-
-document.querySelector('.b-6').onclick = f6;
+//document.querySelector('.b-6').onclick = f6;
 
 // Task 7.
 // Даны 2 input - i-71 и i-72, оба - input[type=number]. При нажатии кнопки b-7 срабатывает функция f7. Функция должна число из i-71 возвести в степень i-72, вывести результат в  out-7. Для возведения в степень можно использовать **, или Math.pow.
