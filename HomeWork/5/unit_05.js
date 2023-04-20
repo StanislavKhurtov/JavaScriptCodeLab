@@ -3,23 +3,28 @@
 //     1 2 3 4 5 6 7 8 9 ... 49 50
 // от 1 до 50 включительно. Разделитель - пробел. Задача решается с помощью цикла.
 
-
-function t1() {
-
-}
-
-document.querySelector('.b-1').onclick = t1;
+//let out = "";
+//function t1() {
+//	for (let i = 1; i <= 50; i++) {
+//		out += i + " ";
+//	}
+//	document.querySelector('.out-1').textContent = out;
+//}
+//document.querySelector('.b-1').onclick = t1;
 
 //  Task 2
 // Кнопка b-2 запускает функцию t2. Функция должна выводить в out-2 строку вида:
 //     2 4 6 ... 122
 // от 2 до 122 c шагом 2. Разделитель - пробел. Задача решается с помощью цикла.
 
-function t2() {
-
-}
-
-document.querySelector('.b-2').onclick = t2;
+//let out = "";
+//function t2() {
+//	for (let i = 2; i <= 122; i = i + 2) {
+//		out += i + " ";
+//	}
+//	document.querySelector('.out-2').textContent = out;
+//}
+//document.querySelector('.b-2').onclick = t2;
 
 
 //  Task 3
@@ -27,11 +32,14 @@ document.querySelector('.b-2').onclick = t2;
 //     25 24 23 22 . . 7
 // от 25 до 7 c шагом 1. Разделитель - пробел. Задача решается с помощью цикла.
 
-function t3() {
-
-}
-
-document.querySelector('.b-3').onclick = t3;
+//let out = "";
+//function t3() {
+//	for (let i = 25; i >= 7; i--) {
+//		out += i + " ";
+//	}
+//	document.querySelector('.out-3').textContent = out;
+//}
+//document.querySelector('.b-3').onclick = t3;
 
 //  Task 4
 // Кнопка b-4 запускает функцию t4. Функция должна выводить в out-4 строку вида:
