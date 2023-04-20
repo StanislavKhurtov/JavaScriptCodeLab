@@ -145,11 +145,22 @@
 // Задача решается с помощью цикла. Подсказка - вначале делаем проверку, а потом запускаем цикл.
 // цикл - один
 
-function t9() {
-
-}
-
-document.querySelector('.b-9').onclick = t9;
+//  let out = "";
+//  function t9() {
+//  	let i91 = +document.querySelector('.i-91').value;
+//  	let i92 = +document.querySelector('.i-92').value;
+//  	if (i91 > i92) {
+//  		for (let i = i92; i <= i91; i++) {
+//  			out += i + " ";
+//  		}
+//  	} else {
+//  		for (let i = i91; i <= i92; i++) {
+//  			out += i + " ";
+//  		}
+//  	}
+//  	document.querySelector('.out-9').innerHTML = out;
+//  }
+//  document.querySelector('.b-9').onclick = t9;
 
 
 //  Task 10
