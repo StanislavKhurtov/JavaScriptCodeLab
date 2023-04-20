@@ -250,12 +250,12 @@
 // 10 0 9 1 8 2 7 3 6 4 5 5 4 6 3 7 2 8 1 9 0 10
 // Для вывода использовать цикл. Разделитель пробел.
 // Подсказка (10 - i) + ' ' + i
-let out = "";
-function t15() {
-	for (let i = 0; i <= 10; i++) {
-		out += (10 - i) + " " + i + " ";
-	}
-	document.querySelector('.out-15').innerHTML = out;
-}
 
-document.querySelector('.b-15').onclick = t15;
+//  let out = "";
+//  function t15() {
+//  	for (let i = 0; i <= 10; i++) {
+//  		out += (10 - i) + " " + i + " ";
+//  	}
+//  	document.querySelector('.out-15').innerHTML = out;
+//  }
+//  document.querySelector('.b-15').onclick = t15;
