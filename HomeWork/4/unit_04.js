@@ -92,31 +92,39 @@ function f8() {
 	//    вашасозданнаякнопка.onclick = f81;
 	//
 }
+//const div = document.querySelector('.out-8');
 
-function f81() {
+//function f8() {
+//	div.innerHTML = '<input type="text" style="margin-bottom: 20px;" class="i-81"><button type = "button" class="b-81">Отправить</button>';
+//	document.querySelector('.b-81').onclick = f81;
+//}
+//function f81() {
+//	let inp = document.querySelector('.i-81');
+//	document.querySelector('.out-81').innerHTML = inp.value;
+//}
 
-}
-
-document.querySelector('.b-8').onclick = f8;
+//document.querySelector('.b-8').onclick = f8;
 
 // Task 9
 //Создайте один input(radio).r-9  и button.b-9 - при нажатии на button если radio.r-9 выбран (активен, checked) выводите в .out-9 - value прописанное в r-9, либо 0 если не активен.
 
-function f9() {
+//function f9() {
+//	let cb = document.querySelector('.r-9');
+//	cb.checked ? document.querySelector('.out-9').innerHTML = cb.value : document.querySelector('.out-9').innerHTML = 0;
+//}
 
-}
-
-document.querySelector('.b-9').onclick = f9;
+//document.querySelector('.b-9').onclick = f9;
 
 // Task 10
 // >Создайте input(color).i-10 и button.b-10 - при нажатии на кнопку окрашивайте div.out-10 выбранным цветом (имеется ввиду .style.background = ).
 
 
-function f10() {
+//function f10() {
+//	let color = document.querySelector('.i-10').value;
+//	document.querySelector('.out-10').style.background = color;
+//}
 
-}
-
-document.querySelector('.b-10').onclick = f10;
+//document.querySelector('.b-10').onclick = f10;
 
 
 // Task     11
