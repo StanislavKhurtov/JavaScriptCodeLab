@@ -229,12 +229,15 @@ function f8() {
 // очень внимательно изучите верстку!!!
 // обратите внимание, что мы не используем class, а присвоили name!!!
 
-function f20(e) {
-	e.preventDefault(); // чтобы форма не перезагружала страницу!!!!
-	let form = document.querySelector('.f-20');
-	console.log(form.elements);
-	console.log(form.elements['username'].value); // так можно обратиться к элементу внутри формы
+//function f20(e) {
+//	e.preventDefault(); // чтобы форма не перезагружала страницу!!!!
+//	let form = document.querySelector('.f-20');
+//	console.log(form.elements);
+//	console.log(form.elements['username'].value); // так можно обратиться к элементу внутри формы
+//}
 
-}
+//document.querySelector('.b-20').onclick = f20;
 
-document.querySelector('.b-20').onclick = f20;
+
+//let g = document.forms; //доступ ко всем формам на странице
+//console.log(g)
