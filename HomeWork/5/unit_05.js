@@ -216,11 +216,15 @@
 // перебрать их с помощью цикла. Обращение к элементу выглядит так elem[i]
 // применить к каждому elem[i].value, причем к value первого должно равняться 1, второго - 2, третьего - 3...
 
-function t13() {
-
-}
-
-document.querySelector('.b-13').onclick = t13;
+//  let out = "";
+//  function t13() {
+//  	let inps = document.querySelectorAll('.i-13');
+//  	for (let i = 0; i < inps.length; i++) {
+//  		out += inps[i].value + " ";
+//  	}
+//  	document.querySelector('.out-13').innerHTML = out;
+//  }
+//  document.querySelector('.b-13').onclick = t13;
 
 //  Task 14
 // Кнопка b-14 запускает функцию t14  Функция должна:
@@ -228,21 +232,30 @@ document.querySelector('.b-13').onclick = t13;
 // перебрать их с помощью цикла. Обращение к элементу выглядит так elem[i]
 // вывести в out-14 value выбранного. Проверить выбран ли элемент можно с помощью elem[i].checked.
 
-
-function t14() {
-
-}
-
-document.querySelector('.b-14').onclick = t14;
+//   let out = "";
+//   function t14(e) {
+//   	e.preventDefault();
+//   	let cb = document.querySelectorAll('.i-14');
+//   	for (let i = 0; i < cb.length; i++) {
+//   		if (cb[i].checked) {
+//   			out += cb[i].value + " ";
+//   		}
+//   	}
+//   	document.querySelector('.out-14').innerHTML = out;
+//   }
+//   document.querySelector('.b-14').onclick = t14;
 
 //  Task 15
 // Кнопка b-15 запускает функцию t15  Функция должна выводить следующую последовательность в out-15:
 // 10 0 9 1 8 2 7 3 6 4 5 5 4 6 3 7 2 8 1 9 0 10
 // Для вывода использовать цикл. Разделитель пробел.
 // Подсказка (10 - i) + ' ' + i
-
+let out = "";
 function t15() {
-
+	for (let i = 0; i <= 10; i++) {
+		out += (10 - i) + " " + i + " ";
+	}
+	document.querySelector('.out-15').innerHTML = out;
 }
 
 document.querySelector('.b-15').onclick = t15;
