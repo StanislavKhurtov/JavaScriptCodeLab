@@ -194,29 +194,34 @@ function f8() {
 // Task 17
 // Создайте select.s-17. Добавьте ему событие onchange, при наступлении которого запускается функция f17. Функция должна выводить в out-17 value выбранного в select option.
 
-function f17() {
+//function f17() {
+//	const select = document.querySelector('.s-17');
+//	document.querySelector('.out-17').innerHTML = select.value;
+//}
 
-}
-
-document.querySelector('.s-17').onchange = f17;
+//document.querySelector('.s-17').onchange = f17;
 
 // Task 18
 // Создайте select.s-18 и input.i-18. Добавьте на select событие onchange, при наступлении которого запускается функция f18. Функция должна выводить в input i-18 value выбранного в select option.
 
-function f18() {
+//function f18() {
+//	const select = document.querySelector('.s-18');
+//	const inp = document.querySelector('.i-18');
+//	inp.value = select.value;
+//}
 
-}
-
-document.querySelector('.s-18').onchange = f18;
+//document.querySelector('.s-18').onchange = f18;
 
 // Task 19
 // Создайте форму. В ней input(text).i-191 и input(password).i-192 - и кнопку button.b-19. По нажатию кнопки выводите значение text и password в out-19 через пробел. Обратите внимание на хитрость. Мы, кнопку сейчас повесили за пределами формы. Чуть позже мы рассмотрим почему это делали.
 
-function f19() {
-
-}
-
-document.querySelector('.b-19').onclick = f19;
+//function f19() {
+//	const inp = document.querySelector('.i-191').value;
+//	const pass = document.querySelector('.i-192').value;
+//	document.querySelector('.out-19').innerHTML = `${inp} ${pass}`
+//}
+//
+//document.querySelector('.b-19').onclick = f19;
 
 // Task 20
 // Создайте форму .f-20. В ней input(text) и input(password) - и кнопку button.b-20. По нажатию кнопки выводите значение из input text и password в out-20 через пробел. Используйте form.elements (читать)
