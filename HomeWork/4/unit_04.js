@@ -161,30 +161,35 @@ function f8() {
 // Task 14
 // Создайте text-area.t-14 и button.b-14 - при нажатии на кнопку выводите на в out-14 текст введенный в t-14.
 
-function f14() {
+//function f14() {
+//	let txta = document.querySelector('.t-14').value;
+//	document.querySelector('.out-14').innerHTML = txta;
+//}
 
-}
-
-document.querySelector('.b-14').onclick = f14;
+//document.querySelector('.b-14').onclick = f14;
 
 // Task 15
 // Создайте text-area.t-15, input.i-15 и button.b-15 - при нажатии на кнопку выводите текст из input.i-15 в textarea.t-15 и на страницу в out-15.
 
-function f15() {
+//function f15() {
+//	let inp = document.querySelector('.i-15');
+//	let txt = document.querySelector('.t-15');
+//	txt.value = inp.value;
+//	document.querySelector('.out-15').innerHTML = inp.value;
+//}
 
-}
-
-document.querySelector('.b-15').onclick = f15;
+//document.querySelector('.b-15').onclick = f15;
 
 // Task 16
 // Создайте select.s-16 и button.b-16 - при нажатии на кнопку выводите в out-16 value выбранного option из s-16.
 
-function f16() {
-	// для получения выбранного option просто получите select в переменную и select.value;
+//function f16() {
+//	// для получения выбранного option просто получите select в переменную и select.value;
+//	const select = document.querySelector('.s-16');
+//	document.querySelector('.out-16').innerHTML = select.value;
+//}
 
-}
-
-document.querySelector('.b-16').onclick = f16;
+//document.querySelector('.b-16').onclick = f16;
 
 // Task 17
 // Создайте select.s-17. Добавьте ему событие onchange, при наступлении которого запускается функция f17. Функция должна выводить в out-17 value выбранного в select option.
