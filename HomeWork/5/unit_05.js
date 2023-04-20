@@ -167,11 +167,14 @@
 // Кнопка b-10 запускает функцию t10. Функция должна выводить в out-10 четные годы от 1950 до 2000 включительно.
 // Разделитель - пробел. Задача решается через цикл, а четность - через шаг (равный 2).
 
-function t10() {
-
-}
-
-document.querySelector('.b-10').onclick = t10;
+//  let out = "";
+//  function t10() {
+//  	for (let i = 1950; i <= 2000; i = i + 2) {
+//  		out += i + " ";
+//  	}
+//  	document.querySelector('.out-10').innerHTML = out;
+//  }
+//  document.querySelector('.b-10').onclick = t10;
 
 //  Task 11
 // Кнопка b-11 запускает функцию t11.  Функция должна:
@@ -181,12 +184,15 @@ document.querySelector('.b-10').onclick = t10;
 //     В результате должно получиться так:
 //     one 3 4 two
 
-
-function t11() {
-
-}
-
-document.querySelector('.b-11').onclick = t11;
+//  let out = "";
+//  function t11() {
+//  	let div = document.querySelectorAll('.div-11');
+//  	for (let i = 0; i < div.length; i++) {
+//  		out += div[i].textContent + " ";
+//  	}
+//  	document.querySelector('.out-11').innerHTML += out;
+//  }
+//  document.querySelector('.b-11').onclick = t11;
 
 //  Task 12
 // Кнопка b-12 запускает функцию t12.  Функция должна:
@@ -194,12 +200,15 @@ document.querySelector('.b-11').onclick = t11;
 // перебрать их с помощью цикла. Обращение к div выглядит так elem[i]
 // применить к каждому elem[i].style.background = ‘orange’
 
-
-function t12() {
-
-}
-
-document.querySelector('.b-12').onclick = t12;
+//  let out = "";
+//  function t12() {
+//  	let div = document.querySelectorAll('.div-12');
+//  	for (let i = 0; i < div.length; i++) {
+//  		out += div[i].style.background = 'orange';
+//  		div[i].style.marginBottom= "20px";
+//  	}
+//  }
+//  document.querySelector('.b-12').onclick = t12;
 
 //  Task 13
 // Кнопка b-13 запускает функцию t13.  Функция должна:
