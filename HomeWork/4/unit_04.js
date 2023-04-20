@@ -130,29 +130,33 @@ function f8() {
 // Task     11
 //   Создайте input(color).i-111 и input(color).i-112- два элемента и button.b-11 - при нажатии на кнопку присвойте цвет из первого input в value второго.
 
-function f11() {
+//function f11() {
+//	let color1 = document.querySelector('.i-111');
+//	let color2 = document.querySelector('.i-112');
+//	color2.value = color1.value;
+//}
 
-}
-
-document.querySelector('.b-11').onclick = f11;
+//document.querySelector('.b-11').onclick = f11;
 
 // Task 12
 //   Создайте input(date).i-12 и button.b-12 - при нажатии на кнопку выводите на в  out-12 выбранную в input дату.
 
-function f12() {
+//function f12() {
+//	let date = document.querySelector('.i-12').value;
+//	document.querySelector('.out-12').innerHTML = date;
+//}
 
-}
-
-document.querySelector('.b-12').onclick = f12;
+//document.querySelector('.b-12').onclick = f12;
 
 // Task 13
 //  Создайте input(range).i-13. При изменении положения ползунка i-13 выводите значение в out-13. Для события используйте oninput.
 
-function f13() {
+//function f13() {
+//	let range= document.querySelector('.i-13').value;
+//	document.querySelector('.out-13').innerHTML = range;
+//}
 
-}
-
-document.querySelector('.i-13').oninput = f13;
+//document.querySelector('.i-13').oninput = f13;
 
 // Task 14
 // Создайте text-area.t-14 и button.b-14 - при нажатии на кнопку выводите на в out-14 текст введенный в t-14.
