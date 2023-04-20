@@ -3,28 +3,28 @@
 //     1 2 3 4 5 6 7 8 9 ... 49 50
 // от 1 до 50 включительно. Разделитель - пробел. Задача решается с помощью цикла.
 
-//let out = "";
-//function t1() {
-//	for (let i = 1; i <= 50; i++) {
-//		out += i + " ";
-//	}
-//	document.querySelector('.out-1').textContent = out;
-//}
-//document.querySelector('.b-1').onclick = t1;
+//  let out = "";
+//  function t1() {
+//  	for (let i = 1; i <= 50; i++) {
+//  		out += i + " ";
+//  	}
+//  	document.querySelector('.out-1').textContent = out;
+//  }
+//  document.querySelector('.b-1').onclick = t1;
 
 //  Task 2
 // Кнопка b-2 запускает функцию t2. Функция должна выводить в out-2 строку вида:
 //     2 4 6 ... 122
 // от 2 до 122 c шагом 2. Разделитель - пробел. Задача решается с помощью цикла.
 
-//let out = "";
-//function t2() {
-//	for (let i = 2; i <= 122; i = i + 2) {
-//		out += i + " ";
-//	}
-//	document.querySelector('.out-2').textContent = out;
-//}
-//document.querySelector('.b-2').onclick = t2;
+//  let out = "";
+//  function t2() {
+//  	for (let i = 2; i <= 122; i = i + 2) {
+//  		out += i + " ";
+//  	}
+//  	document.querySelector('.out-2').textContent = out;
+//  }
+//  document.querySelector('.b-2').onclick = t2;
 
 
 //  Task 3
@@ -32,26 +32,28 @@
 //     25 24 23 22 . . 7
 // от 25 до 7 c шагом 1. Разделитель - пробел. Задача решается с помощью цикла.
 
-//let out = "";
-//function t3() {
-//	for (let i = 25; i >= 7; i--) {
-//		out += i + " ";
-//	}
-//	document.querySelector('.out-3').textContent = out;
-//}
-//document.querySelector('.b-3').onclick = t3;
+//  let out = "";
+//  function t3() {
+//  	for (let i = 25; i >= 7; i--) {
+//  		out += i + " ";
+//  	}
+//  	document.querySelector('.out-3').textContent = out;
+//  }
+//  document.querySelector('.b-3').onclick = t3;
 
 //  Task 4
 // Кнопка b-4 запускает функцию t4. Функция должна выводить в out-4 строку вида:
 //     77_74_71_68_65_62_ ... _38_35_
 // от 77 до 35 c шагом 3. Разделитель - знак подчеркивания. Задача решается с помощью цикла.
 
-
-function t4() {
-
-}
-
-document.querySelector('.b-4').onclick = t4;
+//  let out = "";
+//  function t4() {
+//  	for (let i = 77; i >= 35; i= i - 3) {
+//  		out += i + "_"
+//  	}
+//  	document.querySelector('.out-4').textContent = out;
+//  }
+//  document.querySelector('.b-4').onclick = t4;
 
 
 //  Task 5
@@ -59,11 +61,18 @@ document.querySelector('.b-4').onclick = t4;
 //     1_*2_**3_*4_** ... 17_*
 // от 1 до 17 c шагом 1. Разделитель - знак подчеркивания и звездочка (если число нечетное, и две звездочки если четное). Задача решается с помощью цикла.
 
-function t5() {
-
-}
-
-document.querySelector('.b-5').onclick = t5;
+//  let out = "";
+//  function t5() {
+//  	for (let i = 1; i <= 17; i++) {
+//  		if (i % 2 == 0) {
+//  			out += i + "_**";
+//  		} else {
+//  			out += i + "_*"
+//  		}
+//  	}
+//  	document.querySelector('.out-5').innerHTML = out;
+//  }
+//  document.querySelector('.b-5').onclick = t5;
 
 
 //  Task 6
@@ -75,12 +84,16 @@ document.querySelector('.b-5').onclick = t5;
 //
 //Задача решается с помощью цикла. В каждой итерации цикл выводит 6 звездочек без пробелов. Перенос строки - br. Количество строк (итераций, повторений) цикла вводит пользователь в i-6.
 //
-
-function t6() {
-
-}
-
-document.querySelector('.b-6').onclick = t6;
+//let out = "";
+//function t6() {
+//	let inp = document.querySelector('.i-6').value;
+//	for (let i = 1; i <= inp; i++) {
+//		out += "******<br>";
+//	}
+//	document.querySelector('.out-6').innerHTML = out
+//}
+//
+//document.querySelector('.b-6').onclick = t6;
 
 
 //  Task 7
@@ -90,11 +103,16 @@ document.querySelector('.b-6').onclick = t6;
 //     4 3 2 1 0
 // Задача решается с помощью цикла.
 
-function t7() {
+//let out = "";
+//function t7() {
+//	let inp = document.querySelector('.i-7').value;
+//	for (let i = inp; i >= 0; i--) {
+//		out += i + " ";
+//	}
+//	document.querySelector('.out-7').innerHTML = out;
+//}
 
-}
-
-document.querySelector('.b-7').onclick = t7;
+//document.querySelector('.b-7').onclick = t7;
 
 
 //  Task 8
@@ -105,11 +123,16 @@ document.querySelector('.b-7').onclick = t7;
 //     4 5 6 7 8
 // Задача решается с помощью цикла.
 
-function t8() {
-
-}
-
-document.querySelector('.b-8').onclick = t8;
+//  let out = "";
+//  function t8() {
+//  	let i81 = document.querySelector('.i-81').value;
+//  	let i82 = document.querySelector('.i-82').value;
+//  	for (let i = i81; i <= i82; i++) {
+//  		out += i + " ";
+//  	}
+//  	document.querySelector('.out-8').innerHTML = out;
+//  }
+//  document.querySelector('.b-8').onclick = t8;
 
 
 //  Task 9
