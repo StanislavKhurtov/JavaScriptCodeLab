@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //  Task 1
 // <p>С помощью вложенных циклов, нарисуйте строку:</p>
 // <pre>
@@ -523,6 +523,4 @@ function t10() {
 		out10.innerHTML = row;
 	}
 }
-
->>>>>>> 1301609aa3ac1be36c401f786e09f59ae5be150d
 document.querySelector('.b-10').onclick = t10;
