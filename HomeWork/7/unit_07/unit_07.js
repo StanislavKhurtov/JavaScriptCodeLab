@@ -95,3 +95,16 @@
 // }
 
 
+// Task 9
+// Напишите функцию t9, которая принимает число и возвращает true, если число четное, и false если не четное.
+
+
+//  function t9(num) {
+//  	return num % 2 == 0 ? true : false;
+//  }
+//  document.querySelector('.b-9').onclick = function () {
+//  	document.querySelector('.out-9').textContent = t9(15);
+//  }
+
+
+
