@@ -95,25 +95,3 @@
 // }
 
 
-// Task 9
-// Напишите функцию t9, которая принимает число и возвращает true, если число четное, и false если не четное.
-
-function t9(num) {
-
-}
-
-document.querySelector('.b-9').onclick = function () {
-	document.querySelector('.out-9').textContent = t9(15);
-}
-
-
-// Task 10
-// Создайте функцию t10, которая принимает 2 числа и возвращает большее из них.В случае равенства - любое из чисел.
-
-function t10(a, b) {
-
-}
-
-document.querySelector('.b-10').onclick = function () {
-	document.querySelector('.out-10').textContent = t10(3, 9);
-}
