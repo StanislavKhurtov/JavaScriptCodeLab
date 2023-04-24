@@ -73,13 +73,15 @@
 // Task 7
 // Напишите функцию t7, которая возвращает случайный цвет в формате rgb(x, y, z)(строка).Где x, y, z - случайные числа в диапазоне[0, 255].
 
-function t7() {
-	//return `rgb(${t6(0,255)}....допишите сами
-}
-
-document.querySelector('.b-7').onclick = function () {
-	document.querySelector('.out-7').style.background = t7();
-}
+//  function t7() {
+//  	let x = Math.floor(Math.random() * (255 - 0)) + 0;
+//  	let y = Math.floor(Math.random() * (255 - 0)) + 0;
+//  	let z = Math.floor(Math.random() * (255 - 0)) + 0;
+//  	return `rgb(${x},${y},${z})`;
+//  }
+//  document.querySelector('.b-7').onclick = function () {
+//  	document.querySelector('.out-7').style.background = t7();
+//  }
 
 
 // Task 8
