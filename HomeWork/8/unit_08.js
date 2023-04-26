@@ -69,11 +69,22 @@
 //     1_*2_**3_*4_** ... 17_*
 // от 1 до 17 c шагом 1. Разделитель - знак подчеркивания и звездочка (если число нечетное, и две звездочки если четное). Задача решается с помощью цикла  while.
 
-function t5() {
-
-}
-
-document.querySelector('.b-5').onclick = t5;
+// let out = "";
+// function t5() {
+// 	let i = 1;
+// 	while (i <= 17) {
+// 		if (i % 2 == 0) {
+// 			out += i + "_**";
+// 		}
+// 		else {
+// 			out += i + "_*";
+// 		}
+// 		i++;
+// 	}
+// 	document.querySelector('.out-5').innerHTML = out;
+// }
+// 
+// document.querySelector('.b-5').onclick = t5;
 
 
 //  Task 6
