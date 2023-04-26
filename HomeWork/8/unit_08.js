@@ -83,7 +83,6 @@
 // 	}
 // 	document.querySelector('.out-5').innerHTML = out;
 // }
-// 
 // document.querySelector('.b-5').onclick = t5;
 
 
@@ -95,11 +94,22 @@
 // Задача решается с помощью цикла. В каждой итерации цикл выводит 6 звездочек без пробелов и символ переноса строки br.
 // Количество строк (итераций, повторений) цикла  while вводит пользователь в i-6.
 
-function t6() {
-
-}
-
-document.querySelector('.b-6').onclick = t6;
+//  let out = "";
+//  let inp = document.querySelector('.i-6');
+//  function t6() {
+//  	let i = 0;
+//  	while (i < inp.value) {
+//  		let p = 0;
+//  		while (p < 6) {
+//  			out += "*";
+//  			p++;
+//  		}
+//  		out += "<br>";
+//  		i++;
+//  	}
+//  	document.querySelector('.out-6').innerHTML = out;
+//  }
+//  document.querySelector('.b-6').onclick = t6;
 
 
 //  Task 7
