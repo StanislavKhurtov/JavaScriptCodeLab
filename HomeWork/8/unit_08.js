@@ -5,7 +5,13 @@
 
 
 function t1() {
-
+	let out = "";
+	let i = 1;
+	while (i <= 50) {
+		out = out + i + " ";
+		i++;
+	}
+	document.querySelector('.out-1').innerHTML = out;
 }
 
 document.querySelector('.b-1').onclick = t1;
