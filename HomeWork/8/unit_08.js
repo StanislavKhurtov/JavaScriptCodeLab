@@ -36,12 +36,16 @@
 // Кнопка b-3 запускает функцию t3. Функция должна выводить в out-3 строку вида:
 //     25 24 23 22 . . 7
 // от 25 до 7 c шагом 1. Разделитель - пробел. Задача решается с помощью цикла  while.
-
-function t3() {
-
-}
-
-document.querySelector('.b-3').onclick = t3;
+//  let out = "";
+//  function t3() {
+//  	let i = 25;
+//  	while (i >= 7) {
+//  		out += i + " ";
+//  		i--;
+//  	}
+//  	document.querySelector('.out-3').innerHTML = out;
+//  }
+//  document.querySelector('.b-3').onclick = t3;
 
 //  Task 4
 // Кнопка b-4 запускает функцию t4. Функция должна выводить в out-4 строку вида:
