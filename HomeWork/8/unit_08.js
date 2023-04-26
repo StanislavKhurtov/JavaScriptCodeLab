@@ -119,11 +119,17 @@
 //     4 3 2 1
 // Задача решается с помощью цикла  while.
 
-function t7() {
-
-}
-
-document.querySelector('.b-7').onclick = t7;
+//  let out = "";
+//  let inp = document.querySelector('.i-7');
+//  function t7() {
+//  	let i = inp.value;
+//  	while (i >= 0) {
+//  		out += i + " ";
+//  		i--;
+//  	}
+//  	document.querySelector('.out-7').innerHTML = out;
+//  }
+//  document.querySelector('.b-7').onclick = t7;
 
 
 //  Task 8
