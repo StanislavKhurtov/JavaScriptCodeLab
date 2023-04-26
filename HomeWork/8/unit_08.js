@@ -52,12 +52,16 @@
 //     77_74_71_68_65_62_ ... _38_35_
 // от 77 до 35 c шагом 3. Разделитель - знак подчеркивания. Задача решается с помощью цикла  while.
 
-
-function t4() {
-
-}
-
-document.querySelector('.b-4').onclick = t4;
+// let out = "";
+// function t4() {
+// 	let i = 77;
+// 	while (i >= 35) {
+// 		out += i + "_";
+// 		i = i - 3;
+// 	}
+// 	document.querySelector('.out-4').innerHTML = out;
+// }
+// document.querySelector('.b-4').onclick = t4;
 
 
 //  Task 5
