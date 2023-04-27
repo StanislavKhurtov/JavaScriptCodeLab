@@ -199,11 +199,34 @@
 // Кнопка b-10 запускает функцию t10. Функция должна выводить в out-10 четные годы от 1950 до 2000 включительно.
 // Разделитель - пробел. Задача решается через цикл, а четность - через шаг (равный 2).
 
-function t10() {
+//  let out = "";
+// solid 1
 
-}
+//  function t10() {
+//  	let i = 1950;
+//  	while (i <= 2000) {
+//  		out += i + " ";
+//  		i = i + 2;
+//  	}
+//  	document.querySelector('.out-10').innerHTML = out;
+//  }
+// solid 2
 
-document.querySelector('.b-10').onclick = t10;
+//  function t10() {
+//  	let i = 1950;
+//  	while (i <= 2000) {
+//  		if (i % 2 == 0) {
+//  			out += i + " ";
+//  			i++;
+//  		} else {
+//  			out += "";
+//  			i++;
+//  		}
+//  	}
+//  	document.querySelector('.out-10').innerHTML = out;
+//  }
+
+//document.querySelector('.b-10').onclick = t10;
 
 //  Task 11
 // Кнопка b-11 запускает функцию t11.  Функция должна:
