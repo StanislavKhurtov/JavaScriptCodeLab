@@ -254,12 +254,17 @@
 // перебрать их с помощью цикла  while. Обращение к div выглядит так elem[i]
 // применить к каждому elem[i].style.background = ‘orange’
 
-
-function t12() {
-
-}
-
-document.querySelector('.b-12').onclick = t12;
+//  let out = "";
+//  let div = document.querySelectorAll('.div-12');
+//  function t12() {
+//  	let i = 0;
+//  	while (i < div.length) {
+//  		out += div[i].style.background = 'orange';
+//  		out += div[i].style.marginBottom = '20px';
+//  		i++;
+//  	}
+//  }
+//  document.querySelector('.b-12').onclick = t12;
 
 //  Task 13
 // Кнопка b-13 запускает функцию t13.  Функция должна:
