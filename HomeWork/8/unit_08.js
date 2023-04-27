@@ -272,11 +272,24 @@
 // перебрать их с помощью цикла  while. Обращение к элементу выглядит так elem[i]
 // применить к каждому elem[i].value, причем к value первого должно равняться 1, второго - 2, третьего - 3...
 
-function t13() {
-
-}
-
-document.querySelector('.b-13').onclick = t13;
+//  let out = "";
+//  let inp = document.querySelectorAll('.i-13');
+//  function t13() {
+//  	let i = 0;
+//  	while (i < inp.length) {
+//  		if (inp[i].value == 0 && inp[i].value == "") {
+//  			alert(`введите корректные данные в input`);
+//  			i++;
+//
+//  		} else {
+//  			out += inp[i].value + " ";
+//  			i++;
+//  		}
+//  	}
+//  	document.querySelector('.out-13').innerHTML = out;
+//  }
+//
+//  document.querySelector('.b-13').onclick = t13;
 
 //  Task 14
 // Кнопка b-14 запускает функцию t14  Функция должна:
