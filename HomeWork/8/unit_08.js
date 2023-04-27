@@ -297,12 +297,18 @@
 // перебрать их с помощью цикла  while. Обращение к элементу выглядит так elem[i]
 // вывести в out-14 value выбранного. Проверить выбран ли элемент можно с помощью elem[i].checked.
 
-
-function t14() {
-
-}
-
-document.querySelector('.b-14').onclick = t14;
+//  let cb = document.querySelectorAll('.i-14');
+//  let out = "";
+//  document.querySelector('.b-14').addEventListener('click', () => {
+//  	let i = 0;
+//  	while (i < cb.length) {
+//  		if (cb[i].checked) {
+//  			out += cb[i].value;
+//  		}
+//  		i++;
+//  	}
+//  	document.querySelector('.out-14').innerHTML = out;
+//  });
 
 //  Task 15
 // Кнопка b-15 запускает функцию t15  Функция должна выводить следующую последовательность в out-15:
