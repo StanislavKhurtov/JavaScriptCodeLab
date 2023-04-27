@@ -172,11 +172,27 @@
 // 6 7 8
 // Задача решается с помощью цикла. Подсказка - вначале делаем проверку, а потом запускаем цикл  while.
 
-function t9() {
-
-}
-
-document.querySelector('.b-9').onclick = t9;
+//  let inp91 = document.querySelector('.i-91'),
+//  	inp92 = document.querySelector('.i-92'),
+//  	out = "";
+//  function t9() {
+//  	if (inp91.value <= inp92.value) {
+//  		let i = inp91.value;
+//  		while (i <= inp92.value) {
+//  			out += i + " ";
+//  			i++;
+//  		}
+//  	}
+//  	else {
+//  		let i = inp92.value;
+//  		while (i <= inp91.value) {
+//  			out += i + " ";
+//  			i++;
+//  		}
+//  	}
+//  	document.querySelector('.out-9').innerHTML = out;
+//  }
+//  document.querySelector('.b-9').onclick = t9;
 
 
 //  Task 10
