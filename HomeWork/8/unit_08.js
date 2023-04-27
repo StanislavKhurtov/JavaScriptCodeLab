@@ -140,11 +140,27 @@
 //     4 5 6 7 8
 // Задача решается с помощью цикла  while.
 
-function t8() {
-
-}
-
-document.querySelector('.b-8').onclick = t8;
+//  let inp81 = document.querySelector('.i-81'),
+//  	inp82 = document.querySelector('.i-82'),
+//  	out = "";
+//  function t8() {
+//  	if (inp81.value <= inp82.value) {
+//  		let i = inp81.value;
+//  		while (i <= inp82.value) {
+//  			out += i + " ";
+//  			i++;
+//  		}
+//  	}
+//  	else {
+//  		let i = inp82.value;
+//  		while (i <= inp81.value) {
+//  			out += i + " ";
+//  			i++;
+//  		}
+//  	}
+//  	document.querySelector('.out-8').innerHTML = out;
+//  }
+//  document.querySelector('.b-8').onclick = t8;
 
 
 //  Task 9
