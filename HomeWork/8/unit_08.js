@@ -236,12 +236,17 @@
 //     В результате должно получиться так:
 //     one 3 4 two
 
-
-function t11() {
-
-}
-
-document.querySelector('.b-11').onclick = t11;
+//  let out = "";
+//  let div = document.querySelectorAll('.div-11');
+//  function t11() {
+//  	let i = 0;
+//  	while (i < div.length) {
+//  		out += div[i].textContent + " ";
+//  		i++;
+//  	}
+//  	document.querySelector('.out-11').innerHTML = out;
+//  }
+//  document.querySelector('.b-11').onclick = t11;
 
 //  Task 12
 // Кнопка b-12 запускает функцию t12.  Функция должна:
