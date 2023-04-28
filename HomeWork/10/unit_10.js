@@ -81,12 +81,18 @@
 // Вывод - по нажатию кнопки b-7
 // Вывод в out-7
 
-let ar7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
-
-function f7() {
-}
-
-document.querySelector('.b-7').onclick = f7;
+//  let ar7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
+//  let out = "";
+//  function f7() {
+//  	ar7.push("italy");
+//  	ar7.push("turkey");
+//  	ar7.push("vietnam");
+//  	for (let i = 0; i < ar7.length; i++) {
+//  		out += ar7[i] + " ";
+//  	}
+//  	document.querySelector('.out-7').innerHTML = out;
+//  }
+//  document.querySelector('.b-7').onclick = f7;
 
 // Task 8
 // Добавьте в массив ar8 третий (индекс 3) элемент равный 3.14, 4 (индекс 4) элемент равный 17, 6 элемент (индекс 6) равный 5. Выведите массив в .out-8. Разделитель - дефис. В .out-8-1 выведите длину массива ar8.
