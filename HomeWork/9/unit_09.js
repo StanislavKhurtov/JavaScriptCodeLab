@@ -65,13 +65,13 @@
 //  Task 7
 // По нажатию кнопки b-7 запускайте функцию f7, которая присваивает блокам out-7 класс .bg-7. Обратите внимание, что данных блоков больше одного, следовательно нужен цикл.
 
-let blocks7 = document.querySelectorAll('.out-7');
-
-function f7() {
-	//внутри цикла blocks7[i].classList....
-}
-
-document.querySelector('.b-7').onclick = f7;
+//  let blocks7 = document.querySelectorAll('.out-7');
+//  function f7() {
+//  	for (let i = 0; i < blocks7.length; i++) {
+//  		blocks7[i].classList.add('bg-7');
+//  	}
+//  }
+//  document.querySelector('.b-7').onclick = f7;
 
 
 //  Task 8
