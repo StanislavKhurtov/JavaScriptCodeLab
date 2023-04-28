@@ -209,13 +209,16 @@
 // Вывод - по нажатию кнопки b-14
 // Вывод в out-14
 
-let ar14 = [1, 2, 3, 'hello', 66];
-
-function f14() {
-
-}
-
-document.querySelector('.b-14').onclick = f14;
+// let ar14 = [1, 2, 3, 'hello', 66];
+// let out = ""
+// function f14() {
+// 	ar14.reverse();
+// 	for (let i = 0; i < ar14.length; i++) {
+// 		out += ar14[i] + " ";
+// 	}
+// 	document.querySelector('.out-14').innerHTML = out;
+// }
+// document.querySelector('.b-14').onclick = f14;
 
 // Task 15
 // Используя цикл выведите на страницу элементы массива ar15, которые больше нуля. Разделитель - пробел.
@@ -225,10 +228,14 @@ document.querySelector('.b-14').onclick = f14;
 
 let ar15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
+
 function f15() {
-
+	ar15.reverse();
+	for (let i = 0; i < ar15.length; i++) {
+		out += ar15[i] + " ";
+	}
+	document.querySelector('.out-15').innerHTML = out;
 }
-
 document.querySelector('.b-15').onclick = f15;
 
 // Task 16
