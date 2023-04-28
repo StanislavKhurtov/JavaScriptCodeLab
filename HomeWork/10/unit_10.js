@@ -27,12 +27,11 @@
 // Вывод в out-3
 // Тест допустим массив [1,2,3] вывод - 3
 
-// let ar3 =  // переменную обьявляем здесь!!!!
-
-function f3() {
-}
-
-document.querySelector('.b-3').onclick = f3;
+//  let ar3 = [1, 5, 6, 8, 7, 4, 5, 6];
+//  function f3() {
+//  	document.querySelector('.out-3').innerHTML = ar3.length;
+//  }
+//  document.querySelector('.b-3').onclick = f3;
 
 // Task 4
 //Создайте массив ar4. Выведите нулевой, третий, восьмой элемент массива в out-4 через пробел.
