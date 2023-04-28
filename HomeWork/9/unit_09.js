@@ -188,26 +188,34 @@
 //  Task 17
 // Добавьте кнопку .b-17, которая запускает функцию f17. Функция создает через createElement div c текстом 17 и добавляет ему класс bg-17. Созданный div заменяет  out-17 с помощью replaceWith.
 
-function f17() {
-
-}
-
-document.querySelector('.b-17').onclick = f17;
+//  function f17() {
+//  	let a = document.createElement('div');
+//  	a.innerHTML = "17";
+//  	a.classList.add('bg-17');
+//  	document.querySelector('.out-17').replaceWith(a);
+//  }
+//  document.querySelector('.b-17').onclick = f17;
 
 //  Task 18
 // Добавьте кнопку .b-18, которая запускает функцию f18. Функция с помощью getAttribute получает data-b атрибут с параграф p-18 и выводит в out-18.
 
+
 function f18() {
+	document.querySelector('.out-18')
 
 }
-
 document.querySelector('.b-18').onclick = f18;
 
 //  Task 19
 // Добавьте кнопку .b-19, которая запускает функцию f19. Функция с помощью getAttribute получает data-b атрибут с параграфов p-19 и выводит в out-19 через пробел. Обратите внимание, что элементов p-19 больше одного.
 
+let res = "";
 function f19() {
-
+	let out = document.querySelectorAll('.p-19');
+	for (let i = 0; i < out.length; i++) {
+		res += out[i].getAttribute('data-b') + "<br>";
+	}
+	document.querySelector('.out-19').innerHTML = res
 }
 
 document.querySelector('.b-19').onclick = f19;
