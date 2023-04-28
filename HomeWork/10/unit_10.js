@@ -53,12 +53,11 @@
 // Вывод в out-5
 // Тест допустим массив [1,2,3,4,5,6,7,8,9,10] вывод: 8
 
-// let ar5 =
-
-function f5() {
-}
-
-document.querySelector('.b-5').onclick = f5;
+//  let ar5 = [12, 54, 878, 18, 1, 8, 1878, 1, 878]
+//  function f5() {
+//  	document.querySelector('.out-5').innerHTML = ar5[0] + ar5[2] + ar5[3];
+//  }
+//  document.querySelector('.b-5').onclick = f5;
 
 // Task 6
 //Создайте массив ar6, который содержит ваше имя, знак зодиака, день рождения и месяц рождения. Выведите массив на страницу в div-6. Разделитель - пробел.
