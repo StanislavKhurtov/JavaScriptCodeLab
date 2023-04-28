@@ -121,15 +121,12 @@
 // Вывод - по нажатию кнопки b-9
 // Вывод в out-9
 
-let ar9 = [100, 200, 300, 400, 700, 121];
+// let ar9 = [100, 200, 300, 400, 700, 121];
+// function f9() {
+// 	document.querySelector('.out-9').innerHTML = ar9[ar9.length - 1];
+// }
 
-function f9() {
-	sum = ar9[0] + ar9[ar9.length - 1];
-	document.querySelector('.out-10').innerHTML = sum;
-
-}
-
-document.querySelector('.b-9').onclick = f9;
+// document.querySelector('.b-9').onclick = f9;
 
 // Task 10
 // Выведите сумму первого (индекс 1) и последнего массива ar10 в блок out-10. Индекс последнего элемента массива не указывайте напрямую, а вычисляйте через длину массива.
@@ -137,14 +134,13 @@ document.querySelector('.b-9').onclick = f9;
 // Вывод - по нажатию кнопки b-10
 // Вывод в out-10
 
-let ar10 = [100, 200, 300, 400, 700, 121];
-let sum = "";
-function f10() {
-	sum = ar9[0] + ar9[ar9.length - 1];
-	document.querySelector('.out-10').innerHTML = sum;
-}
-
-document.querySelector('.b-10').onclick = f10;
+//  let ar10 = [100, 200, 300, 400, 700, 121];
+//  let sum = "";
+//  function f10() {
+//  	sum = ar9[0] + ar9[ar9.length - 1];
+//  	document.querySelector('.out-10').innerHTML = sum;
+//  }
+//  document.querySelector('.b-10').onclick = f10;
 
 
 // Task 11
