@@ -11,31 +11,22 @@
 //  Task 2
 // По нажатию кнопки b-2 запускайте функцию f2, которая присваивает блоку out-2 класс .bg-2.
 
-function f2() {
-
-}
-
-document.querySelector('.b-2').onclick = f2;
+//  function f2() {
+//  	document.querySelector('.out-2').classList.add('bg-2');
+//  }
+//  document.querySelector('.b-2').onclick = f2;
 
 
 //  Task 3
 // По нажатию кнопки b-3 запускайте функцию f3, которая удаляет у блока out-3 класс .bg-3.
 
-function f3() {
 
-}
-
-document.querySelector('.b-3').onclick = f3;
 
 //  Task 4
 // По нажатию кнопки b-4 запускайте функцию f4, которая делает toggle класса bg-4 для блока out-4.
 
 
-function f4() {
 
-}
-
-document.querySelector('.b-4').onclick = f4;
 
 
 //  Task 5
