@@ -150,13 +150,18 @@
 // Вывод - по нажатию кнопки b-11
 // Вывод в out-11
 
-let ar11 = [2, 3, 4, 5, 6, 7];
-
-function f11() {
-
-}
-
-document.querySelector('.b-11').onclick = f11;
+//  let ar11 = [2, 3, 4, 5, 6, 7];
+//  let out = "";
+//  function f11() {
+//  	let a = ar11[2];
+//  	ar11[2] = ar11[4];
+//  	ar11[4] = a;
+//  	for (let i = 0; i < ar11.length; i++) {
+//  		out += ar11[i] + " ";
+//  	}
+//  	document.querySelector('.out-11').innerHTML = out;
+//  }
+//  document.querySelector('.b-11').onclick = f11;
 
 
 // Task 12
