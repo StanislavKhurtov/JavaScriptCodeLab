@@ -170,13 +170,18 @@
 // Вывод - по нажатию кнопки b-12
 // Вывод в out-12
 
-let ar12 = ['test', 'west', 'list', 'class', 'best'];
-
-function f12() {
-
-}
-
-document.querySelector('.b-12').onclick = f12;
+//  let ar12 = ['test', 'west', 'list', 'class', 'best'];
+//  let out = "";
+//  function f12() {
+//  	let t = ar12[0];
+//  	ar12[0] = ar12[ar12.length - 1];
+//  	ar12[ar12.length - 1] = t;
+//  	for (let i = 0; i < ar12.length; i++) {
+//  		out += ar12[i] + " ";
+//  	}
+//  	document.querySelector('.out-12').innerHTML = out;
+//  }
+//  document.querySelector('.b-12').onclick = f12;
 
 // Task 13
 // Выведите массив ar13 в out-13 в формате индекс пробел значение пробел.
@@ -187,13 +192,15 @@ document.querySelector('.b-12').onclick = f12;
 //  0 1 1 2 2 3
 
 
-let ar13 = ['test', 'west', 'list', 'class', 'best'];
-
-function f13() {
-
-}
-
-document.querySelector('.b-13').onclick = f13;
+// let ar13 = ['test', 'west', 'list', 'class', 'best'];
+// let out = "";
+// function f13() {
+// 	for (let i = 0; i < ar13.length; i++) {
+// 		out += i + " " + ar13[i] + " ";
+// 	}
+// 	document.querySelector('.out-13').innerHTML = out;
+// }
+// document.querySelector('.b-13').onclick = f13;
 
 
 // Task 14
