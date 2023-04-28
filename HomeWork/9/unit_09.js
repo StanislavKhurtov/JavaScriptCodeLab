@@ -166,11 +166,13 @@
 //  Task 15
 // Добавьте кнопку .b-15, которая запускает функцию f15. Функция создает через createElement div c текстом 15 и добавляет ему класс bg-15. Созданный div добавляется в out-15 с помощью before.
 
-function f15() {
-
-}
-
-document.querySelector('.b-15').onclick = f15;
+//  function f15() {
+//  	let a = document.createElement('div');
+//  		a.innerHTML = "15";
+//  		a.classList.add('bg-15');
+//  		document.querySelector('.out-15').before(a);
+//  }
+//  document.querySelector('.b-15').onclick = f15;
 
 //  Task 16
 // Добавьте кнопку .b-16, которая запускает функцию f16. Функция создает через createElement div c текстом 16 и добавляет ему класс bg-16. Созданный div добавляется в out-16 с помощью after.
