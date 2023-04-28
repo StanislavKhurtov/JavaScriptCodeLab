@@ -53,11 +53,13 @@
 //  Task 6
 // По нажатию b-6 запускайте функцию f6, которая выводит в out-6 количество параграфов с классом p-6.
 
-function f6() {
-
-}
-
-document.querySelector('.b-6').onclick = f6;
+//  function f6() {
+//  	let div = document.querySelectorAll('.p-6');
+//  	for (let i = 0; i < div.length; i++) {
+//  		document.querySelector('.out-6').innerHTML = div.length;
+//  	}
+//  }
+//  document.querySelector('.b-6').onclick = f6;
 
 
 //  Task 7
