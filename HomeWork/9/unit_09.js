@@ -128,11 +128,13 @@
 // Добавьте кнопку .b-12, которая запускает функцию f12. Функция создает через createElement div c текстом 12 и добавляет ему класс bg-12. Созданный div добавляется в out-12.
 
 
-function f12() {
-
-}
-
-document.querySelector('.b-12').onclick = f12;
+//  function f12() {
+//  	let a = document.createElement('div');
+//  	a.innerHTML = "12";
+//  	a.classList.add('bg-12');
+//  	document.querySelector('.out-12').append(a);
+//  }
+//  document.querySelector('.b-12').onclick = f12;
 
 //  Task 13
 // Добавьте кнопку .b-13, которая запускает функцию f13. Функция создает через createElement div c текстом pushMe и добавляет ему класс bg-13. Также, созданному div добавляется событие onclick, по которому выполняется функция f13_1. Созданный div добавляется в out-13.
