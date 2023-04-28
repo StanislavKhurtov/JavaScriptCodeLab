@@ -177,11 +177,13 @@
 //  Task 16
 // Добавьте кнопку .b-16, которая запускает функцию f16. Функция создает через createElement div c текстом 16 и добавляет ему класс bg-16. Созданный div добавляется в out-16 с помощью after.
 
-function f16() {
-
-}
-
-document.querySelector('.b-16').onclick = f16;
+//  function f16() {
+//  	let a = document.createElement('div');
+//  	a.innerHTML = "16";
+//  	a.classList.add('bg-16');
+//  	document.querySelector('.out-16').after(a);
+//  }
+//  document.querySelector('.b-16').onclick = f16;
 
 //  Task 17
 // Добавьте кнопку .b-17, которая запускает функцию f17. Функция создает через createElement div c текстом 17 и добавляет ему класс bg-17. Созданный div заменяет  out-17 с помощью replaceWith.
