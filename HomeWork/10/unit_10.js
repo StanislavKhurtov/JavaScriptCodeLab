@@ -101,12 +101,19 @@
 // Вывод - по нажатию кнопки b-8
 // Вывод в out-8
 
-let ar8 = [];
-
-function f8() {
-}
-
-document.querySelector('.b-8').onclick = f8;
+//  let ar8 = [];
+//  let out = "";
+//  function f8() {
+//  	ar8[3] = 3.14;
+//  	ar8[4] = 17;
+//  	ar8[6] = 5;
+//  	for (let i = 0; i < ar8.length; i++) {
+//  		out += ar8[i] + " ";
+//  	}
+//  	document.querySelector('.out-8').innerHTML = out;
+//  	document.querySelector('.out-8-1').innerHTML = ar8.length;
+//  }
+//  document.querySelector('.b-8').onclick = f8;
 
 // Task 9
 // Выведите последний элемент массива ar9. Вывод последнего элемента  - реализуйте по индексу. Чтобы рассчитать индекс последнего элемента - используйте на длину массива.
