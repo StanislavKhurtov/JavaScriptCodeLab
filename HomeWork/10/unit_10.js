@@ -65,12 +65,15 @@
 // Вывод - по нажатию кнопки b-6
 // Вывод в out-6
 
-// let ar6 =
-
-function f6() {
-}
-
-document.querySelector('.b-6').onclick = f6;
+//  let ar6 = ['Stanslav', 'Стрелец', 15, 12];
+//  let out = "";
+//  function f6() {
+//  	for (let i = 0; i < ar6.length; i++) {
+//  		out += ar6[i] + " ";
+//  			}
+//  	document.querySelector('.out-6').innerHTML = out;
+//  }
+//  document.querySelector('.b-6').onclick = f6;
 
 // Task 7
 // Добавьте в массив ar7  значения 'vietnam' с индексом 7 , 'turkey' с индексом 6, 'italy' с индексом 5. Добавление элементов сделайте в f7. Выведите массив на страницу в .out-7. Разделитель - пробел. Обращаю ваше внимание! Это программирование. Поэтому - никаких больших букв и тому подобного!!!!
