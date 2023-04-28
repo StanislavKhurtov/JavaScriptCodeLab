@@ -29,20 +29,25 @@
 // По нажатию кнопки b-4 запускайте функцию f4, которая делает toggle класса bg-4 для блока out-4.
 
 
-//function f4() {
-//	document.querySelector('.out-4').classList.toggle('bg-4');
-//}
-//document.querySelector('.b-4').onclick = f4;
+//  function f4() {
+//  	document.querySelector('.out-4').classList.toggle('bg-4');
+//  }
+//  document.querySelector('.b-4').onclick = f4;
 
 
 //  Task 5
 // По нажатию b-5 запускайте функцию f5, которая проверяет наличие класса bg-4 у блока out-4 (да, именно bg-4 у out-4 ). Результат - true или false, выводите в out-5.
 
-function f5() {
-
-}
-
-document.querySelector('.b-5').onclick = f5;
+//  function f5() {
+//  	let out = document.querySelector('.out-4');
+//  	if (out.classList.contains('bg-4')) {
+//  		document.querySelector('.out-5').innerHTML = true;
+//  	}
+//  	else {
+//  		document.querySelector('.out-5').innerHTML = false;
+//  	}
+//  }
+//  document.querySelector('.b-5').onclick = f5;
 
 
 //  Task 6
