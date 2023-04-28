@@ -226,17 +226,17 @@
 // Вывод - по нажатию кнопки b-15
 // Вывод в out-15
 
-let ar15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
-
-
-function f15() {
-	ar15.reverse();
-	for (let i = 0; i < ar15.length; i++) {
-		out += ar15[i] + " ";
-	}
-	document.querySelector('.out-15').innerHTML = out;
-}
-document.querySelector('.b-15').onclick = f15;
+//  let ar15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
+//  let out = "";
+//  function f15() {
+//  	for (let i = 0; i < ar15.length; i++) {
+//  		if (ar15[i] > 0) {
+//  			out += ar15[i] + " ";
+//  		}
+//  	}
+//  	document.querySelector('.out-15').innerHTML = out;
+//  }
+//  document.querySelector('.b-15').onclick = f15;
 
 // Task 16
 // Выполните перебор массива arr16. Четные элементы добавьте в массив ar16_even, нечетные в ar16_odd. Добавление в массив - по индексу, а не +=!!!!!. Протестируйте задачу на повторный запуск! Выведите ar16_odd в div.out-16-odd, а ar16_even в div.out-16-even. Разделитель - пробел.
