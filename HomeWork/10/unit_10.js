@@ -124,6 +124,9 @@
 let ar9 = [100, 200, 300, 400, 700, 121];
 
 function f9() {
+	sum = ar9[0] + ar9[ar9.length - 1];
+	document.querySelector('.out-10').innerHTML = sum;
+
 }
 
 document.querySelector('.b-9').onclick = f9;
@@ -135,8 +138,10 @@ document.querySelector('.b-9').onclick = f9;
 // Вывод в out-10
 
 let ar10 = [100, 200, 300, 400, 700, 121];
-
+let sum = "";
 function f10() {
+	sum = ar9[0] + ar9[ar9.length - 1];
+	document.querySelector('.out-10').innerHTML = sum;
 }
 
 document.querySelector('.b-10').onclick = f10;
