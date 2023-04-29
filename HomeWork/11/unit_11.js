@@ -97,6 +97,7 @@ let d1 = [33, 'best', 66, 'best'];
 let d8 = [2, '4', 12, 67, 'hello'];
 
 function f8() {
+	let inp = document.querySelector('.i-8').value;
 
 	showArr('.out-8', d8);
 }
@@ -127,7 +128,7 @@ document.querySelector('.b-9').onclick = f9;
 let d10 = [3, 14, 15, 92, 6];
 
 function f10() {
-
+	d10.reverse();
 	showArr('.out-10', d10);
 }
 
