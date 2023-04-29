@@ -292,18 +292,17 @@
 // Вывод - по нажатию кнопки b-18
 // Вывод в out-18
 
-let ar18 = [15, 24, 13, 78, 21, 4, 45, 67];
-
-//function f18() {
-//	for (let i = 1; i < ar18.length; i++) {
-//		if (ar18[0] > max) {
-//			max = ar18[0]
-//		}
-//	}
-//	document.querySelector('.out-18').innerHTML = max;
-//}
-//
-//document.querySelector('.b-18').onclick = f18;
+//  let ar18 = [15, 24, 13, 78, 21, 4, 45, 67];
+//  let max = ar18[0];
+//  function f18() {
+//  	for (let i = 1; i < ar18.length; i++) {
+//  		if (ar18[i] > max) {
+//  			max = ar18[i]
+//  		}
+//  	}
+//  	document.querySelector('.out-18').innerHTML = max;
+//  }
+//  document.querySelector('.b-18').onclick = f18;
 
 
 // Task 19
