@@ -249,9 +249,24 @@ let ar16_odd = [];
 let ar16_even = [];
 
 function f16() {
+	let out1 = "",
+		out2 = "";
+	ar16_even = ar16;
+	for (let i = 0; i < ar16_even.length; i++) {
+		if (ar16_even[i] % 2 == 0) {
+			out1 += ar16_even[i] + " ";
+		}
 
+		document.querySelector('.out-16-even').innerHTML = out1;
+	}
+	ar16_odd = ar16;
+	for (let i = 0; i < ar16_odd.length; i++) {
+		if (ar16_odd[i] % 2 !== 0) {
+			out2 += ar16_odd[i] + " ";
+		}
+		document.querySelector('.out-16-odd').innerHTML = out2;
+	}
 }
-
 document.querySelector('.b-16').onclick = f16;
 
 // Task 17
@@ -260,13 +275,6 @@ document.querySelector('.b-16').onclick = f16;
 // Вывод - по нажатию кнопки b-17
 // Вывод в out-17
 
-let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
-
-function f17() {
-
-}
-
-document.querySelector('.b-17').onclick = f17;
 
 
 // Task 18
