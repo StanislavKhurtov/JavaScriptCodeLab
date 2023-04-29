@@ -9,7 +9,8 @@ function showArr(domElem, arr) {
 	document.querySelector(domElem).innerHTML = out;
 }
 
-//  let d1 = [33, 'best', 66, 'best'];
+let d1 = [33, 'best', 66, 'best'];
+
 //  function f1() {
 //  	let inp = document.querySelector('.i-1').value;
 //  	d1.push(inp);
@@ -21,12 +22,11 @@ function showArr(domElem, arr) {
 //Напишите функцию f2, которая применяет метод pop к массиву d1, а затем выводит его (showArr) в .out-2
 // функция выполняется при нажатии кнопки b-2
 
-function f2() {
-
-	showArr('.out-2', d1);
-}
-
-document.querySelector('.b-2').onclick = f2;
+//  function f2() {
+//  	d1.pop();
+//  	showArr('.out-2', d1);
+//  }
+//  document.querySelector('.b-2').onclick = f2;
 
 // Task 3
 // Напишите функцию f3, которая применяет метод shift к массиву d1, а затем выводит его (showArr) в .out-3
