@@ -67,15 +67,13 @@ let d1 = [33, 'best', 66, 'best'];
 // Вывод - по нажатию кнопки b-6
 // Вывод в out-6
 
-let d6 = ['test', 5, 12];
-
-function f6() {
-	let inp = document.querySelector('.i-6').value;
-	d6[d6.length] = inp;
-	showArr('.out-6', d6);
-}
-
-document.querySelector('.b-6').onclick = f6;
+// let d6 = ['test', 5, 12];
+// function f6() {
+// 	let inp = document.querySelector('.i-6').value;
+// 	d6[d6.length] = inp;
+// 	showArr('.out-6', d6);
+// }
+// document.querySelector('.b-6').onclick = f6;
 
 // Task 7
 // Напишите функцию f7, которая эмулирует метод pop, т.е. удаляет последний элемент массива d7. Эмулировать - получать результат аналогичный pop, но без применения pop. Функция может быть вызвана много раз, при этом каждый раз должен удаляться последний элемент d7.
@@ -83,14 +81,12 @@ document.querySelector('.b-6').onclick = f6;
 // Вывод - по нажатию кнопки b-7
 // Вывод в out-7
 
-let d7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
-
-function f7() {
-
-	showArr('.out-7', d7);
-}
-
-document.querySelector('.b-7').onclick = f7;
+//  let d7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
+//  function f7() {
+//  	d7.length = d7.length - 1;
+//  	showArr('.out-7', d7);
+//  }
+//  document.querySelector('.b-7').onclick = f7;
 
 // Task 8
 // Напишите функцию f8, которая эмулирует работу метода unShift - добавляем значение из i-8 в начало массива d8.
