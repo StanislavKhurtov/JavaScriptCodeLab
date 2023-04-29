@@ -275,6 +275,17 @@ document.querySelector('.b-16').onclick = f16;
 // Вывод - по нажатию кнопки b-17
 // Вывод в out-17
 
+// let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
+// let out = "";
+// function f17() {
+// 	for (let i = 0; i < ar17.length; i++) {
+// 		if (ar17[i] > 3) {
+// 			out += ar17[i] + " ";
+// 		}
+// 	}
+// 	document.querySelector('.out-17').innerHTML = out;
+// }
+// document.querySelector('.b-17').onclick = f17;
 
 
 // Task 18
