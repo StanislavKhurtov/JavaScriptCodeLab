@@ -244,30 +244,28 @@
 // Вывод - по нажатию кнопки b-16
 // Вывод в out-16
 
-let ar16 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
-let ar16_odd = [];
-let ar16_even = [];
-
-function f16() {
-	let out1 = "",
-		out2 = "";
-	ar16_even = ar16;
-	for (let i = 0; i < ar16_even.length; i++) {
-		if (ar16_even[i] % 2 == 0) {
-			out1 += ar16_even[i] + " ";
-		}
-
-		document.querySelector('.out-16-even').innerHTML = out1;
-	}
-	ar16_odd = ar16;
-	for (let i = 0; i < ar16_odd.length; i++) {
-		if (ar16_odd[i] % 2 !== 0) {
-			out2 += ar16_odd[i] + " ";
-		}
-		document.querySelector('.out-16-odd').innerHTML = out2;
-	}
-}
-document.querySelector('.b-16').onclick = f16;
+// let ar16 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
+// let ar16_odd = [];
+// let ar16_even = [];
+// function f16() {
+// 	let out1 = "",
+// 		out2 = "";
+// 	ar16_even = ar16;
+// 	for (let i = 0; i < ar16_even.length; i++) {
+// 		if (ar16_even[i] % 2 == 0) {
+// 			out1 += ar16_even[i] + " ";
+// 		}
+// 		document.querySelector('.out-16-even').innerHTML = out1;
+// 	}
+// 	ar16_odd = ar16;
+// 	for (let i = 0; i < ar16_odd.length; i++) {
+// 		if (ar16_odd[i] % 2 !== 0) {
+// 			out2 += ar16_odd[i] + " ";
+// 		}
+// 		document.querySelector('.out-16-odd').innerHTML = out2;
+// 	}
+// }
+// document.querySelector('.b-16').onclick = f16;
 
 // Task 17
 // Используя цикл выведите в .out-17 количество элементов ar17, значение которых больше 3. Для расчета используйте цикл и переменную счетчик.
@@ -296,11 +294,16 @@ document.querySelector('.b-16').onclick = f16;
 
 let ar18 = [15, 24, 13, 78, 21, 4, 45, 67];
 
-function f18() {
-
-}
-
-document.querySelector('.b-18').onclick = f18;
+//function f18() {
+//	for (let i = 1; i < ar18.length; i++) {
+//		if (ar18[0] > max) {
+//			max = ar18[0]
+//		}
+//	}
+//	document.querySelector('.out-18').innerHTML = max;
+//}
+//
+//document.querySelector('.b-18').onclick = f18;
 
 
 // Task 19
@@ -323,10 +326,12 @@ document.querySelector('.b-19').onclick = f19;
 // Вывод - по нажатию кнопки b-20
 // Вывод в out-20
 
-let ar20 = [4, 5, 6, 7, 8, 9, 10];
-
-function f20() {
-
-}
-
-document.querySelector('.b-20').onclick = f20;
+// let ar20 = [4, 5, 6, 7, 8, 9, 10];
+// let sum = 0;
+// function f20() {
+// 	for (let i = 0; i < ar20.length; i++) {
+// 		sum = sum + ar20[i];
+// 	}
+// 	document.querySelector('.out-20').innerHTML = sum;
+// }
+// document.querySelector('.b-20').onclick = f20;
