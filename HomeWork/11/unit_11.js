@@ -43,12 +43,12 @@ let d1 = [33, 'best', 66, 'best'];
 // функция выполняется при нажатии кнопки b-4
 
 
-function f4() {
-
-	showArr('.out-4', d1);
-}
-
-document.querySelector('.b-4').onclick = f4;
+//  function f4() {
+//  	let inp = document.querySelector('.i-4').value;
+//  	d1.push(inp);
+//  	showArr('.out-4', d1);
+//  }
+//  document.querySelector('.b-4').onclick = f4;
 
 // Task 5
 // Напишите функцию f5, которая применяет метод unshift к массиву d1, данные для массива берите из i-5, а затем выводит его (showArr) в .out-5
