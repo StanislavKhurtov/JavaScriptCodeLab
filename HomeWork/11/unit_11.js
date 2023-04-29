@@ -70,7 +70,8 @@ let d1 = [33, 'best', 66, 'best'];
 let d6 = ['test', 5, 12];
 
 function f6() {
-
+	let inp = document.querySelector('.i-6').value;
+	d6[d6.length] = inp;
 	showArr('.out-6', d6);
 }
 
