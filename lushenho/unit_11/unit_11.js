@@ -152,12 +152,9 @@ let d10 = [3, 14, 15, 92, 6];
 
 function f10() {
 	d10.reverse()
-
 	showArr('.out-10', d10);
 }
-
 document.querySelector('.b-10').onclick = f10;
-
 
 // Task 11
 // Напишите функцию, которая получает число из input i-11, переводит в число, и с помощью метода indexOf проверяет наличие в массиве d11. Функция выводит в out-11 -1 если такого числа нет в массиве, либо его индекс в массиве.
@@ -251,15 +248,7 @@ document.querySelector('.b-14').onclick = f14;
 let d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
 function f15() {
-	let inp15 = parseInt(document.querySelector('.i-15').value)
 
-	for (let i = 0; i < d15.length; i++) {
-		if (!d15.includes(inp15)) {
-			d15.push(inp15)
-		}
-	}
-
-	showArr('.out-15', d15);
 }
 
 document.querySelector('.b-15').onclick = f15;
