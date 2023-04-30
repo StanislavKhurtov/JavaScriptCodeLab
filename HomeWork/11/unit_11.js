@@ -141,13 +141,17 @@ document.querySelector('.b-10').onclick = f10;
 // Вывод - по нажатию кнопки b-11
 // Вывод в out-11
 
-let d11 = [2, 3, 4, 5, 6, 7];
-
-function f11() {
-
-}
-
-document.querySelector('.b-11').onclick = f11;
+// let d11 = [2, 3, 4, 5, 6, 7];
+// function f11() {
+// 	let inp = parseInt(document.querySelector('.i-11').value);
+// 	let index = d11.indexOf(inp);
+// 	if (index != -1) {
+// 		document.querySelector('.out-11').innerHTML = index;
+// 	} else {
+// 		document.querySelector('.out-11').innerHTML = index;
+// 	}
+// }
+// document.querySelector('.b-11').onclick = f11;
 
 
 // Task 12
