@@ -125,14 +125,12 @@ document.querySelector('.b-9').onclick = f9;
 // Вывод - по нажатию кнопки b-10
 // Вывод в out-10
 
-let d10 = [3, 14, 15, 92, 6];
-
-function f10() {
-	d10.reverse();
-	showArr('.out-10', d10);
-}
-
-document.querySelector('.b-10').onclick = f10;
+//  let d10 = [3, 14, 15, 92, 6];
+//  function f10() {
+//  	d10.reverse();
+//  	showArr('.out-10', d10);
+//  }
+//  document.querySelector('.b-10').onclick = f10;
 
 
 // Task 11
@@ -160,13 +158,19 @@ document.querySelector('.b-10').onclick = f10;
 // Вывод - по нажатию кнопки b-12
 // Вывод в out-12
 
-let d12 = [6, 62, 60, 70, 1, 5];
-
-function f12() {
-
-}
-
-document.querySelector('.b-12').onclick = f12;
+//  let d12 = [6, 62, 60, 70, 1, 5];
+//  function f12() {
+//  	let inp = parseInt(document.querySelector('.i-12').value);
+//  	let index = -1;
+//  	for (let i = 0; i < d12.length; i++) {
+//  		if (d12[i] === inp) {
+//  			index = i;
+//  			break;
+//  		}
+//  	}
+//  	document.querySelector('.out-12').innerHTML = index;
+//  }
+//  document.querySelector('.b-12').onclick = f12;
 
 // Task 13
 // Напишите функцию f13, которая эмулирует работу метода reverse. Т.е. создает новый массив на основе d13 с обратным порядком элементов и выводит в out-13.
