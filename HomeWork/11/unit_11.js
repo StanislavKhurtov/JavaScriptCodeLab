@@ -113,14 +113,12 @@ let d1 = [33, 'best', 66, 'best'];
 // Вывод - по нажатию кнопки b-9
 // Вывод в out-9
 
-let d9 = [100, 200, 300, 400, 700, 121];
-
-function f9() {
-
-	showArr('.out-9', d9);
-}
-
-document.querySelector('.b-9').onclick = f9;
+//  let d9 = [100, 200, 300, 400, 700, 121];
+//  function f9() {
+//  	d9.splice(0, 1);
+//  	showArr('.out-9', d9);
+//  }
+//  document.querySelector('.b-9').onclick = f9;
 
 // Task 10
 // Напишите функцию f10, которая применяет к массиву d10 метод reverse и выводит полученный массив в out-10.
