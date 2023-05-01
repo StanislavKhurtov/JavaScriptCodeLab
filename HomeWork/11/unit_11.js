@@ -181,7 +181,7 @@ function showArr(domElem, arr) {
 
 
 // let d13 = [6, 0, 22, 1, 4, 76];
-// 
+//
 // function f13() {
 // 	let reverseArr = [];
 // 	for (let i = d13.length - 1; i >= 0; i--) {
@@ -190,7 +190,7 @@ function showArr(domElem, arr) {
 // 	d13 = reverseArr
 // 	showArr('.out-13', d13);
 // }
-// 
+//
 // document.querySelector('.b-13').onclick = f13;
 
 
@@ -246,21 +246,19 @@ function showArr(domElem, arr) {
 // Вывод - по нажатию кнопки b-17
 // Вывод в out-17
 
-let d17 = [];
-let d171 = ['a', 'b', 'c', 'd'];
-let d172 = [1, 2, 3, 4, 5];
-
-function f17() {
-	for (var i = 0; i < d171.length; i++) {
-		d17.push(d171[i]);
-	}
-	for (var j = 0; j < d172.length; j++) {
-		d17.push(d172[j]);
-	}
-	showArr('.out-17', d17);
-}
-
-document.querySelector('.b-17').onclick = f17;
+// let d17 = [];
+// let d171 = ['a', 'b', 'c', 'd'];
+// let d172 = [1, 2, 3, 4, 5];
+// function f17() {
+// 	for (var i = 0; i < d171.length; i++) {
+// 		d17.push(d171[i]);
+// 	}
+// 	for (var j = 0; j < d172.length; j++) {
+// 		d17.push(d172[j]);
+// 	}
+// 	showArr('.out-17', d17);
+// }
+// document.querySelector('.b-17').onclick = f17;
 
 
 // Task 18
@@ -269,13 +267,16 @@ document.querySelector('.b-17').onclick = f17;
 // Вывод - по нажатию кнопки b-18
 // Вывод в out-18
 
-let d18 = ['b', 'c', '45', 'e', 'z', 'y'];
-
-function f18() {
-
-}
-
-document.querySelector('.b-18').onclick = f18;
+// let d18 = ['b', 'c', '45', 'e', 'z', 'y'];
+// function f18() {
+// 	let n = document.querySelector('.i-18').value;
+// 	if (d18.includes(n)) {
+// 		document.querySelector('.out-18').innerHTML = true;
+// 	} else {
+// 		document.querySelector('.out-18').innerHTML = false;
+// 	}
+// }
+// document.querySelector('.b-18').onclick = f18;
 
 
 // Task 19
