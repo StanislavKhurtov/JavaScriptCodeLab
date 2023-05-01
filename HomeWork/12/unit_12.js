@@ -140,36 +140,49 @@
 // Task 9
 // При нажатии b-9 выполняете функцию f9. Функция должна вывести в out-9 значения из массива a9, которые больше нуля. Используем цикл. Вывод - через пробел.
 
-function f9() {
-	let out = '';
-	let a9 = [
-		[-2, 7, -3],
-		[3, 4, -7],
-		[-5, 6, -8, 32],
-		[21, -34, -43],
-		[44, -56]
-	];
-
-
-}
-
-document.querySelector('.b-9').onclick = f9;
+//  function f9() {
+//  	let out = '';
+//  	let a9 = [
+//  		[-2, 7, -3],
+//  		[3, 4, -7],
+//  		[-5, 6, -8, 32],
+//  		[21, -34, -43],
+//  		[44, -56]
+//  	];
+//  	for (let i = 0; i < a9.length; i++) {
+//  		for (let k = 0; k < a9[i].length; k++) {
+//  			if (a9[i][k] > 0) {
+//  				out += a9[i][k] + " ";
+//  			}
+//  		}
+//  	}
+//  	document.querySelector('.out-9').textContent = out;
+//  }
+//  document.querySelector('.b-9').onclick = f9;
 
 // Task 10
 // При нажатии b-10 выполняете функцию f10. Функция должна вывести в out-10 значения из массива a10, которые являются строкой. Используем цикл. Вывод - через пробел.
 
-function f10() {
-	let out = '';
-	let a10 = [
-		[-2, '7', -3],
-		[3, 4, -7],
-		[-5, 6, -8, 32, 'a'],
-		['st', 21, -34, -43],
-		[44, -56, 'task']
-	];
-}
-
-document.querySelector('.b-10').onclick = f10;
+//  function f10() {
+//  	let out = '';
+//  	let a10 = [
+//  		[-2, '7', -3],
+//  		[3, 4, -7],
+//  		[-5, 6, -8, 32, 'a'],
+//  		['st', 21, -34, -43],
+//  		[44, -56, 'task']
+//  	];
+//  	for (let i = 0; i < a10.length; i++) {
+//  		for (let k = 0; k < a10[i].length; k++) {
+//
+//  			if (typeof (a10[i][k]) == 'string') {
+//  				out += a10[i][k] + " ";
+//  			}
+//  		}
+//  	}
+//  	document.querySelector('.out-10').textContent = out;
+//  }
+//  document.querySelector('.b-10').onclick = f10;
 
 
 // Task 11
