@@ -114,11 +114,7 @@ let inp8 = document.querySelector('.i-8');
 let count = [];
 
 function f8() {
-	count[0] = inp8.value;
-	for (let i = 0; i < d8.length; i++) {
-		count[i + 1] = d8[i];
-	}
-	d8 = count;
+	
 
 	showArr('.out-8', d8);
 	console.log(d8)

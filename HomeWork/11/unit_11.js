@@ -94,15 +94,18 @@ let d1 = [33, 'best', 66, 'best'];
 // Вывод - по нажатию кнопки b-8
 // Вывод в out-8
 
-let d8 = [2, '4', 12, 67, 'hello'];
-
-function f8() {
-	let inp = document.querySelector('.i-8').value;
-
-	showArr('.out-8', d8);
-}
-
-document.querySelector('.b-8').onclick = f8;
+//  let d8 = [2, '4', 12, 67, 'hello'];
+//  let count = [];
+//  function f8() {
+//  	let inp = document.querySelector('.i-8').value;
+//  	count[0] = inp;
+//  	for (let i = 0; i < d8.length; i++) {
+//  		count[i + 1] = d8[i];
+//  	}
+//  	d8 = count;
+//  	showArr('.out-8', d8);
+//  }
+//  document.querySelector('.b-8').onclick = f8;
 
 // Task 9
 // Напишите функцию f8, которая эмулирует работу метода shift - на примере массива d9.
@@ -248,10 +251,10 @@ let d172 = [1, 2, 3, 4, 5];
 function f17() {
 	for (var i = 0; i < d171.length; i++) {
 		d17.push(d171[i]);
-	  }
-	  for (var j = 0; j < d172.length; j++) {
+	}
+	for (var j = 0; j < d172.length; j++) {
 		d17.push(d172[j]);
-	  }
+	}
 	showArr('.out-17', d17);
 }
 
