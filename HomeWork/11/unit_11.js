@@ -285,14 +285,17 @@ function showArr(domElem, arr) {
 // Вывод - по нажатию кнопки b-19
 // Вывод в out-19
 
-let d19 = ['Your', 'payment', 'method', 'will', 'automatically', 'be', 'charged', 'in', 'advance', 'every'];
-let maxString = '';
-
-function f19() {
-
-}
-
-document.querySelector('.b-19').onclick = f19;
+//  let d19 = ['Your', 'payment', 'method', 'will', 'automatically', 'be', 'charged', 'in', 'advance', 'every'];
+//  let maxString = "";
+//  function f19() {
+//  	for (let i = 0; i < d19.length; i++) {
+//  		if (d19[i].length > maxString.length) {
+//  			maxString = d19[i];
+//  		}
+//  	}
+//  	document.querySelector('.out-19').innerHTML = maxString;
+//  }
+//  document.querySelector('.b-19').onclick = f19;
 
 // Task 20
 // Напишите функцию f20, которая применяет к массиву d20 метод join с параметрами и соединяет элементы массива в одну строку. Результат выводит в .out-20. Укажите мето так d20.join(''). Обратите внимание  - между апострофами нет пробела!!!.
