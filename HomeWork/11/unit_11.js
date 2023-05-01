@@ -9,7 +9,7 @@ function showArr(domElem, arr) {
 	document.querySelector(domElem).innerHTML = out;
 }
 
-let d1 = [33, 'best', 66, 'best'];
+//let d1 = [33, 'best', 66, 'best'];
 
 //  function f1() {
 //  	let inp = document.querySelector('.i-1').value;
@@ -180,14 +180,18 @@ let d1 = [33, 'best', 66, 'best'];
 // Вывод в out-13
 
 
-let d13 = [6, 0, 22, 1, 4, 76];
-
-function f13() {
-
-	showArr('.out-13', d13);
-}
-
-document.querySelector('.b-13').onclick = f13;
+// let d13 = [6, 0, 22, 1, 4, 76];
+// 
+// function f13() {
+// 	let reverseArr = [];
+// 	for (let i = d13.length - 1; i >= 0; i--) {
+// 		reverseArr.push(d13[i])
+// 	}
+// 	d13 = reverseArr
+// 	showArr('.out-13', d13);
+// }
+// 
+// document.querySelector('.b-13').onclick = f13;
 
 
 // Task 14
