@@ -195,14 +195,14 @@ document.querySelector('.b-13').onclick = f13;
 // Вывод - по нажатию кнопки b-14
 // Вывод в out-14
 
-let d14 = [];
-
-function f14() {
-
-	showArr('.out-14', d14);
-}
-
-document.querySelector('.b-14').onclick = f14;
+//  let d14 = [];
+//  function f14() {
+//  	let n = parseInt(document.querySelector('.i-14').value);
+//  	d14 = new Array(n).fill(1);
+//  	document.querySelector('.out-14').innerHTML = d14;
+//  	showArr('.out-14', d14);
+//  }
+//  document.querySelector('.b-14').onclick = f14;
 
 // Task 15
 // Напишите функцию f15, которая вначале проверяет, есть ли элемент из i-15 в массиве d15  (переводим в число), а потом - если нет - добавляет его в массив.
