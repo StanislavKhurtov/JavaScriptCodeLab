@@ -210,17 +210,15 @@ document.querySelector('.b-13').onclick = f13;
 // Вывод - по нажатию кнопки b-15
 // Вывод в out-15
 
-let d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
-
-function f15() {
-	let n = parseInt(document.querySelector('.i-15').value);
-	if (!d15.includes(n)) {
-		d15.push(n);
-	}
-	showArr('.out-15', d15);
-}
-
-document.querySelector('.b-15').onclick = f15;
+//  let d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
+//  function f15() {
+//  	let n = parseInt(document.querySelector('.i-15').value);
+//  	if (!d15.includes(n)) {
+//  		d15.push(n);
+//  	}
+//  	showArr('.out-15', d15);
+//  }
+//  document.querySelector('.b-15').onclick = f15;
 
 // Task 16
 // Даны два массива d161 и d162 - используя метод concat - добавьте в массив d16 результат применения concat между массивом d161 и d162.
@@ -228,16 +226,14 @@ document.querySelector('.b-15').onclick = f15;
 // Вывод - по нажатию кнопки b-16
 // Вывод в out-16
 
-let d16 = [];
-let d161 = [5, 6, 7, 8, 9];
-let d162 = [23, 24, 56, 87];
-
-function f16() {
-
-	showArr('.out-16', d16);
-}
-
-document.querySelector('.b-16').onclick = f16;
+// let d16 = [];
+// let d161 = [5, 6, 7, 8, 9];
+// let d162 = [23, 24, 56, 87];
+// function f16() {
+// 	d16= d161.concat(d162);
+// 	showArr('.out-16', d16);
+// }
+// document.querySelector('.b-16').onclick = f16;
 
 // Task 17
 // Напишите функцию f17, которая эмулирует работу метода concat. Функция должна объедиять массивы d171 и d172 и записывать результат в d17. Для эмуляции используйт цикл.
