@@ -299,7 +299,6 @@ let a16 = [
 	0,
 	8
 ];
-
 console.group('Task 16 ================');
 console.log(a16[3] == 8);
 console.log(a16[0][1] == 7);
@@ -313,13 +312,16 @@ console.groupEnd();
 //  Т.е вы руками просто пишите массив такой, чтобы условия выполнялись.
 
 let a17 = [
-
+	[0, 0, 6],
+	[0,7],
+	0,
+	[0,0,8]
 ];
 
 console.group('Task 17 ================');
-// console.log(a17[3][2] == 8);
-// console.log(a17[1][1] == 7);
-// console.log(a17[0][2] == 6);
+console.log(a17[3][2] == 8);
+console.log(a17[1][1] == 7);
+console.log(a17[0][2] == 6);
 
 console.groupEnd();
 
