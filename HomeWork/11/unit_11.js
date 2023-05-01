@@ -246,7 +246,12 @@ let d171 = ['a', 'b', 'c', 'd'];
 let d172 = [1, 2, 3, 4, 5];
 
 function f17() {
-
+	for (var i = 0; i < d171.length; i++) {
+		d17.push(d171[i]);
+	  }
+	  for (var j = 0; j < d172.length; j++) {
+		d17.push(d172[j]);
+	  }
 	showArr('.out-17', d17);
 }
 
