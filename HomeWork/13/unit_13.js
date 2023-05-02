@@ -136,11 +136,14 @@ let a7 = {
 	"e": 22
 };
 
-
 function f7() {
-
+	let key = document.querySelector(".i-7").value;
+	if (a7[key] !== undefined) {
+		document.querySelector(".out-7").innerHTML = "1";
+	} else {
+		document.querySelector(".out-7").innerHTML = "0";
+	}
 }
-
 document.querySelector('.b-7').onclick = f7;
 
 // Task 8
