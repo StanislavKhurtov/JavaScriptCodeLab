@@ -79,7 +79,7 @@ let a4 = {
 function f4() {
 	let out = "";
 	for (let el in a4) {
-		out += el + ' ' + a4[el] + "<br>";
+		out += `${el} : ${a4[el]} <br>`;
 	}
 	return out;
 }
@@ -93,10 +93,11 @@ document.querySelector('.b-4').onclick = () => {
 
 function f5(arr, block) {
 	let out = '';
-	// цикл
-	// формат вывода `${key} : ${arr[key]} <br>`;
-	//
-	// тут вывод в блок block
+	for (let key in arr) {
+		out += `${key} : ${arr[key]} <br>`;
+	}
+	document.querySelector(block).innerHTML = out;
+
 }
 
 // давайте протестируем f5
