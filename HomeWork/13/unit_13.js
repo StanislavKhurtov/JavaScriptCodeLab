@@ -120,7 +120,10 @@ let a6 = {
 };
 
 function f6() {
-
+	let inp61 = document.querySelector('.i-61').value,
+		inp62 = document.querySelector('.i-62').value;
+	a6[inp61] = inp62;
+	f5(a6, ".out-6");
 }
 
 document.querySelector('.b-6').onclick = f6;
