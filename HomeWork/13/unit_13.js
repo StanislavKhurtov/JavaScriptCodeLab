@@ -49,7 +49,13 @@ function f3() {
 		"odd": "hi",
 		"mix": "mix"
 	};
-	// return
+	let out = "";
+	for (let elem in a3) {
+		if (a3[elem] == "hi") {
+			out += a3[elem] + " ";
+		}
+	}
+	return out;
 }
 
 document.querySelector('.b-3').onclick = () => {
