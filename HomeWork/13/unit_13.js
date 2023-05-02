@@ -77,10 +77,12 @@ let a4 = {
 	"mix": "mix"
 };
 function f4() {
-
-	// return out;
+	let out = "";
+	for (let el in a4) {
+		out += el + ' ' + a4[el] + "<br>";
+	}
+	return out;
 }
-
 document.querySelector('.b-4').onclick = () => {
 	document.querySelector('.out-4').innerHTML = f4();
 }
