@@ -155,6 +155,14 @@ let a8 = {
 };
 
 function f8() {
+	let i8 = document.querySelector(".i-8").value;
+	let out = "";
+	if (a8[] !== undefined) {
+		out += a8[i8];
+	} else {
+		out += 0;
+	}
+	document.querySelector(".out-8").innerHTML = out;
 
 }
 
@@ -172,6 +180,8 @@ let a9 = {
 };
 
 function f9() {
+	let i9 = document.querySelector('.i-9');
+
 
 }
 
@@ -181,9 +191,12 @@ document.querySelector('.b-9').onclick = f9;
 // Давайте напишем полезную функцию f10, которая проверяет есть ли значение в ассоциативном массиве. Фукнция должна возвращать true если есть, и false если нет. Массив и значение передавать функции в качестве параметров.
 
 function f10(arr, val) {
-
-	//return true;
-	//return false;
+	for (let key in arr) {
+		if (arr[key] == val) {
+			return true;
+		}
+	}
+	return false;
 }
 
 document.querySelector('.b-10').onclick = () => {
@@ -361,14 +374,4 @@ document.querySelector('.b-19').onclick = f19;
 // Task 20
 // При нажатии b-20 выполняете функцию f20. Функция должна в out-20 вывести название станции которые содержат переход на другую ветку. Такие станции маркируются 2. Вывод через пробел
 
-let a20 = {
-	"red": [['Akademmistechko', 1], ['Nyvky', 0], ['Universytet', 3], ['Lisova', 1]],
-	"blue": [['Minska', 1], ['Obolon', 0], ['Pochaina', 2], ['Holosiivska', 0]],
-	"green": [['Syrets', 1], ['Zoloti Vorota', 2], ['Klovska', 0], ['Vidubichi', 1]],
-}
-
-function f20() {
-
-}
-
-document.querySelector('.b-20').onclick = f20
+git add 
