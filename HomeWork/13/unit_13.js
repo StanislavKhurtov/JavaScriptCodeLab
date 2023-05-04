@@ -190,40 +190,53 @@
 // Task 10
 // Давайте напишем полезную функцию f10, которая проверяет есть ли значение в ассоциативном массиве. Фукнция должна возвращать true если есть, и false если нет. Массив и значение передавать функции в качестве параметров.
 
-function f10(arr, val) {
-	for (let key in arr) {
-		if (arr[key] == val) {
-			return true;
-		}
-	}
-	return false;
-}
-
-document.querySelector('.b-10').onclick = () => {
-	let a10 = {
-		"k": 22,
-		"d": 54,
-		"m": 22,
-	}
-	document.querySelector('.out-10').innerHTML = f10(a10, 22);
-};
+// function f10(arr, val) {
+// 	for (let key in arr) {
+// 		if (arr[key] == val) {
+// 			return true;
+// 		}
+// 	}
+// 	return false;
+// }
+//
+// document.querySelector('.b-10').onclick = () => {
+// 	let a10 = {
+// 		"k": 22,
+// 		"d": 54,
+// 		"m": 22,
+// 	}
+// 	document.querySelector('.out-10').innerHTML = f10(a10, 22);
+// };
 
 
 // Task 11
 // При нажатии b-11 выполняете функцию f11. Функция должна получить ключ из i-11 и удалить запись из массива a11 с таким ключем. После этого вывести массив в out-11. Для вывода используйте функцию f5.
 
-let a11 = {
-	"b": 17,
-	"e": 22,
-	"j": 17,
-	"k": 22,
-	"d": 54
-};
+//let a11 = {
+//	"b": 17,
+//	"e": 22,
+//	"j": 17,
+//	"k": 22,
+//	"d": 54
+//};
+//
+//function f11() {
+//	let i11 = document.querySelector(".i-11").value;
+//	if (a11[i11] !== undefined) {
+//		delete a11[i11];
+//	}
+//	f5(a11, ".out-11");
+//}
 
-function f11() {
+function f5(arr, block) {
+	let out = '';
+	for (let key in arr) {
+		out += `${key} : ${arr[key]} <br>`;
+	}
+	document.querySelector(block).innerHTML = out;
 }
 
-document.querySelector('.b-11').onclick = f11;
+//document.querySelector('.b-11').onclick = f11;
 
 // Task 12
 //  При нажатии b-12 выполняете функцию f12. Функция должна получить значение из i-12 и удалить запись из массива a12 с таким значением. После этого вывести массив в out-12. Для вывода используйте функцию f5.
