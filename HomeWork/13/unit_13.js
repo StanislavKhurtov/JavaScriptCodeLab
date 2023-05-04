@@ -228,6 +228,37 @@
 //	f5(a11, ".out-11");
 //}
 
+// function f5(arr, block) {
+// 	let out = '';
+// 	for (let key in arr) {
+// 		out += `${key} : ${arr[key]} <br>`;
+// 	}
+// 	document.querySelector(block).innerHTML = out;
+// }
+
+//document.querySelector('.b-11').onclick = f11;
+
+// Task 12
+//  При нажатии b-12 выполняете функцию f12. Функция должна получить значение из i-12 и удалить запись из массива a12 с таким значением. После этого вывести массив в out-12. Для вывода используйте функцию f5.
+
+//let a12 = {
+//	"b": 17,
+//	"e": 22,
+//	"j": 17,
+//	"k": 22,
+//	"d": 17,
+//};
+//
+//function f12() {
+//	let i12 = document.querySelector(".i-12").value;
+//	for (let key in a12) {
+//		if (a12[key] == i12) {
+//			delete a12[key];
+//		}
+//	}
+//	f5(a12, ".out-12");
+//}
+
 function f5(arr, block) {
 	let out = '';
 	for (let key in arr) {
@@ -236,24 +267,8 @@ function f5(arr, block) {
 	document.querySelector(block).innerHTML = out;
 }
 
-//document.querySelector('.b-11').onclick = f11;
 
-// Task 12
-//  При нажатии b-12 выполняете функцию f12. Функция должна получить значение из i-12 и удалить запись из массива a12 с таким значением. После этого вывести массив в out-12. Для вывода используйте функцию f5.
-
-let a12 = {
-	"b": 17,
-	"e": 22,
-	"j": 17,
-	"k": 22,
-	"d": 17,
-};
-
-function f12() {
-
-}
-
-document.querySelector('.b-12').onclick = f12;
+//document.querySelector('.b-12').onclick = f12;
 
 // Task 13
 // При нажатии b-13 выполняете функцию f13. Функция должна в out-13 выводить сумму значений массива a13 (только числа).
