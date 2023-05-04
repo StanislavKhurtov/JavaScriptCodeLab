@@ -316,18 +316,24 @@ function f5(arr, block) {
 
 // т.е ожидаем 1 2 23 3 5 6 7 8 9 10
 
-let a15 = {
-	'prim': [1, 2, 23],
-	'one': [3, 5],
-	'testt': [6, 7, 8],
-	'ivan': [9, 10]
-};
-
-function f15() {
-
-}
-
-document.querySelector('.b-15').onclick = f15;
+//  let a15 = {
+//  	'prim': [1, 2, 23],
+//  	'one': [3, 5],
+//  	'testt': [6, 7, 8],
+//  	'ivan': [9, 10]
+//  };
+//
+//  function f15() {
+//  	let out = "";
+//  	for (let key in a15) {
+//  		for (let el in a15[key]) {
+//  			out += a15[key][el] + " ";
+//  		}
+//  	}
+//  	document.querySelector('.out-15').innerHTML = out;
+//  }
+//
+//  document.querySelector('.b-15').onclick = f15;
 
 // Task 16
 // При нажатии b-16 выполняете функцию f16. Функция должна в out-16 выводить элементы name вложенных массивов в a16. Вывод через пробел.
