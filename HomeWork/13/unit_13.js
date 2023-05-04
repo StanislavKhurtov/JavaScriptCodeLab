@@ -365,26 +365,32 @@ function f5(arr, block) {
 // Task 17
 // При нажатии b-17 выполняете функцию f17. Функция должна в out-17 выводить элементы name вложенных массивов в a17 для который age > 30. Вывод через пробел.
 
-let a17 = {
-	"iis8sj": {
-		"name": "Ivan",
-		"age": 27,
-	},
-	"iiss7j": {
-		"name": "Petr",
-		"age": 26,
-	},
-	"s3s8sj": {
-		"name": "Serg",
-		"age": 47,
-	},
-}
-
-function f17() {
-
-}
-
-document.querySelector('.b-17').onclick = f17;
+//  let a17 = {
+//  	"iis8sj": {
+//  		"name": "Ivan",
+//  		"age": 27,
+//  	},
+//  	"iiss7j": {
+//  		"name": "Petr",
+//  		"age": 26,
+//  	},
+//  	"s3s8sj": {
+//  		"name": "Serg",
+//  		"age": 47,
+//  	},
+//  }
+//
+//  function f17() {
+//  	let out = "";
+//  	for (let key in a17) {
+//  		if (a17[key]["age"] > 30) {
+//  			out += a17[key]["name"] + " ";
+//  		}
+//  	}
+//  	document.querySelector('.out-17').innerHTML = out;
+//  }
+//
+//  document.querySelector('.b-17').onclick = f17;
 
 // Task 18
 // При нажатии b-18 выполняете функцию f18. Функция должна в out-18 вывести станции метро из массива a18 той ветки, которую пользователь ввел в i-18. Вывод станций - через пробел. Если ветка не найдена выводите пустую строку.
