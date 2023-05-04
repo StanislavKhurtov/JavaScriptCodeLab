@@ -273,18 +273,24 @@ function f5(arr, block) {
 // Task 13
 // При нажатии b-13 выполняете функцию f13. Функция должна в out-13 выводить сумму значений массива a13 (только числа).
 
-let a13 = {
-	'prim': 'hello',
-	'one': 4,
-	'testt': 'vodoley',
-	'ivan': 6
-};
-
-function f13() {
-
-}
-
-document.querySelector('.b-13').onclick = f13;
+// let a13 = {
+// 	'prim': 'hello',
+// 	'one': 4,
+// 	'testt': 'vodoley',
+// 	'ivan': 6
+// };
+//
+// function f13() {
+// 	let sum = 0;
+// 	for (let key in a13) {
+// 		if (typeof (a13[key]) == "number") {
+// 			sum += a13[key];
+// 		}
+// 	}
+// 	document.querySelector('.out-13').innerHTML = sum;
+// }
+//
+// document.querySelector('.b-13').onclick = f13;
 
 // Task 14
 // При нажатии b-14 выполняете функцию f14. Функция должна в out-14 выводить нулевые (по индексу)  элементы вложенных массивов в a14. Вывод через пробел.
