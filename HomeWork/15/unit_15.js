@@ -13,7 +13,6 @@ console.log(s1);
 // Task 2
 // При нажатии b-2 выполняете функцию f2. Функция должна добавить в набор s2 элементы, которые пользователь вводит в i-2. Функция должна выводить в консоль s2 после каждого добавления элемента.
 
-
 let s2 = new Set();
 const f2 = () => {
 	let inp = document.querySelector('.i-2').value;
@@ -22,28 +21,30 @@ const f2 = () => {
 }
 document.querySelector('.b-2').onclick = f2;
 
-
 // Task 3
 // При нажатии b-3 выполняете функцию f3. Функция должна удалить из набора s3 строку, которую пользователь вводит в i-3. Функция должна выводить в консоль s3 после каждого удаления элемента.
 
 let s3 = new Set(['one', 'two', 'four']); // обратите внимание, как просто можно добавить массив в набор!
-
 const f3 = () => {
 	let inp = document.querySelector('.i-3').value;
 	s3.delete(inp);
 	console.log(s3);
 }
-
 document.querySelector('.b-3').onclick = f3;
-
 
 // Task 4
 // При нажатии b-4 выполняете функцию f4. Функция должна проверить наличие в наборе s4 строки введенной пользователем в i-4. Если строка есть - то вывести в out-4 true. Если нет - false.
 
 let s4 = new Set(['a', 'b', 'c', 'z']);
-
-const f4 = () => { }
-
+const f4 = () => {
+	let inp = document.querySelector('.i-4').value;
+	let out = "";
+	if (s4.has(inp.toLowerCase())) {
+		document.querySelector('.out-4').textContent = true;
+	} else {
+		document.querySelector('.out-4').textContent = false;
+	}
+}
 document.querySelector('.b-4').onclick = f4;
 
 // Task 5
