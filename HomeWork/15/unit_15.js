@@ -1,20 +1,19 @@
-// В данной работе и далее под определением набор понимают Set. 
+// В данной работе и далее под определением набор понимают Set.
 
 // Task 1
 // Создайте set s1. Добавьте в него три элемента 'h', 'b', 'o', 'h'. Добавление делайте через add. Выведите в консоль получившийся набор (set) s1.
 
-// let s1 = new ...
-
+let s1 = new Set();
+s1.add('h');
+s1.add('b');
+s1.add('o');
+s1.add('h');
+console.log(s1);
 
 // Task 2
 // При нажатии b-2 выполняете функцию f2. Функция должна добавить в набор s2 элементы, которые пользователь вводит в i-2. Функция должна выводить в консоль s2 после каждого добавления элемента.
 
 
-// let s2 =
-
-const f2 = () => { }
-
-document.querySelector('.b-2').onclick = f2;
 
 
 // Task 3
@@ -73,14 +72,14 @@ const f8 = () => { }
 document.querySelector('.b-8').onclick = f8;
 
 // Task 9
-//  При нажатии b-9 выполняете функцию f9. Функция должна принимать набор our_set в качестве параметра, преобразовывать его в строку, причем после каждого символа строки должен быть пробел. Функция должна возвращать результирующую строку. 
-// В нашем примере результат должен быть 9 8 7 6 5 
+//  При нажатии b-9 выполняете функцию f9. Функция должна принимать набор our_set в качестве параметра, преобразовывать его в строку, причем после каждого символа строки должен быть пробел. Функция должна возвращать результирующую строку.
+// В нашем примере результат должен быть 9 8 7 6 5
 
 const f9 = our_set => { }
 
 document.querySelector('.b-9').onclick = () => {
-    let s9 = new Set([9, 8, 7, 6, 5]);
-    document.querySelector('.out-9').innerHTML = f9(s9);
+	let s9 = new Set([9, 8, 7, 6, 5]);
+	document.querySelector('.out-9').innerHTML = f9(s9);
 }
 
 // Task 10
@@ -89,8 +88,8 @@ document.querySelector('.b-9').onclick = () => {
 const f10 = (out_set, elem) => { }
 
 document.querySelector('.b-10').onclick = () => {
-    let a10 = new Set(['4', '5', '6']);
-    f10(a10, '.out-10');
+	let a10 = new Set(['4', '5', '6']);
+	f10(a10, '.out-10');
 };
 
 
@@ -99,10 +98,10 @@ document.querySelector('.b-10').onclick = () => {
 // Да, эта задача решена! Просто разберитесь.
 
 const f11 = () => {
-    let s = new Set();
-    s.add([1]);
-    s.add([1]);
-    console.log(s);
+	let s = new Set();
+	s.add([1]);
+	s.add([1]);
+	console.log(s);
 }
 
 document.querySelector('.b-11').onclick = f11;
@@ -117,7 +116,7 @@ const f12 = () => {
 }
 
 document.querySelector('.b-12').onclick = () => {
-    console.log(f12());
+	console.log(f12());
 }
 
 // Task 13
@@ -130,9 +129,9 @@ let str13 = 'The name conjures up visions of plum pudding and Christmas punch qu
 
 const f13 = () => {
 
-    // return
+	// return
 }
 
 document.querySelector('.b-13').onclick = () => {
-    console.log(f13());
+	console.log(f13());
 }
