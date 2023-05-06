@@ -61,12 +61,10 @@ document.querySelector('.b-5').onclick = f5;
 // При нажатии b-6 выполняете функцию f6. Функция должна вывести в out-6 число уникальных элементов в массиве a6. Решение должно использовать set.
 
 let a6 = [1, 2, 3, 4, 5, 3, 4, 5, 2, 4, 5, 3, 24, 5, 2, 4, 56, 4, 3, 2, 335, 2, 23, 41, 3, 4, 1, 1, 4, 2, 2, 4, 5, 24, 5, 3, 22, 56];
-
 const f6 = () => {
 	let newArr = Array.from(new Set(a6));
 	document.querySelector('.out-6').innerHTML = newArr;
 }
-
 document.querySelector('.b-6').onclick = f6;
 
 // Task 7
@@ -81,8 +79,19 @@ document.querySelector('.b-7').onclick = f7;
 
 let s8 = new Set([1, 2, 3, 4, 5, 3, 4, 7, 9, 5, 7, 8, 9, 23, 45, 5, 2, 4, 5, 3, 24, 5, 2, 4, 56, 4, 3, 2, 335, 2, 23, 41, 3, 4, 1, 1, 4, 2, 2, 4, 5, 24, 5, 3, 22, 56]);
 let ar8 = [];
+console.log(s8);
 
-const f8 = () => { }
+const f8 = () => {
+	let out = "";
+
+	s8.forEach((el) => {
+		if (el > 5) {
+			out += el
+		}
+	})
+	ar8 = Array.from(new Set(out));
+	console.log(ar8)
+}
 
 document.querySelector('.b-8').onclick = f8;
 
@@ -143,8 +152,15 @@ let str13 = 'The name conjures up visions of plum pudding and Christmas punch qu
 
 
 const f13 = () => {
-
-	// return
+	let arrString = Array.from(str13);
+	console.log(arrString);
+	let setArr = new Set(arrString);
+	console.log(setArr);
+	let out = "";
+	for (let key of setArr) {
+		out += `{${key} : `;
+	}
+	console.log(out);
 }
 
 document.querySelector('.b-13').onclick = () => {
