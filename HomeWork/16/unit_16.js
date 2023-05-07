@@ -65,7 +65,7 @@ function f5() {
 			arr.push(el)
 		}
 	}
-	console.log(arr);
+	return arr;
 }
 
 document.querySelector('.b-5').addEventListener('click', () => {
