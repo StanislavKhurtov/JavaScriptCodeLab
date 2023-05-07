@@ -204,7 +204,12 @@ document.querySelector('.b-12').addEventListener('click', f12);
 let a13 = 'testone';
 
 function f13() {
-
+	let out = "";
+	let arr = Array.from(a13);
+	for (let el of arr) {
+		out += el + " ";
+	}
+	document.querySelector('.out-13').innerHTML = out;
 }
 
 document.querySelector('.b-13').addEventListener('click', f13);
