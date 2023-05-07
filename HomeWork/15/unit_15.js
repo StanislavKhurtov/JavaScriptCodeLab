@@ -154,7 +154,9 @@ document.querySelector('.b-11').onclick = f11;
 let str12 = 'The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy firesides but also of orphaned and starving children';
 
 const f12 = () => {
-
+	let arrStr = Array.from(str12);
+	let strSet = new Set(arrStr);
+	return strSet;
 }
 
 document.querySelector('.b-12').onclick = () => {
@@ -170,15 +172,16 @@ let str13 = 'The name conjures up visions of plum pudding and Christmas punch qu
 
 
 const f13 = () => {
-	let arrString = Array.from(str13);
-	console.log(arrString);
-	let setArr = new Set(arrString);
-	console.log(setArr);
-	let out = "";
-	for (let key of setArr) {
-		out += `{${key} : `;
+	let res = {};
+	let s13 = new Set(str13);
+	for (let s of s13) {
+	let count = 0;
+	for (let i = 0; i < str13.length; i++) {
+	if (s === str13[i]) count++;
 	}
-	console.log(out);
+	res[s] = count;
+	}
+	return res;
 }
 
 document.querySelector('.b-13').onclick = () => {
