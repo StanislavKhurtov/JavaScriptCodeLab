@@ -47,7 +47,7 @@ document.querySelector('.b-3').addEventListener('click', f3);
 function f4() {
 	let div4 = document.querySelectorAll('.out-4');
 	for (let i = 0; i < div4.length; i++) {
-		div4[i].innerHTML = `out-4 4`;
+		div4[i].textContent = `out-4 4`;
 	}
 }
 
@@ -59,7 +59,13 @@ document.querySelector('.b-4').addEventListener('click', f4);
 let a5 = [3, 4, 5, 2, 1, 7, 8, 2, 4, 6, 8, 11, 23, 17];
 
 function f5() {
-
+	let arr = [];
+	for (let el of a5) {
+		if (el > 7) {
+			arr.push(el)
+		}
+	}
+	console.log(arr);
 }
 
 document.querySelector('.b-5').addEventListener('click', () => {
