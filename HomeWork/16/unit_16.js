@@ -236,7 +236,9 @@ document.querySelector('.b-14').addEventListener('click', f14);
 
 
 function f15() {
-
+	let out = document.querySelectorAll('.out-15');
+	for (let i = 0; i < out.length; i++) {
+		out[i].innerHTML = 15;
+	}
 }
-
 document.querySelector('.b-15').addEventListener('click', f15);
