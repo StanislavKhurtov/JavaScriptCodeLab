@@ -148,7 +148,12 @@ document.querySelector('.b-9').addEventListener('click', () => {
 let a10 = [4, 6, 9, 'Hello'];
 
 function f10() {
-
+	let a = {};
+	for (let i = 0; i < a10.length; i++) {
+		a[a10[i]] = a10[i];
+	}
+	a10 = a;
+	return a10;
 }
 
 document.querySelector('.b-10').addEventListener('click', () => {
@@ -166,7 +171,13 @@ let a11 = {
 }
 
 function f11() {
-
+	let out = "";
+	for (let key in a11) {
+		if (a11[key] > 10) {
+			out += a11[key] + " ";
+		}
+	}
+	document.querySelector('.out-11').innerHTML = out;
 }
 
 document.querySelector('.b-11').addEventListener('click', f11);
