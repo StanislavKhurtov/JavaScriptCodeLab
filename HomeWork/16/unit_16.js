@@ -57,7 +57,6 @@ document.querySelector('.b-4').addEventListener('click', f4);
 //При нажатии .b-5 выполняете функцию f5. Функция должна с помощью for of перебрать массив a5 и возвратить новый массив куда входят элементы из a5 большие 7.
 
 let a5 = [3, 4, 5, 2, 1, 7, 8, 2, 4, 6, 8, 11, 23, 17];
-
 function f5() {
 	let arr = [];
 	for (let el of a5) {
@@ -67,7 +66,6 @@ function f5() {
 	}
 	return arr;
 }
-
 document.querySelector('.b-5').addEventListener('click', () => {
 	document.querySelector('.out-5').innerHTML = f5();
 });
@@ -78,7 +76,13 @@ document.querySelector('.b-5').addEventListener('click', () => {
 let a6 = [[1, 2], [3, 4], [5, 6]];
 
 function f6() {
-
+	let arr = [];
+	for (let i = 0; i < a6.length; i++) {
+		for (let k = 0; k < a6[i].length; k++) {
+			arr.push(a6[i][k])
+		}
+	}
+	document.querySelector('.out-6').innerHTML = arr;
 }
 
 document.querySelector('.b-6').addEventListener('click', f6);
