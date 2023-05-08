@@ -51,7 +51,6 @@ function t3() {
 	//a3_res = a3.map(item => parseInt(item));
 	return a3_res;
 }
-
 document.querySelector('.b-3').onclick = () => {
 	console.log(t3());
 }
@@ -63,9 +62,17 @@ document.querySelector('.b-3').onclick = () => {
 let a4 = [4, "3", 6, 7, "12", 34, "56", 78, 90, 11];
 
 function t4() {
-
+	a4_res = a4.map((el) => {
+		if (typeof el === "number") {
+			return el;
+		}
+	}).filter((item) => {
+		if (item !== undefined) {
+			return item;
+		}
+	})
+	return a4_res;
 }
-
 document.querySelector('.b-4').onclick = () => {
 	console.log(t4());
 }
