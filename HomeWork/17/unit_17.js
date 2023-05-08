@@ -129,21 +129,16 @@ document.querySelector('.b-7').onclick = () => {
 /* Дан массив b8 = [3, 14, 15, 92, "6", "5", "hello", 32]. С помощью filter, переберите массив b8 и создайте массив b8_res, который содержит индексы четных элементов. Возвратите b8_res. Действия должны запускаться при вызове функции t8 */
 
 let b8 = [3, 14, 15, 92, "6", "5", "hello", 32];
-
 function t8() {
 	b8_res = b8
-    .map((element, index) => ({ element, index })) // Добавляем индексы элементов
-    .filter(({ element }) => typeof element === 'number' && element % 2 === 0) // Оставляем только четные числа
-    .map(({ index }) => index); // Получаем только индексы
+		.map((element, index) => ({ element, index })) // Добавляем индексы элементов
+		.filter(({ element }) => typeof element === 'number' && element % 2 === 0) // Оставляем только четные числа
+		.map(({ index }) => index); // Получаем только индексы
 	return b8_res;
 }
-
-
 document.querySelector('.b-8').onclick = () => {
 	console.log(t8());
 }
-
-
 
 // Task 9 ============================================
 /*  Дан массив b9 = [3, "hello", 4, "world", 5, "hi"]. С помощью filter, переберите массив b9 и создайте массив b9_num и b9_string, которые содержат первый - числа из b9, второй - строки. Задачу решите с помощью filter. Действия должны запускаться при вызове функции t9. */
@@ -151,7 +146,8 @@ document.querySelector('.b-8').onclick = () => {
 let b9 = [3, "hello", 4, "world", 5, "hi"];
 
 function t9() {
-
+	b9_num = b9.filter(item => typeof item === "number");
+	b9_string = b9.filter(item => typeof item === "string");
 	return [b9_num, b9_string];
 }
 
@@ -159,15 +155,12 @@ document.querySelector('.b-9').onclick = () => {
 	console.log(t9());
 }
 
-
-
 // Task 10 ============================================
 /*  Дан массив b10 = [ [1,2,3], [3,4,6], [4,5,7], [8,9,3]]. С помощью filter переберите массив и создайте  b10_res, в который входят вложенные массивы содержащие цифру 3.  Возвратите b10_res. Действия должны запускаться при вызове функции t10. */
 
 let b10 = [[1, 2, 3], [3, 4, 6], [4, 5, 7], [8, 9, 3]]
 
 function t10() {
-
 
 }
 
