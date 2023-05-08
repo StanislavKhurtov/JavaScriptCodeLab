@@ -131,8 +131,13 @@ document.querySelector('.b-7').onclick = () => {
 let b8 = [3, 14, 15, 92, "6", "5", "hello", 32];
 
 function t8() {
-
+	b8_res = b8
+    .map((element, index) => ({ element, index })) // Добавляем индексы элементов
+    .filter(({ element }) => typeof element === 'number' && element % 2 === 0) // Оставляем только четные числа
+    .map(({ index }) => index); // Получаем только индексы
+	return b8_res;
 }
+
 
 document.querySelector('.b-8').onclick = () => {
 	console.log(t8());
