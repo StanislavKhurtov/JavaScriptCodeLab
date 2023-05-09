@@ -4,11 +4,11 @@ let a1_res = [], a2_res = [], a3_res = [], a4_res = [], a5_res = [], a6_res = []
 /* <p>Дан массив a1 = [4,5,6,7,12,34,56,78,90,11] - с помощью forEach переберите массив и создайте новый массив a1_res куда добавьте элементы данного массива умноженные на 2. Действия должны запускаться при вызове функции t1.</p> */
 
 function t1() {
-    let a1 = [4, 5, 6, 7, 12, 34, 56, 78, 90, 11];
-    a1.forEach(elem => {
-        a1_res.push(elem * 2);
-    });
-    document.querySelector('.out-1').innerHTML = a1_res;
+	let a1 = [4, 5, 6, 7, 12, 34, 56, 78, 90, 11];
+	a1.forEach(elem => {
+		a1_res.push(elem * 2);
+	});
+	document.querySelector('.out-1').innerHTML = a1_res;
 }
 
 document.querySelector('.b-1').onclick = t1;
@@ -19,7 +19,9 @@ document.querySelector('.b-1').onclick = t1;
 запускаться при вызове функции t2.*/
 
 function t2() {
-
+	let a1 = [2, 3, 4, 5, 10, 11, 12];
+	a1.forEach(elem => a2_res.push(elem / 2));
+	document.querySelector('.out-2').innerHTML = a2_res;
 }
 
 document.querySelector('.b-2').onclick = t2;
@@ -53,7 +55,7 @@ function t5() {
 }
 
 document.querySelectorAll('.task-5').forEach(elem => {
-    elem.onclick = t5;
+	elem.onclick = t5;
 });
 
 
