@@ -48,7 +48,7 @@ document.querySelector('.div-4').ondblclick = t4;
 /*  Дан блок .div-5.active. Добавьте на него событие двойной клик, по которому удалется класс active если он есть и добавляется если такого класса нет. */
 
 function t5() {
-	this.classList.remove('active');
+	this.classList.toggle('active');
 }
 document.querySelector('.div-5').ondblclick = t5;
 
@@ -66,9 +66,10 @@ document.querySelector('.div-6').ondblclick = t6;
 /*  Дан блок .div-7. При клике правой кнопкой мыши на блоке добавляйте ему класс .active. При повторном клике - удаляйте. */
 
 function t7() {
-	this.classList.toggle('active')
+	this.classList.toggle('active');
+	return false;
 }
-document.querySelector('.div-7').ondblclick = t7;
+document.querySelector('.div-7').oncontextmenu = t7;
 
 
 // Task 8 ============================================
@@ -103,11 +104,12 @@ document.querySelector('.div-9').oncontextmenu = t9;
 // Task 10 ============================================
 /*  Дан блок .div-10. Внутри блока - изображение 1.png. При наведении мыши (mouseenter)  - меняйте изображение на 2.png. */
 
-function t10() {
+function t10(e) {
+	return e.target.children[0].src = "img/2.png";
 
 }
 
-// ваше событие здесь!!!
+document.querySelector('.div-10').onmouseenter = t10;
 
 // Task 11 ============================================
 /*  Дан блок .div-11. Внутри блока - изображение 1.png. При наведении мыши (mouseenter)  - меняйте изображение на 2.png. При уведении мыши - mouseleave - возвращайте исходное изображение. */
@@ -116,7 +118,7 @@ function t11() {
 
 }
 
-// ваше событие здесь!!!
+document.querySelector('.div-11').onmouseenter = t11;
 
 // Task 12 ============================================
 /*  Дан блок .div-12. Добавьте на него событие mousedown - при нажатии кнопки мыши - добавляйте ему класс active. */
