@@ -129,7 +129,7 @@ document.querySelector('.div-11').onmouseleave = t111;
 
 
 document.querySelector('.div-12').onmousedown = (e) => {
-	e.classList.add('active')
+	e.target.classList.add('active');
 }
 
 
