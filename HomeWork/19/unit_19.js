@@ -85,6 +85,7 @@ function t8() {
 		};
 	}
 }
+
 document.querySelector('.ch-8').onchange = t8;
 
 
