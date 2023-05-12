@@ -136,14 +136,13 @@ document.querySelector('.div-12').onmousedown = (e) => {
 // Task 13 ============================================
 /*  Дан блок .div-13. Добавьте на него событие mousedown - при нажатии кнопки мыши - добавляйте ему класс active. Добавьте ему событие mouseup - при отпускании мыши - удаляйте класс active. */
 
-// () =>  {
+document.querySelector('.div-13').onmousedown = (e) => {
+	e.target.classList.add('active');
+}
+document.querySelector('.div-13').onmouseup = (e) => {
+	e.target.classList.remove('active');
+}
 
-// }
-
-// () =>  {
-
-// }
-// ваше событие здесь!!!
 
 
 // Task 14 ============================================
