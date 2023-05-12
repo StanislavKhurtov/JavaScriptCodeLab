@@ -24,11 +24,12 @@ document.querySelector('.div-2').onclick = (e) => {
 
 let w3 = 75;
 
-function t3() {
-
+function t3(el) {
+	el.target.style.width = `${w3}px`;
+	w3 += 5;
+	document.querySelector(".out-3").textContent = w3;
 }
-
-// ваше событие здесь!!!
+document.querySelector('.div-3').onclick = t3;
 
 
 // Task 4 ============================================
