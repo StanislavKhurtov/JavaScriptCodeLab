@@ -103,18 +103,27 @@ function t9(event) {
 	}
 	document.querySelector(".out-9").innerHTML = out;
 }
-
 document.querySelector('.i-9').onkeydown = t9;
 
 
 // Task 10 ============================================
 /*  Дан input .i-10 и изображение 1.png. Добавьте событие на input, при нажатии клавиш стрелка вправо и стрелка влево увеличивать ширину изображения. Клавиши стрелка вверх и вниз - увеличивать высоту изображения. Одно нажатие клавиши - 1px. */
 
-function t10() {
+let w10 = 75,
+	h10 = 75;
 
+function t10(event) {
+	if (event.keyCode === 37 || event.keyCode === 39) {
+		document.querySelector('.div-10').style.width = `${w10}px`;
+		w10++;
+	}
+	else if (event.keyCode === 38 || event.keyCode === 40) {
+		document.querySelector('.div-10').style.height = `${h10}px`;
+		h10++;
+	}
 }
 
-// ваше событие здесь!!!
+document.querySelector('.i-10').onkeydown = t10;
 
 // Task 11 ============================================
 /*  Проект.
@@ -125,6 +134,7 @@ function t10() {
 */
 
 function t11() {
+
 
 }
 
