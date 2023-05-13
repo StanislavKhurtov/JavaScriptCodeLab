@@ -23,11 +23,17 @@ document.querySelector('.i-2').onkeypress = t2;
 
 let w3 = 75;
 
-function t3() {
+function t3(event) {
+	if (event.keyCode >= 48 && event.keyCode <= 57) {
+		document.querySelector('.out-3').innerHTML = false;
+	}
+	else {
+		document.querySelector('.out-3').innerHTML = true;
+	}
 
 }
 
-// ваше событие здесь!!!
+document.querySelector('.i-3').onkeypress = t3;
 
 
 // Task 4 ============================================
