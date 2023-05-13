@@ -4,17 +4,18 @@
 
 function t1(event) {
 	document.querySelector('.out-1').innerHTML = event.key;
+	return event.key;
 }
 document.querySelector('.i-1').onkeypress = t1;
 
 // Task 2 ============================================
 /*  Дан input .i-2. Напишите функцию t2, которая выводит в .out-2 код символа и возвращает его. */
 
-function t2() {
-
+function t2(event) {
+	document.querySelector('.out-2').innerHTML = event.keyCode;
+	return event.keyCode;
 }
-
-// ваше событие здесь!!!
+document.querySelector('.i-2').onkeypress = t2;
 
 
 // Task 3 ============================================
