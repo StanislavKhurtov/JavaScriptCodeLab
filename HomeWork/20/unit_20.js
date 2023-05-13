@@ -57,31 +57,41 @@ document.querySelector('.i-5').onkeypress = t5;
 // Task 6 ============================================
 /*  Дан input .i-6. Напишите функцию t6, которая выводит в .i-6 только символы в нижнем регистре.  */
 
-function t6() {
-
+function t6(event) {
+	console.log(event)
+	document.querySelector('.out-6').innerHTML += event.key.toLowerCase();
 }
 
-// ваше событие здесь!!!
+document.querySelector('.i-6').onkeypress = t6;
 
 
 // Task 7 ============================================
 /*  Дан input .i-7. Напишите функцию t7, которая выводит в .out-7 случаный символ из массива a7 при каждом вводе символа. */
 
 function t7() {
-	const a7 = [];
-
+	const a7 = ["a", "z", "x", "w", "y", "t"];
+	let rdm = Math.floor(Math.random() * a7.length);
+	document.querySelector(".out-7").innerHTML += `${a7[rdm]}`;
 }
 
-// ваше событие здесь!!!
+document.querySelector('.i-7').onkeypress = t7;
 
 // Task 8 ============================================
 /*  Дан input .i-8. Напишите функцию t8, которая выводит в .out-8 вводимый в input текст, но заменяет i на 1, o на 0, l на 7. */
 
-function t8() {
+function t8(event) {
+	const a8 = {
+		i: 1,
+		o: 0,
+		l: 7
+	}
+	document.querySelector('.i-8').value = a8[event.key];
+	document.querySelector('.out-8').innerHTML += event.key;
+	return false;
 
 }
 
-// ваше событие здесь!!!
+document.querySelector('.i-8').onkeypress = t8;
 
 
 // Task 9 ============================================
