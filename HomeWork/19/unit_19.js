@@ -214,3 +214,10 @@ function t20(e) {
 	t++;
 }
 document.querySelector('progress').onmousemove = t20;
+
+
+document.addEventListener('keypress', (event) => {
+	const keyName = event.key;
+
+	alert('keypress event\n\n' + 'key: ' + keyName);
+});
