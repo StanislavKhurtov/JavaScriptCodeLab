@@ -96,12 +96,15 @@ document.querySelector('.i-8').onkeypress = t8;
 
 // Task 9 ============================================
 /* Дан input .i-9. Напишите функцию t8, выводит в .out-9 количество нажатых клавиш стрелка вниз. */
-
-function t9() {
-
+let out = 0;
+function t9(event) {
+	if (event.keyCode == 40) {
+		out++;
+	}
+	document.querySelector(".out-9").innerHTML = out;
 }
 
-// ваше событие здесь!!!
+document.querySelector('.i-9').onkeydown = t9;
 
 
 // Task 10 ============================================
