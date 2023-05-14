@@ -138,5 +138,5 @@ function t11() {
 
 }
 
-// ваше событие здесь!!!
+document.querySelector('.i-11').onkeydown = t11;
 
