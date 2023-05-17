@@ -10,12 +10,13 @@ document.querySelector('.div-1').addEventListener('touchstart', t1)
 
 // Task 2 ============================================
 /* Создайте блок div-2. Добавьте на него событие touchstart. Выведите в out-2 число срабатываний события. */
-
-function t2() {
-
+let out2 = 0;
+function t2(event) {
+	out2++;
+	document.querySelector('.out-2').innerHTML = out2;
 }
 
-// ваше событие здесь!!!
+document.querySelector('.div-2').addEventListener('touchstart', t2)
 
 
 // Task 3 ============================================
