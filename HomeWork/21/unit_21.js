@@ -15,18 +15,25 @@ function t2(event) {
 	out2++;
 	document.querySelector('.out-2').innerHTML = out2;
 }
-
 document.querySelector('.div-2').addEventListener('touchstart', t2)
 
 
 // Task 3 ============================================
 /*  Создайте блок div-3_1 и div-3_2. Добавьте на них событие touchstart. Выведите в out-3 номер блока 1 или 2 на котором сработало событие. */
 
-function t3() {
-
+function t3(e) {
+	console.log(e);
+	if (e.target.innerText === "3-1") {
+		document.querySelector('.out-3').textContent = '1';
+	} else if (e.target.innerText === "3-2") {
+		document.querySelector('.out-3').textContent = '2';
+	}
 }
 
-// ваше событие здесь!!!
+
+document.querySelector('.div-3_1').addEventListener('touchstart', t3);
+document.querySelector('.div-3_2').addEventListener('touchstart', t3);
+
 
 
 // Task 4 ============================================
