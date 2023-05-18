@@ -105,12 +105,13 @@ document.querySelector('.div-9').ontouchstart = t9;
 
 // Task 10 ============================================
 /*  Дан блок div-10. Добавьте на него событие touchmove. При срабатывании события - увеличивайте его ширину на 1. */
-
-function t10() {
-
+let w10 = 75;
+function t10(event) {
+	event.target.style.width = `${w10}px`;
+	w10++;
 }
 
-// ваше событие здесь!!!
+document.querySelector('.div-10').addEventListener('touchmove', t10)
 
 // Task 11 ============================================
 /*  Дан блок div-11. Добавьте на него событие touch. При срабатывании выводите радиус события radiusX, radiusY. */
