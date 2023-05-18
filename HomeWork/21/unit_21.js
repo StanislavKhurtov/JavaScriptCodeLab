@@ -38,22 +38,23 @@ document.querySelector('.div-3_2').addEventListener('touchstart', t3);
 /*  Создайте блок div-4. И кнопку b-4. При нажатии кнопки - добавляйте событие ontouchstart на блок div-4. При событии происходит вывод текста touch в out-4.  */
 
 function t4(event) {
-	console.log(event);
+	console.log(event)
 	document.querySelector('.out-4').textContent = event.target.innerText;
+	document.querySelector('.out-4').style.marginBottom = '20px';
 }
-
-document.querySelector('.b-4').addEventListener('click', function() {
-	document.querySelector('.div-4').ontouchstart = t4;
+document.querySelector('.b-4').addEventListener('click', function () {
+	document.querySelector('.div-4').addEventListener('touchstart', t4);
 })
 
 // Task 5 ============================================
 /*  Дана кнопка b-5. При ее нажатии очищайте событие ontouchstart на блоке div-4. */
 
 function t5() {
-
+	document.querySelector('.div-4').removeEventListener('touchstart', t4);
+	document.querySelector('.out-4').textContent = "";
 }
 
-// ваше событие здесь!!!
+document.querySelector('.b-5').addEventListener('touchstart', t5)
 
 // Task 6 ============================================
 /*  Добавьте событие ontouchend на div-4. При его срабатывании выведите в out-6 слово touchend. */
