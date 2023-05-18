@@ -69,20 +69,28 @@ document.querySelector('.div-4').ontouchend = t6;
 // Task 7 ============================================
 /*  Дан блок div-7. Добавьте событие touch, при срабатывании которого окрашивайте блок в красный цвет. */
 
-function t7() {
+function t7(e) {
+	//e.target.style.background = 'red';
+	//перевести в красный цвет , как то легко, при нажатие на блок рандомно выпадает другой цвет
+	let x = Math.floor(Math.random() * (255 - 0) - 0);
+	let y = Math.floor(Math.random() * (255 - 0) - 0);
+	let z = Math.floor(Math.random() * (255 - 0) - 0);
+	e.target.style.background = `rgb(${x},${y},${z})`;
 
 }
+document.querySelector('.div-7').addEventListener('touchstart', t7);
 
-// ваше событие здесь!!!
+//перевести в красный цвет , как то легко, при нажатие на блок рандомно выпадает другой цвет
 
 // Task 8 ============================================
 /*  Дан блок div-8. Добавьте на него событие touch, которое при срабатывании окрашивает блок случаным цветом из массива a8=[red, green, blue, orange, pink, yellow] */
 
-function t8() {
-
+let a8 = ['red', 'green', 'blue', 'orange', 'pink', 'yellow'];
+function t8(e) {
+	let colorRansom = a8[Math.floor(Math.random() * a8.length)];
+	e.target.style.background = colorRansom;
 }
-
-// ваше событие здесь!!!
+document.querySelector('.div-8').addEventListener('touchstart', t8);
 
 
 // Task 9 ============================================
