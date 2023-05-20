@@ -99,7 +99,6 @@ document.querySelector('.div-8').addEventListener('touchstart', t8);
 function t9(e) {
 	document.querySelector('.out-9').innerHTML = e.touches.length;
 }
-
 document.querySelector('.div-9').ontouchstart = t9;
 
 
@@ -117,8 +116,10 @@ document.querySelector('.div-10').addEventListener('touchmove', t10)
 /*  Дан блок div-11. Добавьте на него событие touch. При срабатывании выводите радиус события radiusX, radiusY. */
 
 function t11(e) {
-
-
+	console.log(e)
+	let x = e.touches[0].radiusX;
+	let y = e.touches[0].radiusY;
+	document.querySelector('.out-11').innerHTML = `radiusX : ${x}, radiusY : ${y}`
 }
 
 document.querySelector('.div-11').addEventListener('touchstart', t11)
