@@ -121,7 +121,6 @@ function t11(e) {
 	let y = e.touches[0].radiusY;
 	document.querySelector('.out-11').innerHTML = `radiusX : ${x}, radiusY : ${y}`
 }
-
 document.querySelector('.div-11').addEventListener('touchstart', t11)
 
 // Task 12 ============================================
@@ -144,6 +143,11 @@ const prev = document.querySelectorAll('.prev');
 prev.onclick = prevFunction;
 
 function nextFunction() {
+	console.log("1")
+	let imgCollection = document.querySelectorAll('.div-12-wrapper');
+	for (let i = 0; i < imgCollection.length; i++) {
+		console.log(imgCollection[i])
+	}
 
 }
 
